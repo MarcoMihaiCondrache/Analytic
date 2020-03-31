@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+mkdir -p lib
+
 #START COMPILING ANALYTIC
 cd analytic
 gcc -c -o src/obj/functions.o src/functions.c
