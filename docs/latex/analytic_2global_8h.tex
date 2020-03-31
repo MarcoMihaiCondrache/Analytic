@@ -1,0 +1,304 @@
+\hypertarget{analytic_2global_8h}{}\doxysection{analytic/global.h File Reference}
+\label{analytic_2global_8h}\index{analytic/global.h@{analytic/global.h}}
+
+
+Header file that defines global variables and macros.  
+
+
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}}
+\begin{DoxyCompactList}\small\item\em Straight Line Structure ( $y = mx + q$) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}
+\begin{DoxyCompactList}\small\item\em Circumference structure ( $x^2 + y^2 + ax + by + c = 0$) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}
+\begin{DoxyCompactList}\small\item\em Hyperbole structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}}
+\begin{DoxyCompactList}\small\item\em Parabola structure $y = ax^2 + bx + c$ or $x = ay^2 + by + c$. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}}
+\begin{DoxyCompactList}\small\item\em Position structure (Contains the coordinates of a point) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_analytic___single}{Analytic\+\_\+\+Single}}
+\begin{DoxyCompactList}\small\item\em Structure that defines the data set to render. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}}~1.\+0
+\begin{DoxyCompactList}\small\item\em Default value from which to start scaling. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{analytic_2global_8h_a4d96c811f24cd3d9dee15953fc10c764}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+I\+V\+I\+S\+OR}}~10
+\begin{DoxyCompactList}\small\item\em Default value from which to start the calculation of the divisor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}} \mbox{\hyperlink{analytic_2global_8h_a259de3d68b924242e760208d457cc4e3}{Analytic\+\_\+\+Line}}
+\begin{DoxyCompactList}\small\item\em Straight Line Structure ( $y = mx + q$) \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} \mbox{\hyperlink{analytic_2global_8h_aebc8fa2d4562e7d17eacd5bfa8084484}{Analytic\+\_\+\+Circumference}}
+\begin{DoxyCompactList}\small\item\em Circumference structure ( $x^2 + y^2 + ax + by + c = 0$) \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} \mbox{\hyperlink{analytic_2global_8h_a027bde1a7bce55b75cafe73e12a7c6e0}{Analytic\+\_\+\+Hyperbole}}
+\begin{DoxyCompactList}\small\item\em Hyperbole structure. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} \mbox{\hyperlink{analytic_2global_8h_a898d545acfd784282e5543e325740dcc}{Analytic\+\_\+\+Parabola}}
+\begin{DoxyCompactList}\small\item\em Parabola structure $y = ax^2 + bx + c$ or $x = ay^2 + by + c$. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}} \mbox{\hyperlink{analytic_2global_8h_a3fbd39b2ad5135ebfec6d2a0f5f25eac}{Analytic\+\_\+\+Position}}
+\begin{DoxyCompactList}\small\item\em Position structure (Contains the coordinates of a point) \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_analytic___single}{Analytic\+\_\+\+Single}} \mbox{\hyperlink{analytic_2global_8h_aa8f7b1a6794665473f79e9913af0f4f4}{Analytic\+\_\+\+Single}}
+\begin{DoxyCompactList}\small\item\em Structure that defines the data set to render. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{analytic_2global_8h_ad768a8ed10d778ed371f9ace142fd52b}{A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+D\+A\+T\+A\+S\+ET}} \{ \newline
+{\bfseries A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+D\+A\+T\+A\+S\+ET}, 
+{\bfseries A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+L\+I\+N\+E\+\_\+\+D\+A\+T\+A\+S\+ET}, 
+{\bfseries A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+C\+I\+R\+C\+U\+M\+F\+E\+R\+E\+N\+C\+E\+\_\+\+D\+A\+T\+A\+S\+ET}, 
+{\bfseries A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+P\+A\+R\+A\+B\+O\+L\+A\+\_\+\+D\+A\+T\+A\+S\+ET}, 
+\newline
+{\bfseries A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+H\+Y\+P\+E\+R\+B\+O\+L\+E\+\_\+\+D\+A\+T\+A\+S\+ET}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for the indexes of the data set. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{analytic_2global_8h_a447a35b01759e8cb5ba438c5d72f54b4}{Analytic\+\_\+\+Parabola\+Type}} \{ {\bfseries Analytic\+\_\+\+ParabolaX}, 
+{\bfseries Analytic\+\_\+\+ParabolaY}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for the parables types. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{analytic_2global_8h_ab73e7d4dd747c31293420cd98a14c8ae}{Analytic\+\_\+\+Hyperbole\+Type}} \{ {\bfseries Analytic\+\_\+\+HyperboleX}, 
+{\bfseries Analytic\+\_\+\+HyperboleY}, 
+{\bfseries Analytic\+\_\+\+HyperboleK}, 
+{\bfseries Analytic\+\_\+\+Hyperbole\+Homographic}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for the hyperbole types. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{analytic_2global_8h_a283b40a06f6010bf2b9ebfa50756fb07}{Analytic\+\_\+\+Position\+Type}} \{ {\bfseries Analytic\+\_\+\+Position\+Relative}, 
+{\bfseries Analytic\+\_\+\+Position\+Absolute}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for the position types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{analytic_2global_8h_a11d946235bb0123edad7b8947df9ac8a}{S\+C\+A\+LE}}
+\begin{DoxyCompactList}\small\item\em Variables that contains the scale value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{analytic_2global_8h_aa7a31ad64d830ee62750ac6bc1303442}{D\+I\+V\+I\+S\+OR}}
+\begin{DoxyCompactList}\small\item\em Variables that contains the divisor value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{analytic_2global_8h_a3e0900de701e9d1d0acad5870bbe67c0}{S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE}}
+\begin{DoxyCompactList}\small\item\em Defines the Window Size. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{analytic_2global_8h_ae52d6857be5bab413d6e69ec275c1265}{T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT}}
+\begin{DoxyCompactList}\small\item\em If the program has to show the logs on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_analytic___single}{Analytic\+\_\+\+Single}} \mbox{\hyperlink{analytic_2global_8h_a7a035146b05dc590fece4a070811ab18}{S\+I\+N\+G\+LE}}
+\begin{DoxyCompactList}\small\item\em The data set of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file that defines global variables and macros. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{analytic_2global_8h_a4d96c811f24cd3d9dee15953fc10c764}\label{analytic_2global_8h_a4d96c811f24cd3d9dee15953fc10c764}} 
+\index{global.h@{global.h}!DEFAULT\_DIVISOR@{DEFAULT\_DIVISOR}}
+\index{DEFAULT\_DIVISOR@{DEFAULT\_DIVISOR}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DIVISOR}{DEFAULT\_DIVISOR}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+I\+V\+I\+S\+OR~10}
+
+
+
+Default value from which to start the calculation of the divisor. 
+
+\mbox{\Hypertarget{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}\label{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}} 
+\index{global.h@{global.h}!DEFAULT\_SCALE@{DEFAULT\_SCALE}}
+\index{DEFAULT\_SCALE@{DEFAULT\_SCALE}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SCALE}{DEFAULT\_SCALE}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE~1.\+0}
+
+
+
+Default value from which to start scaling. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{analytic_2global_8h_aebc8fa2d4562e7d17eacd5bfa8084484}\label{analytic_2global_8h_aebc8fa2d4562e7d17eacd5bfa8084484}} 
+\index{global.h@{global.h}!Analytic\_Circumference@{Analytic\_Circumference}}
+\index{Analytic\_Circumference@{Analytic\_Circumference}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_Circumference}{Analytic\_Circumference}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} \mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}}
+
+
+
+Circumference structure ( $x^2 + y^2 + ax + by + c = 0$) 
+
+\mbox{\Hypertarget{analytic_2global_8h_a027bde1a7bce55b75cafe73e12a7c6e0}\label{analytic_2global_8h_a027bde1a7bce55b75cafe73e12a7c6e0}} 
+\index{global.h@{global.h}!Analytic\_Hyperbole@{Analytic\_Hyperbole}}
+\index{Analytic\_Hyperbole@{Analytic\_Hyperbole}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_Hyperbole}{Analytic\_Hyperbole}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} \mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}}
+
+
+
+Hyperbole structure. 
+
+Hyperbole types supported\+:
+
+
+\begin{DoxyItemize}
+\item $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$
+\item $\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$
+\item $xy = k$
+\item $y = \frac{ax + b}{cx + d}$ 
+\end{DoxyItemize}\mbox{\Hypertarget{analytic_2global_8h_a259de3d68b924242e760208d457cc4e3}\label{analytic_2global_8h_a259de3d68b924242e760208d457cc4e3}} 
+\index{global.h@{global.h}!Analytic\_Line@{Analytic\_Line}}
+\index{Analytic\_Line@{Analytic\_Line}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_Line}{Analytic\_Line}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}} \mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}}}
+
+
+
+Straight Line Structure ( $y = mx + q$) 
+
+\mbox{\Hypertarget{analytic_2global_8h_a898d545acfd784282e5543e325740dcc}\label{analytic_2global_8h_a898d545acfd784282e5543e325740dcc}} 
+\index{global.h@{global.h}!Analytic\_Parabola@{Analytic\_Parabola}}
+\index{Analytic\_Parabola@{Analytic\_Parabola}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_Parabola}{Analytic\_Parabola}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} \mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}}}
+
+
+
+Parabola structure $y = ax^2 + bx + c$ or $x = ay^2 + by + c$. 
+
+\mbox{\Hypertarget{analytic_2global_8h_a3fbd39b2ad5135ebfec6d2a0f5f25eac}\label{analytic_2global_8h_a3fbd39b2ad5135ebfec6d2a0f5f25eac}} 
+\index{global.h@{global.h}!Analytic\_Position@{Analytic\_Position}}
+\index{Analytic\_Position@{Analytic\_Position}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_Position}{Analytic\_Position}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}} \mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}}}
+
+
+
+Position structure (Contains the coordinates of a point) 
+
+\mbox{\Hypertarget{analytic_2global_8h_aa8f7b1a6794665473f79e9913af0f4f4}\label{analytic_2global_8h_aa8f7b1a6794665473f79e9913af0f4f4}} 
+\index{global.h@{global.h}!Analytic\_Single@{Analytic\_Single}}
+\index{Analytic\_Single@{Analytic\_Single}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_Single}{Analytic\_Single}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_analytic___single}{Analytic\+\_\+\+Single}} \mbox{\hyperlink{struct_analytic___single}{Analytic\+\_\+\+Single}}}
+
+
+
+Structure that defines the data set to render. 
+
+This structure contains an array of bool values, everyone indicates if a place contains the data to render if not it will not be rendered. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{analytic_2global_8h_ad768a8ed10d778ed371f9ace142fd52b}\label{analytic_2global_8h_ad768a8ed10d778ed371f9ace142fd52b}} 
+\index{global.h@{global.h}!ANALYTIC\_DATASET@{ANALYTIC\_DATASET}}
+\index{ANALYTIC\_DATASET@{ANALYTIC\_DATASET}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{ANALYTIC\_DATASET}{ANALYTIC\_DATASET}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{analytic_2global_8h_ad768a8ed10d778ed371f9ace142fd52b}{A\+N\+A\+L\+Y\+T\+I\+C\+\_\+\+D\+A\+T\+A\+S\+ET}}}
+
+
+
+Enum for the indexes of the data set. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a7a035146b05dc590fece4a070811ab18}{S\+I\+N\+G\+LE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_2global_8h_ab73e7d4dd747c31293420cd98a14c8ae}\label{analytic_2global_8h_ab73e7d4dd747c31293420cd98a14c8ae}} 
+\index{global.h@{global.h}!Analytic\_HyperboleType@{Analytic\_HyperboleType}}
+\index{Analytic\_HyperboleType@{Analytic\_HyperboleType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_HyperboleType}{Analytic\_HyperboleType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{analytic_2global_8h_ab73e7d4dd747c31293420cd98a14c8ae}{Analytic\+\_\+\+Hyperbole\+Type}}}
+
+
+
+Enum for the hyperbole types. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_2global_8h_a447a35b01759e8cb5ba438c5d72f54b4}\label{analytic_2global_8h_a447a35b01759e8cb5ba438c5d72f54b4}} 
+\index{global.h@{global.h}!Analytic\_ParabolaType@{Analytic\_ParabolaType}}
+\index{Analytic\_ParabolaType@{Analytic\_ParabolaType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_ParabolaType}{Analytic\_ParabolaType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{analytic_2global_8h_a447a35b01759e8cb5ba438c5d72f54b4}{Analytic\+\_\+\+Parabola\+Type}}}
+
+
+
+Enum for the parables types. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_2global_8h_a283b40a06f6010bf2b9ebfa50756fb07}\label{analytic_2global_8h_a283b40a06f6010bf2b9ebfa50756fb07}} 
+\index{global.h@{global.h}!Analytic\_PositionType@{Analytic\_PositionType}}
+\index{Analytic\_PositionType@{Analytic\_PositionType}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_PositionType}{Analytic\_PositionType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{analytic_2global_8h_a283b40a06f6010bf2b9ebfa50756fb07}{Analytic\+\_\+\+Position\+Type}}}
+
+
+
+Enum for the position types. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{analytic_2global_8h_aa7a31ad64d830ee62750ac6bc1303442}\label{analytic_2global_8h_aa7a31ad64d830ee62750ac6bc1303442}} 
+\index{global.h@{global.h}!DIVISOR@{DIVISOR}}
+\index{DIVISOR@{DIVISOR}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{DIVISOR}{DIVISOR}}
+{\footnotesize\ttfamily int D\+I\+V\+I\+S\+OR}
+
+
+
+Variables that contains the divisor value. 
+
+\mbox{\Hypertarget{analytic_2global_8h_a11d946235bb0123edad7b8947df9ac8a}\label{analytic_2global_8h_a11d946235bb0123edad7b8947df9ac8a}} 
+\index{global.h@{global.h}!SCALE@{SCALE}}
+\index{SCALE@{SCALE}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{SCALE}{SCALE}}
+{\footnotesize\ttfamily float S\+C\+A\+LE}
+
+
+
+Variables that contains the scale value. 
+
+\mbox{\Hypertarget{analytic_2global_8h_a3e0900de701e9d1d0acad5870bbe67c0}\label{analytic_2global_8h_a3e0900de701e9d1d0acad5870bbe67c0}} 
+\index{global.h@{global.h}!SDL\_WINDOW\_SIZE@{SDL\_WINDOW\_SIZE}}
+\index{SDL\_WINDOW\_SIZE@{SDL\_WINDOW\_SIZE}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{SDL\_WINDOW\_SIZE}{SDL\_WINDOW\_SIZE}}
+{\footnotesize\ttfamily int S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE}
+
+
+
+Defines the Window Size. 
+
+\mbox{\Hypertarget{analytic_2global_8h_a7a035146b05dc590fece4a070811ab18}\label{analytic_2global_8h_a7a035146b05dc590fece4a070811ab18}} 
+\index{global.h@{global.h}!SINGLE@{SINGLE}}
+\index{SINGLE@{SINGLE}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{SINGLE}{SINGLE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_analytic___single}{Analytic\+\_\+\+Single}} S\+I\+N\+G\+LE}
+
+
+
+The data set of the program. 
+
+\mbox{\Hypertarget{analytic_2global_8h_ae52d6857be5bab413d6e69ec275c1265}\label{analytic_2global_8h_ae52d6857be5bab413d6e69ec275c1265}} 
+\index{global.h@{global.h}!TERMINAL\_OUTPUT@{TERMINAL\_OUTPUT}}
+\index{TERMINAL\_OUTPUT@{TERMINAL\_OUTPUT}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{TERMINAL\_OUTPUT}{TERMINAL\_OUTPUT}}
+{\footnotesize\ttfamily bool T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT}
+
+
+
+If the program has to show the logs on the screen. 
+

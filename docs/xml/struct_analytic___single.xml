@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_analytic___single" kind="struct" language="C++" prot="public">
+    <compoundname>Analytic_Single</compoundname>
+    <includes refid="analytic_2global_8h" local="no">global.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dataSet[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>dataSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that contains the status of the places </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="203" column="10" bodyfile="analytic/global.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref></type>
+        <definition>Analytic_Position position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Position of the data set (for the tangents) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="204" column="23" bodyfile="analytic/global.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref></type>
+        <definition>Analytic_Line line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Line of the data set (tangets and simple) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="205" column="19" bodyfile="analytic/global.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+        <definition>Analytic_Circumference circumference</definition>
+        <argsstring></argsstring>
+        <name>circumference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Circumference of the data set (tangent and simple) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="206" column="28" bodyfile="analytic/global.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref></type>
+        <definition>Analytic_Parabola parabola</definition>
+        <argsstring></argsstring>
+        <name>parabola</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parabola of the data set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="207" column="23" bodyfile="analytic/global.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___single_1ace86c643912227afeb37f05d06511446" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+        <definition>Analytic_Hyperbole hyperbole</definition>
+        <argsstring></argsstring>
+        <name>hyperbole</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Hyperbole of the data set </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="208" column="24" bodyfile="analytic/global.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure that defines the data set to render. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure contains an array of bool values, everyone indicates if a place contains the data to render if not it will not be rendered. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Analytic_Circumference</label>
+        <link refid="struct_analytic___circumference"/>
+      </node>
+      <node id="4">
+        <label>Analytic_Position</label>
+        <link refid="struct_analytic___position"/>
+      </node>
+      <node id="5">
+        <label>Analytic_Hyperbole</label>
+        <link refid="struct_analytic___hyperbole"/>
+      </node>
+      <node id="1">
+        <label>Analytic_Single</label>
+        <link refid="struct_analytic___single"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>circumference</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>parabola</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>hyperbole</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>line</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Analytic_Parabola</label>
+        <link refid="struct_analytic___parabola"/>
+      </node>
+      <node id="6">
+        <label>Analytic_Line</label>
+        <link refid="struct_analytic___line"/>
+      </node>
+    </collaborationgraph>
+    <location file="analytic/global.h" line="202" column="1" bodyfile="analytic/global.h" bodystart="201" bodyend="209"/>
+    <listofallmembers>
+      <member refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" prot="public" virt="non-virtual"><scope>Analytic_Single</scope><name>circumference</name></member>
+      <member refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" prot="public" virt="non-virtual"><scope>Analytic_Single</scope><name>dataSet</name></member>
+      <member refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" prot="public" virt="non-virtual"><scope>Analytic_Single</scope><name>hyperbole</name></member>
+      <member refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" prot="public" virt="non-virtual"><scope>Analytic_Single</scope><name>line</name></member>
+      <member refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" prot="public" virt="non-virtual"><scope>Analytic_Single</scope><name>parabola</name></member>
+      <member refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" prot="public" virt="non-virtual"><scope>Analytic_Single</scope><name>position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

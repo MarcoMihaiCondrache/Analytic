@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="struct_analytic___circumference" kind="struct"><name>Analytic_Circumference</name>
+    <member refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" kind="variable"><name>a</name></member>
+    <member refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" kind="variable"><name>b</name></member>
+    <member refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" kind="variable"><name>c</name></member>
+  </compound>
+  <compound refid="struct_analytic___hyperbole" kind="struct"><name>Analytic_Hyperbole</name>
+    <member refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" kind="variable"><name>type</name></member>
+    <member refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" kind="variable"><name>a</name></member>
+    <member refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" kind="variable"><name>b</name></member>
+    <member refid="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" kind="variable"><name>k</name></member>
+    <member refid="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" kind="variable"><name>c</name></member>
+    <member refid="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" kind="variable"><name>d</name></member>
+  </compound>
+  <compound refid="struct_analytic___line" kind="struct"><name>Analytic_Line</name>
+    <member refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" kind="variable"><name>m</name></member>
+    <member refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" kind="variable"><name>q</name></member>
+  </compound>
+  <compound refid="struct_analytic___parabola" kind="struct"><name>Analytic_Parabola</name>
+    <member refid="struct_analytic___parabola_1a4ea833de8cbe1d97da852130706ec899" kind="variable"><name>type</name></member>
+    <member refid="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" kind="variable"><name>a</name></member>
+    <member refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" kind="variable"><name>b</name></member>
+    <member refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" kind="variable"><name>c</name></member>
+  </compound>
+  <compound refid="struct_analytic___position" kind="struct"><name>Analytic_Position</name>
+    <member refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" kind="variable"><name>x</name></member>
+    <member refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="struct_analytic___single" kind="struct"><name>Analytic_Single</name>
+    <member refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kind="variable"><name>dataSet</name></member>
+    <member refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" kind="variable"><name>position</name></member>
+    <member refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kind="variable"><name>line</name></member>
+    <member refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kind="variable"><name>circumference</name></member>
+    <member refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kind="variable"><name>parabola</name></member>
+    <member refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kind="variable"><name>hyperbole</name></member>
+  </compound>
+  <compound refid="analytic_8h" kind="file"><name>analytic.h</name>
+    <member refid="analytic_8h_1ab826206fc9bcfb04b3f882d78e9c2e52" kind="function"><name>Analytic_setDivisor</name></member>
+    <member refid="analytic_8h_1ab7ba4146e49c2fadea470b9a955d1f43" kind="function"><name>Analytic_setScale</name></member>
+    <member refid="analytic_8h_1a6c06f4df99cf2c9fc4bc1a24b688abe3" kind="function"><name>Analytic_setWindowSize</name></member>
+    <member refid="analytic_8h_1ae61088b3078a2530f978af1bedf51413" kind="function"><name>Analytic_setTerminalOutput</name></member>
+    <member refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kind="function"><name>Analytic_setDataSet</name></member>
+    <member refid="analytic_8h_1a37cfa23d5daf2d72901a4712de9bcf63" kind="function"><name>Analytic_initDataSet</name></member>
+  </compound>
+  <compound refid="functions_8h" kind="file"><name>functions.h</name>
+    <member refid="functions_8h_1a6035d73bb5eb43e59b38cc63e2c63d82" kind="function"><name>Analytic_LineFunction</name></member>
+    <member refid="functions_8h_1a338af7326772bf75a1f3faff419e29b5" kind="function"><name>Analytic_ParabolaYFunction</name></member>
+    <member refid="functions_8h_1a3d5ec75330f5ff3427823ed0c74c89ab" kind="function"><name>Analytic_ParabolaXFunction</name></member>
+    <member refid="functions_8h_1a3f76b8b0d36bb8450732ac5b7ad1a863" kind="function"><name>Analytic_CircumferenceRadiusFunction</name></member>
+    <member refid="functions_8h_1abe5a4543009708604f165fc7db8bdd4c" kind="function"><name>Analytic_CircumferenceXCentreFunction</name></member>
+    <member refid="functions_8h_1a92231210c9c966ede33e488827b542a0" kind="function"><name>Analytic_CircumferenceYCentreFunction</name></member>
+    <member refid="functions_8h_1a40c3be7865f7cc46313f47c5a29ac906" kind="function"><name>Analytic_HyperboleYFunction</name></member>
+    <member refid="functions_8h_1a17880b2292a03fb34fe9249bca44d5c8" kind="function"><name>Analytic_HyperboleXFunction</name></member>
+    <member refid="functions_8h_1abca3c5edb5a119eb4976ec375cf3abea" kind="function"><name>Analytic_HyperboleKFunction</name></member>
+    <member refid="functions_8h_1a8505a4fc8732149bc6c3768bf4e91c3e" kind="function"><name>Analytic_HyperboleHomographicFunction</name></member>
+  </compound>
+  <compound refid="geometry_8h" kind="file"><name>geometry.h</name>
+    <member refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kind="function"><name>Analytic_createPoint</name></member>
+    <member refid="geometry_8h_1a8f1d8e436b2a4c4a1a307270be8a479c" kind="function"><name>Analytic_createLine</name></member>
+    <member refid="geometry_8h_1a423bc0666f5da3db90e89204b3f36de3" kind="function"><name>Analytic_createCircumference</name></member>
+    <member refid="geometry_8h_1aea684c82b570b0f6b5ebd16d1ee672c4" kind="function"><name>Analytic_createHyperbole</name></member>
+    <member refid="geometry_8h_1a22dc585163e64ffc15c1b38c4edfdcbd" kind="function"><name>Analytic_createParabola</name></member>
+    <member refid="geometry_8h_1a7bcf2b79866a8b3387b1ab12eafe3635" kind="function"><name>Analytic_createTangents</name></member>
+  </compound>
+  <compound refid="analytic_2global_8h" kind="file"><name>global.h</name>
+    <member refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kind="define"><name>DEFAULT_SCALE</name></member>
+    <member refid="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" kind="define"><name>DEFAULT_DIVISOR</name></member>
+    <member refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52b" kind="enum"><name>ANALYTIC_DATASET</name></member>
+    <member refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52ba09ef65ad55397d695435f2191efe0e14" kind="enumvalue"><name>ANALYTIC_POSITION_DATASET</name></member>
+    <member refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52bac423d19fba521f012fdef03e4cf175b9" kind="enumvalue"><name>ANALYTIC_LINE_DATASET</name></member>
+    <member refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52ba897abbdc0939d5ed5b8f4f3b28267860" kind="enumvalue"><name>ANALYTIC_CIRCUMFERENCE_DATASET</name></member>
+    <member refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52bae79ffeb235bd78351256deeef0ae01eb" kind="enumvalue"><name>ANALYTIC_PARABOLA_DATASET</name></member>
+    <member refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52baed138d3a36358fc966709768712c0550" kind="enumvalue"><name>ANALYTIC_HYPERBOLE_DATASET</name></member>
+    <member refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" kind="enum"><name>Analytic_ParabolaType</name></member>
+    <member refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4a9d64ee06efaf564dc52ed3f099fd5007" kind="enumvalue"><name>Analytic_ParabolaX</name></member>
+    <member refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4a26da363d7506bde34694d70bff5385f8" kind="enumvalue"><name>Analytic_ParabolaY</name></member>
+    <member refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" kind="enum"><name>Analytic_HyperboleType</name></member>
+    <member refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea6b0bcd833367389e05acdfc7a4d5254b" kind="enumvalue"><name>Analytic_HyperboleX</name></member>
+    <member refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea06059114102d6b08a5529cdce80f85cc" kind="enumvalue"><name>Analytic_HyperboleY</name></member>
+    <member refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea72a5f11c3efac97e86abe88e383f80ff" kind="enumvalue"><name>Analytic_HyperboleK</name></member>
+    <member refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea8d4bacfc0918ebec15116d755f8ef772" kind="enumvalue"><name>Analytic_HyperboleHomographic</name></member>
+    <member refid="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07" kind="enum"><name>Analytic_PositionType</name></member>
+    <member refid="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07a0c50087fc8eec13835e37b35183db1c8" kind="enumvalue"><name>Analytic_PositionRelative</name></member>
+    <member refid="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07a5ee350438986709cf5ab1c4ebe1b3e46" kind="enumvalue"><name>Analytic_PositionAbsolute</name></member>
+    <member refid="analytic_2global_8h_1a259de3d68b924242e760208d457cc4e3" kind="typedef"><name>Analytic_Line</name></member>
+    <member refid="analytic_2global_8h_1aebc8fa2d4562e7d17eacd5bfa8084484" kind="typedef"><name>Analytic_Circumference</name></member>
+    <member refid="analytic_2global_8h_1a027bde1a7bce55b75cafe73e12a7c6e0" kind="typedef"><name>Analytic_Hyperbole</name></member>
+    <member refid="analytic_2global_8h_1a898d545acfd784282e5543e325740dcc" kind="typedef"><name>Analytic_Parabola</name></member>
+    <member refid="analytic_2global_8h_1a3fbd39b2ad5135ebfec6d2a0f5f25eac" kind="typedef"><name>Analytic_Position</name></member>
+    <member refid="analytic_2global_8h_1aa8f7b1a6794665473f79e9913af0f4f4" kind="typedef"><name>Analytic_Single</name></member>
+    <member refid="analytic_2global_8h_1a2c5a75b2418362af39c6f76e11f7f0ef" kind="variable"><name>white</name></member>
+    <member refid="analytic_2global_8h_1a473cf91025b6bc541335f4ed65cd2072" kind="variable"><name>black</name></member>
+    <member refid="analytic_2global_8h_1a04d83b25c59197e03e102d27fe267980" kind="variable"><name>red</name></member>
+    <member refid="analytic_2global_8h_1a2cdecc37e378bfffec2e0395addd9f06" kind="variable"><name>green</name></member>
+    <member refid="analytic_2global_8h_1afca3bf4ec423d92bebd1593c5c94d39e" kind="variable"><name>blue</name></member>
+    <member refid="analytic_2global_8h_1ab33673453f69c3e5700c05934ef4d096" kind="variable"><name>purple</name></member>
+    <member refid="analytic_2global_8h_1ad3dcae71ae52abe7ee424de596b9e663" kind="variable"><name>grey</name></member>
+    <member refid="analytic_2global_8h_1a1e4ff8e7294f2953895bb0f207d5b273" kind="variable"><name>yellow</name></member>
+    <member refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kind="variable"><name>SCALE</name></member>
+    <member refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kind="variable"><name>DIVISOR</name></member>
+    <member refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kind="variable"><name>SDL_WINDOW_SIZE</name></member>
+    <member refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kind="variable"><name>TERMINAL_OUTPUT</name></member>
+    <member refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kind="variable"><name>SINGLE</name></member>
+  </compound>
+  <compound refid="ui_2global_8h" kind="file"><name>global.h</name>
+    <member refid="ui_2global_8h_1a8f1b998f57a3bd99d4d0e43e94e22841" kind="define"><name>TRAILING</name></member>
+    <member refid="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" kind="define"><name>CLEAR</name></member>
+  </compound>
+  <compound refid="plane_8h" kind="file"><name>plane.h</name>
+    <member refid="plane_8h_1a33aba8b285d58bbe789701e6fc308bd8" kind="function"><name>Analytic_setAxes</name></member>
+    <member refid="plane_8h_1ae62ae1fafbdf2386e362bf8013c09654" kind="function"><name>Analytic_setBackground</name></member>
+    <member refid="plane_8h_1ac4e4ccd12bf4d819be77f35138b1be39" kind="function"><name>Analytic_initPlane</name></member>
+    <member refid="plane_8h_1aef4c54bb7462953d8d287d27f8a51758" kind="function"><name>Analytic_renderMethod</name></member>
+  </compound>
+  <compound refid="scale_8h" kind="file"><name>scale.h</name>
+    <member refid="scale_8h_1a1b94b66e4fd4dbf04d6de215caa52d5b" kind="function"><name>Analytic_convertXAbsolute</name></member>
+    <member refid="scale_8h_1a172cef737d77c0147c24a74fa00be51c" kind="function"><name>Analytic_convertYAbsolute</name></member>
+    <member refid="scale_8h_1a5c4d4b9aafa3cb986417ce7302ff8d6a" kind="function"><name>Analytic_calculateDivisor</name></member>
+    <member refid="scale_8h_1aba0b026e3eb373ffafabc41eb9b5159b" kind="function"><name>Analytic_scaleIn</name></member>
+    <member refid="scale_8h_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" kind="function"><name>Analytic_scaleOut</name></member>
+    <member refid="scale_8h_1a4e63a4fe52c3a36f03346adeec9cedba" kind="function"><name>Analytic_isXRelativeOK</name></member>
+    <member refid="scale_8h_1ada53a5722ff0085a087e802b09115555" kind="function"><name>Analytic_isYRelativeOK</name></member>
+  </compound>
+  <compound refid="analytic_8c" kind="file"><name>analytic.c</name>
+    <member refid="analytic_8c_1a37cfa23d5daf2d72901a4712de9bcf63" kind="function"><name>Analytic_initDataSet</name></member>
+    <member refid="analytic_8c_1a35f7f9f64fa0a10bd79d4fe4e5476915" kind="function"><name>Analytic_setDataSet</name></member>
+    <member refid="analytic_8c_1ab826206fc9bcfb04b3f882d78e9c2e52" kind="function"><name>Analytic_setDivisor</name></member>
+    <member refid="analytic_8c_1ab7ba4146e49c2fadea470b9a955d1f43" kind="function"><name>Analytic_setScale</name></member>
+    <member refid="analytic_8c_1a6c06f4df99cf2c9fc4bc1a24b688abe3" kind="function"><name>Analytic_setWindowSize</name></member>
+    <member refid="analytic_8c_1ae61088b3078a2530f978af1bedf51413" kind="function"><name>Analytic_setTerminalOutput</name></member>
+  </compound>
+  <compound refid="functions_8c" kind="file"><name>functions.c</name>
+    <member refid="functions_8c_1a6035d73bb5eb43e59b38cc63e2c63d82" kind="function"><name>Analytic_LineFunction</name></member>
+    <member refid="functions_8c_1a338af7326772bf75a1f3faff419e29b5" kind="function"><name>Analytic_ParabolaYFunction</name></member>
+    <member refid="functions_8c_1a3d5ec75330f5ff3427823ed0c74c89ab" kind="function"><name>Analytic_ParabolaXFunction</name></member>
+    <member refid="functions_8c_1a3f76b8b0d36bb8450732ac5b7ad1a863" kind="function"><name>Analytic_CircumferenceRadiusFunction</name></member>
+    <member refid="functions_8c_1abe5a4543009708604f165fc7db8bdd4c" kind="function"><name>Analytic_CircumferenceXCentreFunction</name></member>
+    <member refid="functions_8c_1a92231210c9c966ede33e488827b542a0" kind="function"><name>Analytic_CircumferenceYCentreFunction</name></member>
+    <member refid="functions_8c_1a40c3be7865f7cc46313f47c5a29ac906" kind="function"><name>Analytic_HyperboleYFunction</name></member>
+    <member refid="functions_8c_1a17880b2292a03fb34fe9249bca44d5c8" kind="function"><name>Analytic_HyperboleXFunction</name></member>
+    <member refid="functions_8c_1abca3c5edb5a119eb4976ec375cf3abea" kind="function"><name>Analytic_HyperboleKFunction</name></member>
+    <member refid="functions_8c_1a8505a4fc8732149bc6c3768bf4e91c3e" kind="function"><name>Analytic_HyperboleHomographicFunction</name></member>
+  </compound>
+  <compound refid="geometry_8c" kind="file"><name>geometry.c</name>
+    <member refid="geometry_8c_1a91271cf91f67ee374615ad91f4ddff9f" kind="function"><name>Analytic_createPoint</name></member>
+    <member refid="geometry_8c_1a8f1d8e436b2a4c4a1a307270be8a479c" kind="function"><name>Analytic_createLine</name></member>
+    <member refid="geometry_8c_1a22dc585163e64ffc15c1b38c4edfdcbd" kind="function"><name>Analytic_createParabola</name></member>
+    <member refid="geometry_8c_1a423bc0666f5da3db90e89204b3f36de3" kind="function"><name>Analytic_createCircumference</name></member>
+    <member refid="geometry_8c_1a7bcf2b79866a8b3387b1ab12eafe3635" kind="function"><name>Analytic_createTangents</name></member>
+    <member refid="geometry_8c_1aea684c82b570b0f6b5ebd16d1ee672c4" kind="function"><name>Analytic_createHyperbole</name></member>
+  </compound>
+  <compound refid="plane_8c" kind="file"><name>plane.c</name>
+    <member refid="plane_8c_1ae62ae1fafbdf2386e362bf8013c09654" kind="function"><name>Analytic_setBackground</name></member>
+    <member refid="plane_8c_1a33aba8b285d58bbe789701e6fc308bd8" kind="function"><name>Analytic_setAxes</name></member>
+    <member refid="plane_8c_1ac4e4ccd12bf4d819be77f35138b1be39" kind="function"><name>Analytic_initPlane</name></member>
+    <member refid="plane_8c_1aef4c54bb7462953d8d287d27f8a51758" kind="function"><name>Analytic_renderMethod</name></member>
+  </compound>
+  <compound refid="scale_8c" kind="file"><name>scale.c</name>
+    <member refid="scale_8c_1ad6f90aea8631c8a06a5a2e8564762778" kind="function"><name>Analytic_convertXAbsolute</name></member>
+    <member refid="scale_8c_1a01b243cff69ca3df349c69431b189053" kind="function"><name>Analytic_convertYAbsolute</name></member>
+    <member refid="scale_8c_1a4e63a4fe52c3a36f03346adeec9cedba" kind="function"><name>Analytic_isXRelativeOK</name></member>
+    <member refid="scale_8c_1ada53a5722ff0085a087e802b09115555" kind="function"><name>Analytic_isYRelativeOK</name></member>
+    <member refid="scale_8c_1aba0b026e3eb373ffafabc41eb9b5159b" kind="function"><name>Analytic_scaleIn</name></member>
+    <member refid="scale_8c_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" kind="function"><name>Analytic_scaleOut</name></member>
+    <member refid="scale_8c_1a5c4d4b9aafa3cb986417ce7302ff8d6a" kind="function"><name>Analytic_calculateDivisor</name></member>
+  </compound>
+  <compound refid="draw_8c" kind="file"><name>draw.c</name>
+    <member refid="draw_8c_1a8de3ed741dadc9c979a4ff17c0a9116e" kind="define"><name>NDEBUG</name></member>
+    <member refid="draw_8c_1a51f528deaaeb973f417b46a2ec36f850" kind="define"><name>SDL_MAIN_HANDLED</name></member>
+    <member refid="draw_8c_1abf9e6b7e6f15df4b525a2e7705ba3089" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="log_8h" kind="file"><name>log.h</name>
+    <member refid="log_8h_1aa48b2017856a8a9c33a9935afe604c8d" kind="define"><name>LOG_VERSION</name></member>
+    <member refid="log_8h_1af89cb876e6e1d43cfeacdd58a7c9b78c" kind="define"><name>log_trace</name></member>
+    <member refid="log_8h_1aa77e596ef13d2f0f75d0ac9540ed358d" kind="define"><name>log_debug</name></member>
+    <member refid="log_8h_1aa1cfe5444875c8eca0ea6f6993977d6d" kind="define"><name>log_info</name></member>
+    <member refid="log_8h_1a04af09851c431d178f16b24fa1aac1e9" kind="define"><name>log_warn</name></member>
+    <member refid="log_8h_1a6ae72553ea9805dd87a463d6f710364d" kind="define"><name>log_error</name></member>
+    <member refid="log_8h_1a704a43b1e2ff3bb554aff101efdbeecf" kind="define"><name>log_fatal</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55ba5b76dd51db62558b1952158ba38b723f" kind="enumvalue"><name>LOG_TRACE</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55bab9f002c6ffbfd511da8090213227454e" kind="enumvalue"><name>LOG_DEBUG</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6e98ff471e3ce6c4ef2d75c37ee51837" kind="enumvalue"><name>LOG_INFO</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55bac8041ffa22bc823d4726701cdb13fc13" kind="enumvalue"><name>LOG_WARN</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55ba230506cce5c68c3bac5a821c42ed3473" kind="enumvalue"><name>LOG_ERROR</name></member>
+    <member refid="log_8h_1a06fc87d81c62e9abb8790b6e5713c55bac630750884d91cb9767ef2200bbb048b" kind="enumvalue"><name>LOG_FATAL</name></member>
+    <member refid="log_8h_1aa8f9dc0532ecacdb6dd9fb0de5e0450e" kind="typedef"><name>log_LockFn</name></member>
+    <member refid="log_8h_1a670c547ace6683148e5f480c4fc4c0f0" kind="function"><name>log_set_udata</name></member>
+    <member refid="log_8h_1a93d6674a530b372c85e6bdf275e6e6b4" kind="function"><name>log_set_lock</name></member>
+    <member refid="log_8h_1af0f33363d4098787cac5b47f0a6ad443" kind="function"><name>log_set_fp</name></member>
+    <member refid="log_8h_1af2493e94f152a28b2ba4e3a2e2bba65d" kind="function"><name>log_set_level</name></member>
+    <member refid="log_8h_1a15fc2e61d925edc83d6eaa748a7fb40c" kind="function"><name>log_set_quiet</name></member>
+    <member refid="log_8h_1a4997d5e10e9467049e1a62f750746acd" kind="function"><name>log_set_date</name></member>
+    <member refid="log_8h_1ae8e87b2a5ff4addb8e1f2e741d1c50b8" kind="function"><name>log_set_specs</name></member>
+    <member refid="log_8h_1ac008ecbde449b2dd1bc4f8671d9a0e07" kind="function"><name>log_log</name></member>
+  </compound>
+  <compound refid="log_8c" kind="file"><name>log.c</name>
+    <member refid="log_8c_1a697ce711b67313990d351b5c95f87aed" kind="variable"><name>udata</name></member>
+    <member refid="log_8c_1a9863926e23e26ddb194b82b7fc50756a" kind="variable"><name>lock</name></member>
+    <member refid="log_8c_1aa065f30aa9f5f9a42132c82c787ee70b" kind="variable"><name>fp</name></member>
+    <member refid="log_8c_1acf4d33ee4cff36f69b924471174dcb11" kind="variable"><name>level</name></member>
+    <member refid="log_8c_1a55602ca214fb365e8deef9a73c8442e7" kind="variable"><name>quiet</name></member>
+    <member refid="log_8c_1a06bc9fdc1bb40c3434e1a59de7576632" kind="variable"><name>date</name></member>
+    <member refid="log_8c_1ae22014135947d124b2b1eda801ded038" kind="variable"><name>specs</name></member>
+    <member refid="log_8c_1a32afcca366c50561cf80f8df68a4e552" kind="variable"><name>L</name></member>
+    <member refid="log_8c_1a6ee99f12766d97f932da55d2232f5cf5" kind="variable"><name>level_names</name></member>
+    <member refid="log_8c_1abb7cc7eb4e959fda6a43c8dd85f20090" kind="function"><name>unlock</name></member>
+    <member refid="log_8c_1a670c547ace6683148e5f480c4fc4c0f0" kind="function"><name>log_set_udata</name></member>
+    <member refid="log_8c_1a93d6674a530b372c85e6bdf275e6e6b4" kind="function"><name>log_set_lock</name></member>
+    <member refid="log_8c_1af0f33363d4098787cac5b47f0a6ad443" kind="function"><name>log_set_fp</name></member>
+    <member refid="log_8c_1af2493e94f152a28b2ba4e3a2e2bba65d" kind="function"><name>log_set_level</name></member>
+    <member refid="log_8c_1a15fc2e61d925edc83d6eaa748a7fb40c" kind="function"><name>log_set_quiet</name></member>
+    <member refid="log_8c_1a4997d5e10e9467049e1a62f750746acd" kind="function"><name>log_set_date</name></member>
+    <member refid="log_8c_1ae8e87b2a5ff4addb8e1f2e741d1c50b8" kind="function"><name>log_set_specs</name></member>
+    <member refid="log_8c_1ac008ecbde449b2dd1bc4f8671d9a0e07" kind="function"><name>log_log</name></member>
+  </compound>
+  <compound refid="logs_8txt" kind="file"><name>logs.txt</name>
+  </compound>
+  <compound refid="input_8h" kind="file"><name>input.h</name>
+    <member refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kind="function"><name>Ui_readInput</name></member>
+  </compound>
+  <compound refid="output_8h" kind="file"><name>output.h</name>
+    <member refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kind="function"><name>Ui_showWarningDialog</name></member>
+    <member refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kind="function"><name>Ui_printWithNewLine</name></member>
+    <member refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kind="function"><name>Ui_clear</name></member>
+    <member refid="output_8h_1a1c8eb6e6978cb305edd16e606b009ccd" kind="function"><name>Ui_handleMenu</name></member>
+  </compound>
+  <compound refid="input_8c" kind="file"><name>input.c</name>
+    <member refid="input_8c_1a8d59110a032874a1c4baefff2e07fc4c" kind="function"><name>Ui_readInput</name></member>
+  </compound>
+  <compound refid="output_8c" kind="file"><name>output.c</name>
+    <member refid="output_8c_1af5478c04f03d2085f1d9d981eb7afd64" kind="variable"><name>colorScheme</name></member>
+    <member refid="output_8c_1a12d2732eb7b59efbf02ae7035f0e9229" kind="variable"><name>warningButtons</name></member>
+    <member refid="output_8c_1a890c3b9485ab4118590dd471f4762197" kind="function"><name>Ui_showWarningDialog</name></member>
+    <member refid="output_8c_1ada732a53693bdb968ea3885c60089e9f" kind="function"><name>Ui_printWithNewLine</name></member>
+    <member refid="output_8c_1a1c8eb6e6978cb305edd16e606b009ccd" kind="function"><name>Ui_handleMenu</name></member>
+    <member refid="output_8c_1a53477a547a3921b54fb3a8d49ea2ea6e" kind="function"><name>Ui_clear</name></member>
+  </compound>
+  <compound refid="dir_5442d31fec03fdc21be8e873744e9d81" kind="dir"><name>analytic</name>
+  </compound>
+  <compound refid="dir_9381a7bbd03577d6d8720c7f35c94ffa" kind="dir"><name>log</name>
+  </compound>
+  <compound refid="dir_bddad71ee8844db90baa0118102329e1" kind="dir"><name>log/src</name>
+  </compound>
+  <compound refid="dir_141134a55e20d5b2929e699c0bb11230" kind="dir"><name>ui/src</name>
+  </compound>
+  <compound refid="dir_67d2e13ca3f01184a214626909208d62" kind="dir"><name>analytic/src</name>
+  </compound>
+  <compound refid="dir_1788f8309b1a812dcb800a185471cf6c" kind="dir"><name>ui</name>
+  </compound>
+</doxygenindex>

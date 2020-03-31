@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="log_8h" kind="file" language="C++">
+    <compoundname>log.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includedby refid="functions_8c" local="yes">analytic/src/functions.c</includedby>
+    <includedby refid="geometry_8c" local="yes">analytic/src/geometry.c</includedby>
+    <includedby refid="plane_8c" local="yes">analytic/src/plane.c</includedby>
+    <includedby refid="scale_8c" local="yes">analytic/src/scale.c</includedby>
+    <includedby refid="draw_8c" local="no">draw.c</includedby>
+    <includedby refid="log_8c" local="yes">log/src/log.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1">
+        <label>log/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>draw.c</label>
+        <link refid="draw_8c"/>
+      </node>
+      <node id="1">
+        <label>log/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="log_8h_1aa48b2017856a8a9c33a9935afe604c8d" prot="public" static="no">
+        <name>LOG_VERSION</name>
+        <initializer>&quot;0.1.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright (c) 2017 rxi</para>
+<para>This library is free software; you can redistribute it and/or modify it under the terms of the MIT license. See <computeroutput>log.c</computeroutput> for details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="14" column="9" bodyfile="log/log.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1af89cb876e6e1d43cfeacdd58a7c9b78c" prot="public" static="no">
+        <name>log_trace</name>
+        <param><defname>...</defname></param>
+        <initializer>log_log(LOG_TRACE, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="28" column="9" bodyfile="log/log.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1aa77e596ef13d2f0f75d0ac9540ed358d" prot="public" static="no">
+        <name>log_debug</name>
+        <param><defname>...</defname></param>
+        <initializer>log_log(LOG_DEBUG, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="29" column="9" bodyfile="log/log.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1aa1cfe5444875c8eca0ea6f6993977d6d" prot="public" static="no">
+        <name>log_info</name>
+        <param><defname>...</defname></param>
+        <initializer>log_log(LOG_INFO, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="30" column="9" bodyfile="log/log.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a04af09851c431d178f16b24fa1aac1e9" prot="public" static="no">
+        <name>log_warn</name>
+        <param><defname>...</defname></param>
+        <initializer>log_log(LOG_WARN, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="31" column="9" bodyfile="log/log.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a6ae72553ea9805dd87a463d6f710364d" prot="public" static="no">
+        <name>log_error</name>
+        <param><defname>...</defname></param>
+        <initializer>log_log(LOG_ERROR, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="32" column="9" bodyfile="log/log.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="log_8h_1a704a43b1e2ff3bb554aff101efdbeecf" prot="public" static="no">
+        <name>log_fatal</name>
+        <param><defname>...</defname></param>
+        <initializer>log_log(LOG_FATAL, __FILE__, __LINE__, __VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="33" column="9" bodyfile="log/log.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55ba5b76dd51db62558b1952158ba38b723f" prot="public">
+          <name>LOG_TRACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55bab9f002c6ffbfd511da8090213227454e" prot="public">
+          <name>LOG_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55ba6e98ff471e3ce6c4ef2d75c37ee51837" prot="public">
+          <name>LOG_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55bac8041ffa22bc823d4726701cdb13fc13" prot="public">
+          <name>LOG_WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55ba230506cce5c68c3bac5a821c42ed3473" prot="public">
+          <name>LOG_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="log_8h_1a06fc87d81c62e9abb8790b6e5713c55bac630750884d91cb9767ef2200bbb048b" prot="public">
+          <name>LOG_FATAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="19" column="1" bodyfile="log/log.h" bodystart="18" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="log_8h_1aa8f9dc0532ecacdb6dd9fb0de5e0450e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* log_LockFn) (void *udata, int lock)</definition>
+        <argsstring>)(void *udata, int lock)</argsstring>
+        <name>log_LockFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="16" column="9" bodyfile="log/log.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="log_8h_1a670c547ace6683148e5f480c4fc4c0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_udata</definition>
+        <argsstring>(void *udata)</argsstring>
+        <name>log_set_udata</name>
+        <param>
+          <type>void *</type>
+          <declname>udata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="35" column="6" bodyfile="log/src/log.c" bodystart="66" bodyend="69" declfile="log/log.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1a93d6674a530b372c85e6bdf275e6e6b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_lock</definition>
+        <argsstring>(log_LockFn fn)</argsstring>
+        <name>log_set_lock</name>
+        <param>
+          <type>log_LockFn</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="36" column="6" bodyfile="log/src/log.c" bodystart="71" bodyend="74" declfile="log/log.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1af0f33363d4098787cac5b47f0a6ad443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_fp</definition>
+        <argsstring>(FILE *fp)</argsstring>
+        <name>log_set_fp</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="37" column="6" bodyfile="log/src/log.c" bodystart="76" bodyend="79" declfile="log/log.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1af2493e94f152a28b2ba4e3a2e2bba65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_level</definition>
+        <argsstring>(int level)</argsstring>
+        <name>log_set_level</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="38" column="6" bodyfile="log/src/log.c" bodystart="81" bodyend="84" declfile="log/log.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1a15fc2e61d925edc83d6eaa748a7fb40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_quiet</definition>
+        <argsstring>(int enable)</argsstring>
+        <name>log_set_quiet</name>
+        <param>
+          <type>int</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="39" column="6" bodyfile="log/src/log.c" bodystart="86" bodyend="89" declfile="log/log.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1a4997d5e10e9467049e1a62f750746acd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_date</definition>
+        <argsstring>(int enable)</argsstring>
+        <name>log_set_date</name>
+        <param>
+          <type>int</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="40" column="6" bodyfile="log/src/log.c" bodystart="91" bodyend="94" declfile="log/log.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1ae8e87b2a5ff4addb8e1f2e741d1c50b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_set_specs</definition>
+        <argsstring>(int enable)</argsstring>
+        <name>log_set_specs</name>
+        <param>
+          <type>int</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="41" column="6" bodyfile="log/src/log.c" bodystart="96" bodyend="99" declfile="log/log.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="log_8h_1ac008ecbde449b2dd1bc4f8671d9a0e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void log_log</definition>
+        <argsstring>(int level, const char *file, int line, const char *fmt,...)</argsstring>
+        <name>log_log</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log/log.h" line="43" column="6" bodyfile="log/src/log.c" bodystart="101" bodyend="177" declfile="log/log.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>LOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_VERSION<sp/>&quot;0.1.0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*log_LockFn)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*udata,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lock);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_TRACE,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_DEBUG,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_WARN,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_ERROR,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_FATAL</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_trace(...)<sp/>log_log(LOG_TRACE,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_debug(...)<sp/>log_log(LOG_DEBUG,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_info(...)<sp/>log_log(LOG_INFO,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_warn(...)<sp/>log_log(LOG_WARN,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_error(...)<sp/>log_log(LOG_ERROR,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>log_fatal(...)<sp/>log_log(LOG_FATAL,<sp/>__FILE__,<sp/>__LINE__,<sp/>__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_udata(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*udata);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_lock(log_LockFn<sp/>fn);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_fp(FILE<sp/>*fp);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_level(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_quiet(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_date(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_set_specs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>log_log(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>...);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="log/log.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+\hypertarget{plane_8h}{}\doxysection{analytic/plane.h File Reference}
+\label{plane_8h}\index{analytic/plane.h@{analytic/plane.h}}
+
+
+Header file for functions to manage the plane.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{plane_8h_a33aba8b285d58bbe789701e6fc308bd8}{Analytic\+\_\+set\+Axes}} (S\+D\+L\+\_\+\+Color color, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to draw the Axes on the plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plane_8h_ae62ae1fafbdf2386e362bf8013c09654}{Analytic\+\_\+set\+Background}} (S\+D\+L\+\_\+\+Color color, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to set the background of the plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plane_8h_ac4e4ccd12bf4d819be77f35138b1be39}{Analytic\+\_\+init\+Plane}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to init the plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{plane_8h_aef4c54bb7462953d8d287d27f8a51758}{Analytic\+\_\+render\+Method}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to render the places. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for functions to manage the plane. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{plane_8h_ac4e4ccd12bf4d819be77f35138b1be39}\label{plane_8h_ac4e4ccd12bf4d819be77f35138b1be39}} 
+\index{plane.h@{plane.h}!Analytic\_initPlane@{Analytic\_initPlane}}
+\index{Analytic\_initPlane@{Analytic\_initPlane}!plane.h@{plane.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_initPlane()}{Analytic\_initPlane()}}
+{\footnotesize\ttfamily void Analytic\+\_\+init\+Plane (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to init the plane. 
+
+The function sets the default values for the plane;
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Renderer to which to init the plane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{plane_8h_aef4c54bb7462953d8d287d27f8a51758}\label{plane_8h_aef4c54bb7462953d8d287d27f8a51758}} 
+\index{plane.h@{plane.h}!Analytic\_renderMethod@{Analytic\_renderMethod}}
+\index{Analytic\_renderMethod@{Analytic\_renderMethod}!plane.h@{plane.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_renderMethod()}{Analytic\_renderMethod()}}
+{\footnotesize\ttfamily void Analytic\+\_\+render\+Method (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to render the places. 
+
+This function checks the data set and draws the places.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Renderer to which to render \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{plane_8h_a33aba8b285d58bbe789701e6fc308bd8}\label{plane_8h_a33aba8b285d58bbe789701e6fc308bd8}} 
+\index{plane.h@{plane.h}!Analytic\_setAxes@{Analytic\_setAxes}}
+\index{Analytic\_setAxes@{Analytic\_setAxes}!plane.h@{plane.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setAxes()}{Analytic\_setAxes()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Axes (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Color}]{color,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to draw the Axes on the plane. 
+
+The function draw point by point on defined ~\newline
+coordinates. Every D\+I\+V\+I\+S\+OR pixels the function draw e red line ~\newline
+that is used to classify the unit
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color of the axes \\
+\hline
+{\em renderer} & Renderer to which to draw the axes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{plane_8h_ae62ae1fafbdf2386e362bf8013c09654}\label{plane_8h_ae62ae1fafbdf2386e362bf8013c09654}} 
+\index{plane.h@{plane.h}!Analytic\_setBackground@{Analytic\_setBackground}}
+\index{Analytic\_setBackground@{Analytic\_setBackground}!plane.h@{plane.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setBackground()}{Analytic\_setBackground()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Background (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Color}]{color,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to set the background of the plane. 
+
+The function clears the background and re-\/renderer the plane
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color or the background \\
+\hline
+{\em renderer} & Renderer to which to apply the background \\
+\hline
+\end{DoxyParams}

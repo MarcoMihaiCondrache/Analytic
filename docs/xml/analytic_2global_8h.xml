@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="analytic_2global_8h" kind="file" language="C++">
+    <compoundname>global.h</compoundname>
+    <includes local="no">SDL2/SDL.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="analytic_8c" local="yes">analytic/src/analytic.c</includedby>
+    <includedby refid="functions_8c" local="yes">analytic/src/functions.c</includedby>
+    <includedby refid="geometry_8c" local="yes">analytic/src/geometry.c</includedby>
+    <includedby refid="plane_8c" local="yes">analytic/src/plane.c</includedby>
+    <includedby refid="scale_8c" local="yes">analytic/src/scale.c</includedby>
+    <includedby refid="draw_8c" local="no">draw.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="1">
+        <label>analytic/global.h</label>
+        <link refid="analytic_2global_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>draw.c</label>
+        <link refid="draw_8c"/>
+      </node>
+      <node id="1">
+        <label>analytic/global.h</label>
+        <link refid="analytic_2global_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_analytic___line" prot="public">Analytic_Line</innerclass>
+    <innerclass refid="struct_analytic___circumference" prot="public">Analytic_Circumference</innerclass>
+    <innerclass refid="struct_analytic___hyperbole" prot="public">Analytic_Hyperbole</innerclass>
+    <innerclass refid="struct_analytic___parabola" prot="public">Analytic_Parabola</innerclass>
+    <innerclass refid="struct_analytic___position" prot="public">Analytic_Position</innerclass>
+    <innerclass refid="struct_analytic___single" prot="public">Analytic_Single</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" prot="public" static="no">
+        <name>DEFAULT_SCALE</name>
+        <initializer>1.0</initializer>
+        <briefdescription>
+<para>Default value from which to start scaling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="23" column="9" bodyfile="analytic/global.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" prot="public" static="no">
+        <name>DEFAULT_DIVISOR</name>
+        <initializer>10</initializer>
+        <briefdescription>
+<para>Default value from which to start the calculation of the divisor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="28" column="9" bodyfile="analytic/global.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ANALYTIC_DATASET</name>
+        <enumvalue id="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52ba09ef65ad55397d695435f2191efe0e14" prot="public">
+          <name>ANALYTIC_POSITION_DATASET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52bac423d19fba521f012fdef03e4cf175b9" prot="public">
+          <name>ANALYTIC_LINE_DATASET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52ba897abbdc0939d5ed5b8f4f3b28267860" prot="public">
+          <name>ANALYTIC_CIRCUMFERENCE_DATASET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52bae79ffeb235bd78351256deeef0ae01eb" prot="public">
+          <name>ANALYTIC_PARABOLA_DATASET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52baed138d3a36358fc966709768712c0550" prot="public">
+          <name>ANALYTIC_HYPERBOLE_DATASET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum for the indexes of the data set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="84" column="1" bodyfile="analytic/global.h" bodystart="83" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Analytic_ParabolaType</name>
+        <enumvalue id="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4a9d64ee06efaf564dc52ed3f099fd5007" prot="public">
+          <name>Analytic_ParabolaX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4a26da363d7506bde34694d70bff5385f8" prot="public">
+          <name>Analytic_ParabolaY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum for the parables types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="98" column="1" bodyfile="analytic/global.h" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Analytic_HyperboleType</name>
+        <enumvalue id="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea6b0bcd833367389e05acdfc7a4d5254b" prot="public">
+          <name>Analytic_HyperboleX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea06059114102d6b08a5529cdce80f85cc" prot="public">
+          <name>Analytic_HyperboleY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea72a5f11c3efac97e86abe88e383f80ff" prot="public">
+          <name>Analytic_HyperboleK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8aea8d4bacfc0918ebec15116d755f8ef772" prot="public">
+          <name>Analytic_HyperboleHomographic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum for the hyperbole types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="109" column="1" bodyfile="analytic/global.h" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="enum" id="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Analytic_PositionType</name>
+        <enumvalue id="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07a0c50087fc8eec13835e37b35183db1c8" prot="public">
+          <name>Analytic_PositionRelative</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07a5ee350438986709cf5ab1c4ebe1b3e46" prot="public">
+          <name>Analytic_PositionAbsolute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum for the position types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="122" column="1" bodyfile="analytic/global.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="analytic_2global_8h_1a259de3d68b924242e760208d457cc4e3" prot="public" static="no">
+        <type>struct <ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref></type>
+        <definition>typedef struct Analytic_Line Analytic_Line</definition>
+        <argsstring></argsstring>
+        <name>Analytic_Line</name>
+        <briefdescription>
+<para>Straight Line Structure ( <formula id="0">$y = mx + q$</formula>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="135" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="analytic_2global_8h_1aebc8fa2d4562e7d17eacd5bfa8084484" prot="public" static="no">
+        <type>struct <ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+        <definition>typedef struct Analytic_Circumference Analytic_Circumference</definition>
+        <argsstring></argsstring>
+        <name>Analytic_Circumference</name>
+        <briefdescription>
+<para>Circumference structure ( <formula id="16">$x^2 + y^2 + ax + by + c = 0$</formula>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="146" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="analytic_2global_8h_1a027bde1a7bce55b75cafe73e12a7c6e0" prot="public" static="no">
+        <type>struct <ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+        <definition>typedef struct Analytic_Hyperbole Analytic_Hyperbole</definition>
+        <argsstring></argsstring>
+        <name>Analytic_Hyperbole</name>
+        <briefdescription>
+<para>Hyperbole structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Hyperbole types supported:</para>
+<para><itemizedlist>
+<listitem><para><formula id="17">$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$</formula></para>
+</listitem><listitem><para><formula id="18">$\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$</formula></para>
+</listitem><listitem><para><formula id="13">$xy = k$</formula></para>
+</listitem><listitem><para><formula id="15">$y = \frac{ax + b}{cx + d}$</formula> </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="170" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="analytic_2global_8h_1a898d545acfd784282e5543e325740dcc" prot="public" static="no">
+        <type>struct <ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref></type>
+        <definition>typedef struct Analytic_Parabola Analytic_Parabola</definition>
+        <argsstring></argsstring>
+        <name>Analytic_Parabola</name>
+        <briefdescription>
+<para>Parabola structure <formula id="1">$y = ax^2 + bx + c$</formula> or <formula id="3">$x = ay^2 + by + c$</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="182" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="analytic_2global_8h_1a3fbd39b2ad5135ebfec6d2a0f5f25eac" prot="public" static="no">
+        <type>struct <ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref></type>
+        <definition>typedef struct Analytic_Position Analytic_Position</definition>
+        <argsstring></argsstring>
+        <name>Analytic_Position</name>
+        <briefdescription>
+<para>Position structure (Contains the coordinates of a point) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="192" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="analytic_2global_8h_1aa8f7b1a6794665473f79e9913af0f4f4" prot="public" static="no">
+        <type>struct <ref refid="struct_analytic___single" kindref="compound">Analytic_Single</ref></type>
+        <definition>typedef struct Analytic_Single Analytic_Single</definition>
+        <argsstring></argsstring>
+        <name>Analytic_Single</name>
+        <briefdescription>
+<para>Structure that defines the data set to render. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This structure contains an array of bool values, everyone indicates if a place contains the data to render if not it will not be rendered. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="209" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="analytic_2global_8h_1a2c5a75b2418362af39c6f76e11f7f0ef" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color white</definition>
+        <argsstring></argsstring>
+        <name>white</name>
+        <initializer>= {0xFF, 0xFF, 0xFF, 0xFF}</initializer>
+        <briefdescription>
+<para>White color (FFFFFF with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="34" column="24" bodyfile="analytic/global.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a473cf91025b6bc541335f4ed65cd2072" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color black</definition>
+        <argsstring></argsstring>
+        <name>black</name>
+        <initializer>= {0x00, 0x00, 0x00, 0xFF}</initializer>
+        <briefdescription>
+<para>Black color (000000 with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="40" column="24" bodyfile="analytic/global.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a04d83b25c59197e03e102d27fe267980" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <initializer>= {0xFF, 0x00, 0x00, 0xFF}</initializer>
+        <briefdescription>
+<para>Red color (FF0000 with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="46" column="24" bodyfile="analytic/global.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a2cdecc37e378bfffec2e0395addd9f06" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <initializer>= {0x00, 0xFF, 0x00, 0xFF}</initializer>
+        <briefdescription>
+<para>Green color (00FF00 with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="52" column="24" bodyfile="analytic/global.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1afca3bf4ec423d92bebd1593c5c94d39e" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <initializer>= {0x00, 0x00, 0xFF, 0xFF}</initializer>
+        <briefdescription>
+<para>Blue color (0000FF with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="58" column="24" bodyfile="analytic/global.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1ab33673453f69c3e5700c05934ef4d096" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color purple</definition>
+        <argsstring></argsstring>
+        <name>purple</name>
+        <initializer>= {0x9D, 0x70, 0xFF, 0xFF}</initializer>
+        <briefdescription>
+<para>Purple (variant) color (9D70FF with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="64" column="24" bodyfile="analytic/global.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1ad3dcae71ae52abe7ee424de596b9e663" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color grey</definition>
+        <argsstring></argsstring>
+        <name>grey</name>
+        <initializer>= {0xDB, 0xDB, 0xDB, 0x64}</initializer>
+        <briefdescription>
+<para>Grey (variant) color (DBDBDB with alpha 64) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="70" column="24" bodyfile="analytic/global.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a1e4ff8e7294f2953895bb0f207d5b273" prot="public" static="yes" mutable="no">
+        <type>const SDL_Color</type>
+        <definition>const SDL_Color yellow</definition>
+        <argsstring></argsstring>
+        <name>yellow</name>
+        <initializer>= {0xF5, 0xF2, 0x42, 0xFF}</initializer>
+        <briefdescription>
+<para>Yellow (variant) color (F5F242 with alpha FF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="76" column="24" bodyfile="analytic/global.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SCALE</definition>
+        <argsstring></argsstring>
+        <name>SCALE</name>
+        <briefdescription>
+<para>Variables that contains the scale value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="215" column="7" bodyfile="analytic/global.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DIVISOR</definition>
+        <argsstring></argsstring>
+        <name>DIVISOR</name>
+        <briefdescription>
+<para>Variables that contains the divisor value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="221" column="5" bodyfile="analytic/global.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SDL_WINDOW_SIZE</definition>
+        <argsstring></argsstring>
+        <name>SDL_WINDOW_SIZE</name>
+        <briefdescription>
+<para>Defines the Window Size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="227" column="5" bodyfile="analytic/global.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TERMINAL_OUTPUT</definition>
+        <argsstring></argsstring>
+        <name>TERMINAL_OUTPUT</name>
+        <briefdescription>
+<para>If the program has to show the logs on the screen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="233" column="6" bodyfile="analytic/global.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_analytic___single" kindref="compound">Analytic_Single</ref></type>
+        <definition>Analytic_Single SINGLE</definition>
+        <argsstring></argsstring>
+        <name>SINGLE</name>
+        <briefdescription>
+<para>The data set of the program. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="239" column="17" bodyfile="analytic/global.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file that defines global variables and macros. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>25-03-2020</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020</para>
+</simplesect>
+<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>ANALYTIC_GLOBAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANALYTIC_GLOBAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SDL2/SDL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" refkind="member"><highlight class="preprocessor">#define<sp/>DEFAULT_SCALE<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" refkind="member"><highlight class="preprocessor">#define<sp/>DEFAULT_DIVISOR<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>white<sp/>=<sp/>{0xFF,<sp/>0xFF,<sp/>0xFF,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>black<sp/>=<sp/>{0x00,<sp/>0x00,<sp/>0x00,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>red<sp/>=<sp/>{0xFF,<sp/>0x00,<sp/>0x00,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>green<sp/>=<sp/>{0x00,<sp/>0xFF,<sp/>0x00,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>blue<sp/>=<sp/>{0x00,<sp/>0x00,<sp/>0xFF,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>purple<sp/>=<sp/>{0x9D,<sp/>0x70,<sp/>0xFF,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>grey<sp/>=<sp/>{0xDB,<sp/>0xDB,<sp/>0xDB,<sp/>0x64};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_Color<sp/>yellow<sp/>=<sp/>{0xF5,<sp/>0xF2,<sp/>0x42,<sp/>0xFF};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>ANALYTIC_POSITION_DATASET,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>ANALYTIC_LINE_DATASET,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>ANALYTIC_CIRCUMFERENCE_DATASET,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>ANALYTIC_PARABOLA_DATASET,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>ANALYTIC_HYPERBOLE_DATASET</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1ad768a8ed10d778ed371f9ace142fd52b" kindref="member">ANALYTIC_DATASET</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_ParabolaX,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_ParabolaY</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" kindref="member">Analytic_ParabolaType</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_HyperboleX,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_HyperboleY,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_HyperboleK,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_HyperboleHomographic</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" kindref="member">Analytic_HyperboleType</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_PositionRelative,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>Analytic_PositionAbsolute</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1a283b40a06f6010bf2b9ebfa50756fb07" kindref="member">Analytic_PositionType</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="struct_analytic___line" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133" refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" kindref="member">m</ref>;<sp/></highlight></codeline>
+<codeline lineno="134" refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" kindref="member">q</ref>;<sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1a259de3d68b924242e760208d457cc4e3" kindref="member">Analytic_Line</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="struct_analytic___circumference" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143" refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>;<sp/></highlight></codeline>
+<codeline lineno="144" refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>;<sp/></highlight></codeline>
+<codeline lineno="145" refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>;<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1aebc8fa2d4562e7d17eacd5bfa8084484" kindref="member">Analytic_Circumference</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="struct_analytic___hyperbole" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164" refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" kindref="member">Analytic_HyperboleType</ref><sp/><ref refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" kindref="member">type</ref>;<sp/></highlight></codeline>
+<codeline lineno="165" refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166" refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167" refid="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" kindref="member">k</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168" refid="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" kindref="member">d</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1a027bde1a7bce55b75cafe73e12a7c6e0" kindref="member">Analytic_Hyperbole</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="struct_analytic___parabola" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178" refid="struct_analytic___parabola_1a4ea833de8cbe1d97da852130706ec899" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" kindref="member">Analytic_ParabolaType</ref><sp/><ref refid="struct_analytic___parabola_1a4ea833de8cbe1d97da852130706ec899" kindref="member">type</ref>;<sp/></highlight></codeline>
+<codeline lineno="179" refid="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="180" refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="181" refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1a898d545acfd784282e5543e325740dcc" kindref="member">Analytic_Parabola</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="struct_analytic___position" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190" refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" kindref="member">x</ref>;<sp/></highlight></codeline>
+<codeline lineno="191" refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" kindref="member">y</ref>;<sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1a3fbd39b2ad5135ebfec6d2a0f5f25eac" kindref="member">Analytic_Position</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="struct_analytic___single" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_analytic___single" kindref="compound">Analytic_Single</ref></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203" refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204" refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/><ref refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" kindref="member">position</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205" refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref><sp/><ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206" refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref><sp/><ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>;<sp/></highlight></codeline>
+<codeline lineno="207" refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref><sp/><ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208" refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref><sp/><ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}<sp/><ref refid="analytic_2global_8h_1aa8f7b1a6794665473f79e9913af0f4f4" kindref="member">Analytic_Single</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" refkind="member"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kindref="member">TERMINAL_OUTPUT</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" refkind="member"><highlight class="normal"><ref refid="struct_analytic___single" kindref="compound">Analytic_Single</ref><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="analytic/global.h"/>
+  </compounddef>
+</doxygen>

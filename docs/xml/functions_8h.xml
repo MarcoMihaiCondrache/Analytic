@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="functions_8h" kind="file" language="C++">
+    <compoundname>functions.h</compoundname>
+    <includedby refid="functions_8c" local="yes">analytic/src/functions.c</includedby>
+    <includedby refid="geometry_8c" local="yes">analytic/src/geometry.c</includedby>
+    <includedby refid="draw_8c" local="no">draw.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>analytic/functions.h</label>
+        <link refid="functions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>draw.c</label>
+        <link refid="draw_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="functions_8h_1a6035d73bb5eb43e59b38cc63e2c63d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_LineFunction</definition>
+        <argsstring>(Analytic_Line line, float x)</argsstring>
+        <name>Analytic_LineFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref></type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to get y. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="0">$y = mx + q$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the line parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int The calculated y </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="28" column="1" bodyfile="analytic/src/functions.c" bodystart="5" bodyend="8" declfile="analytic/functions.h" declline="28" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a338af7326772bf75a1f3faff419e29b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_ParabolaYFunction</definition>
+        <argsstring>(Analytic_Parabola parabola, float x)</argsstring>
+        <name>Analytic_ParabolaYFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref></type>
+          <declname>parabola</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to get y of parables with vertical symmetry axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="1">$y = ax^2 + bx + c$</formula></para>
+<para>All the parameters are transformed into their opposites because the sdl plane is inverse<linebreak/>
+so the used formula is</para>
+<para><formula id="2">$y = - ax^2 - bx - c$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parabola</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the parabola parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated y</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" kindref="member">Analytic_ParabolaType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="49" column="14" bodyfile="analytic/src/functions.c" bodystart="10" bodyend="13" declfile="analytic/functions.h" declline="49" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a3d5ec75330f5ff3427823ed0c74c89ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_ParabolaXFunction</definition>
+        <argsstring>(Analytic_Parabola parabola, float y)</argsstring>
+        <name>Analytic_ParabolaXFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref></type>
+          <declname>parabola</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to get x of parables with horizontal symmetry axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the x with a mathematic formula</para>
+<para><formula id="3">$x = ay^2 + by + c$</formula></para>
+<para>But the sdl plane is inverse so the used formula is</para>
+<para><formula id="4">$x = - (ay^2 + by - c)$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parabola</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the parabola parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the x </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated x</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" kindref="member">Analytic_ParabolaType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="69" column="14" bodyfile="analytic/src/functions.c" bodystart="15" bodyend="18" declfile="analytic/functions.h" declline="69" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a3f76b8b0d36bb8450732ac5b7ad1a863" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_CircumferenceRadiusFunction</definition>
+        <argsstring>(Analytic_Circumference circumference)</argsstring>
+        <name>Analytic_CircumferenceRadiusFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+          <declname>circumference</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to calculate the radius of a circumference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the radius with a mathematic formula</para>
+<para><formula id="5">$r = \sqrt{\frac{a^{2}}{4} + \frac{b^{2}}{4} - c}$</formula></para>
+<para><simplesect kind="warning"><para>The function also checks for a negative radius. <linebreak/>
+In this case the program will exit returning a fatal error. <linebreak/>
+Before calling this function, check that the <linebreak/>
+given circumference is really a circumference!</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circumference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the circumference parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated radius</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="88" column="14" bodyfile="analytic/src/functions.c" bodystart="20" bodyend="29" declfile="analytic/functions.h" declline="88" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1abe5a4543009708604f165fc7db8bdd4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_CircumferenceXCentreFunction</definition>
+        <argsstring>(Analytic_Circumference circumference)</argsstring>
+        <name>Analytic_CircumferenceXCentreFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+          <declname>circumference</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to calculate the x of the centre of a circumference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the x with a mathematic formula</para>
+<para><formula id="6">$x = -\frac{a}{2}$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circumference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the circumference parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated x</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="102" column="14" bodyfile="analytic/src/functions.c" bodystart="31" bodyend="34" declfile="analytic/functions.h" declline="102" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a92231210c9c966ede33e488827b542a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_CircumferenceYCentreFunction</definition>
+        <argsstring>(Analytic_Circumference circumference)</argsstring>
+        <name>Analytic_CircumferenceYCentreFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+          <declname>circumference</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to calculate the y of the centre of a circumference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="7">$y = -\frac{b}{2}$</formula></para>
+<para>The result is transformed into its opposite because the SDL plan is inverse so</para>
+<para><formula id="8">$y = \frac{b}{2}$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circumference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the circumference parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated y</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="120" column="14" bodyfile="analytic/src/functions.c" bodystart="36" bodyend="39" declfile="analytic/functions.h" declline="120" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a40c3be7865f7cc46313f47c5a29ac906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_HyperboleYFunction</definition>
+        <argsstring>(Analytic_Hyperbole hyperbole, float x)</argsstring>
+        <name>Analytic_HyperboleYFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+          <declname>hyperbole</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to get y of hyperboles with vertical symmetry axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="9">$y = \pm \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$</formula></para>
+<para>The function calculates the second y and the first <linebreak/>
+is drawn by exploiting the symmetry property of the <linebreak/>
+hyperbole for more precise coordinates<linebreak/>
+ <formula id="10">$y = - \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$</formula></para>
+<para><simplesect kind="warning"><para>The function also checks that the hyperbole parameters <linebreak/>
+are larger and different from zero in order to avoid errors <linebreak/>
+during mathematical calculations. If this were the case, <linebreak/>
+the function would block the program and return a fatal error</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hyperbole</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the hyperbole parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated y</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>Analytic_Analytic_HyperboleType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="147" column="14" bodyfile="analytic/src/functions.c" bodystart="41" bodyend="49" declfile="analytic/functions.h" declline="147" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a17880b2292a03fb34fe9249bca44d5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_HyperboleXFunction</definition>
+        <argsstring>(Analytic_Hyperbole hyperbole, float x)</argsstring>
+        <name>Analytic_HyperboleXFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+          <declname>hyperbole</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to get y of hyperboles with horizontal symmetry axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="11">$y = \pm \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$</formula></para>
+<para>The function calculates the second y and the first is drawn by exploiting the symmetry property of the hyperbole for more precise coordinates</para>
+<para><formula id="12">$y = - \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$</formula></para>
+<para><simplesect kind="warning"><para>The function also checks that the hyperbole parameters <linebreak/>
+are larger and different from zero in order to avoid errors <linebreak/>
+during mathematical calculations. If this were the case, <linebreak/>
+the function would block the program and return a fatal error</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hyperbole</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the hyperbole parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated y</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" kindref="member">Analytic_HyperboleType</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="174" column="14" bodyfile="analytic/src/functions.c" bodystart="51" bodyend="60" declfile="analytic/functions.h" declline="174" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1abca3c5edb5a119eb4976ec375cf3abea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_HyperboleKFunction</definition>
+        <argsstring>(Analytic_Hyperbole hyperbole, float x)</argsstring>
+        <name>Analytic_HyperboleKFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+          <declname>hyperbole</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to get y of equilateral hyperbolas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="13">$xy = k$</formula></para>
+<para>So to extract the y we use</para>
+<para><formula id="14">$y = \frac{k}{x}$</formula></para>
+<para><simplesect kind="warning"><para>When x=0 the formula returns NaN;</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hyperbole</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the hyperbole parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated y </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="193" column="14" bodyfile="analytic/src/functions.c" bodystart="61" bodyend="64" declfile="analytic/functions.h" declline="193" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a8505a4fc8732149bc6c3768bf4e91c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Analytic_HyperboleHomographicFunction</definition>
+        <argsstring>(Analytic_Hyperbole hyperbole, float x)</argsstring>
+        <name>Analytic_HyperboleHomographicFunction</name>
+        <param>
+          <type><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+          <declname>hyperbole</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Mathematical function to draw hyperbolas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the y with a mathematic formula</para>
+<para><formula id="15">$y = \frac{ax + b}{cx + d}$</formula></para>
+<para><simplesect kind="warning"><para>The function also checks that c is different from 0 and that there is no proportion between the parameters (ad = db). In the case it stops the program and returns a fatal error. So first please check the hyperbola parameters</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hyperbole</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the hyperbole parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unknown to calculate the y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float The calculated y </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/functions.h" line="209" column="14" bodyfile="analytic/src/functions.c" bodystart="66" bodyend="75" declfile="analytic/functions.h" declline="209" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file for the math functions used by the library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>25-03-2020</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020</para>
+</simplesect>
+<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>ANALYTIC_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANALYTIC_FUNCTIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="functions_8h_1a6035d73bb5eb43e59b38cc63e2c63d82" kindref="member">Analytic_LineFunction</ref>(<ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref><sp/>line,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a338af7326772bf75a1f3faff419e29b5" kindref="member">Analytic_ParabolaYFunction</ref>(<ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref><sp/>parabola,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a3d5ec75330f5ff3427823ed0c74c89ab" kindref="member">Analytic_ParabolaXFunction</ref>(<ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref><sp/>parabola,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a3f76b8b0d36bb8450732ac5b7ad1a863" kindref="member">Analytic_CircumferenceRadiusFunction</ref>(<ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref><sp/>circumference);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1abe5a4543009708604f165fc7db8bdd4c" kindref="member">Analytic_CircumferenceXCentreFunction</ref>(<ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref><sp/>circumference);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a92231210c9c966ede33e488827b542a0" kindref="member">Analytic_CircumferenceYCentreFunction</ref>(<ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref><sp/>circumference);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a40c3be7865f7cc46313f47c5a29ac906" kindref="member">Analytic_HyperboleYFunction</ref>(<ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref><sp/>hyperbole,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a17880b2292a03fb34fe9249bca44d5c8" kindref="member">Analytic_HyperboleXFunction</ref>(<ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref><sp/>hyperbole,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1abca3c5edb5a119eb4976ec375cf3abea" kindref="member">Analytic_HyperboleKFunction</ref>(<ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref><sp/>hyperbole,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a8505a4fc8732149bc6c3768bf4e91c3e" kindref="member">Analytic_HyperboleHomographicFunction</ref>(<ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref><sp/>hyperbole,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="analytic/functions.h"/>
+  </compounddef>
+</doxygen>

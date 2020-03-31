@@ -1,0 +1,380 @@
+.TH "analytic/functions.h" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+analytic/functions.h \- Header file for the math functions used by the library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBAnalytic_LineFunction\fP (\fBAnalytic_Line\fP line, float x)"
+.br
+.RI "Mathematical function to get y\&. "
+.ti -1c
+.RI "float \fBAnalytic_ParabolaYFunction\fP (\fBAnalytic_Parabola\fP parabola, float x)"
+.br
+.RI "Mathematical function to get y of parables with vertical symmetry axis\&. "
+.ti -1c
+.RI "float \fBAnalytic_ParabolaXFunction\fP (\fBAnalytic_Parabola\fP parabola, float y)"
+.br
+.RI "Mathematical function to get x of parables with horizontal symmetry axis\&. "
+.ti -1c
+.RI "float \fBAnalytic_CircumferenceRadiusFunction\fP (\fBAnalytic_Circumference\fP circumference)"
+.br
+.RI "Mathematical function to calculate the radius of a circumference\&. "
+.ti -1c
+.RI "float \fBAnalytic_CircumferenceXCentreFunction\fP (\fBAnalytic_Circumference\fP circumference)"
+.br
+.RI "Mathematical function to calculate the x of the centre of a circumference\&. "
+.ti -1c
+.RI "float \fBAnalytic_CircumferenceYCentreFunction\fP (\fBAnalytic_Circumference\fP circumference)"
+.br
+.RI "Mathematical function to calculate the y of the centre of a circumference\&. "
+.ti -1c
+.RI "float \fBAnalytic_HyperboleYFunction\fP (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+.br
+.RI "Mathematical function to get y of hyperboles with vertical symmetry axis\&. "
+.ti -1c
+.RI "float \fBAnalytic_HyperboleXFunction\fP (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+.br
+.RI "Mathematical function to get y of hyperboles with horizontal symmetry axis\&. "
+.ti -1c
+.RI "float \fBAnalytic_HyperboleKFunction\fP (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+.br
+.RI "Mathematical function to get y of equilateral hyperbolas\&. "
+.ti -1c
+.RI "float \fBAnalytic_HyperboleHomographicFunction\fP (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+.br
+.RI "Mathematical function to draw hyperbolas\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file for the math functions used by the library\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Marco Mihai Condrache (marcomihaicondrache@gmail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25-03-2020
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2020
+.RE
+.PP
+https://github.com/MarcoMihaiCondrache 
+.SH "Function Documentation"
+.PP 
+.SS "float Analytic_CircumferenceRadiusFunction (\fBAnalytic_Circumference\fP circumference)"
+
+.PP
+Mathematical function to calculate the radius of a circumference\&. The function calculates the radius with a mathematic formula
+.PP
+$r = \sqrt{\frac{a^{2}}{4} + \frac{b^{2}}{4} - c}$.PP
+\fBWarning\fP
+.RS 4
+The function also checks for a negative radius\&. 
+.br
+In this case the program will exit returning a fatal error\&. 
+.br
+Before calling this function, check that the 
+.br
+given circumference is really a circumference!
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIcircumference\fP Contains the circumference parameters 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated radius
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Circumference\fP 
+.RE
+.PP
+
+.SS "float Analytic_CircumferenceXCentreFunction (\fBAnalytic_Circumference\fP circumference)"
+
+.PP
+Mathematical function to calculate the x of the centre of a circumference\&. The function calculates the x with a mathematic formula
+.PP
+$x = -\frac{a}{2}$.PP
+\fBParameters\fP
+.RS 4
+\fIcircumference\fP Contains the circumference parameters 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated x
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Circumference\fP 
+.RE
+.PP
+
+.SS "float Analytic_CircumferenceYCentreFunction (\fBAnalytic_Circumference\fP circumference)"
+
+.PP
+Mathematical function to calculate the y of the centre of a circumference\&. The function calculates the y with a mathematic formula
+.PP
+$y = -\frac{b}{2}$.PP
+The result is transformed into its opposite because the SDL plan is inverse so
+.PP
+$y = \frac{b}{2}$.PP
+\fBParameters\fP
+.RS 4
+\fIcircumference\fP Contains the circumference parameters 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated y
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Circumference\fP 
+.RE
+.PP
+
+.SS "float Analytic_HyperboleHomographicFunction (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+
+.PP
+Mathematical function to draw hyperbolas\&. The function calculates the y with a mathematic formula
+.PP
+$y = \frac{ax + b}{cx + d}$.PP
+\fBWarning\fP
+.RS 4
+The function also checks that c is different from 0 and that there is no proportion between the parameters (ad = db)\&. In the case it stops the program and returns a fatal error\&. So first please check the hyperbola parameters
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhyperbole\fP Contains the hyperbole parameters 
+.br
+\fIx\fP Unknown to calculate the y 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated y 
+.RE
+.PP
+
+.SS "float Analytic_HyperboleKFunction (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+
+.PP
+Mathematical function to get y of equilateral hyperbolas\&. The function calculates the y with a mathematic formula
+.PP
+$xy = k$.PP
+So to extract the y we use
+.PP
+$y = \frac{k}{x}$.PP
+\fBWarning\fP
+.RS 4
+When x=0 the formula returns NaN;
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhyperbole\fP Contains the hyperbole parameters 
+.br
+\fIx\fP Unknown to calculate the y 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated y 
+.RE
+.PP
+
+.SS "float Analytic_HyperboleXFunction (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+
+.PP
+Mathematical function to get y of hyperboles with horizontal symmetry axis\&. The function calculates the y with a mathematic formula
+.PP
+$y = \pm \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$.PP
+The function calculates the second y and the first is drawn by exploiting the symmetry property of the hyperbole for more precise coordinates
+.PP
+$y = - \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$.PP
+\fBWarning\fP
+.RS 4
+The function also checks that the hyperbole parameters 
+.br
+are larger and different from zero in order to avoid errors 
+.br
+during mathematical calculations\&. If this were the case, 
+.br
+the function would block the program and return a fatal error
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhyperbole\fP Contains the hyperbole parameters 
+.br
+\fIx\fP Unknown to calculate the y 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated y
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Hyperbole\fP 
+.PP
+\fBAnalytic_HyperboleType\fP 
+.RE
+.PP
+
+.SS "float Analytic_HyperboleYFunction (\fBAnalytic_Hyperbole\fP hyperbole, float x)"
+
+.PP
+Mathematical function to get y of hyperboles with vertical symmetry axis\&. The function calculates the y with a mathematic formula
+.PP
+$y = \pm \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$.PP
+The function calculates the second y and the first 
+.br
+is drawn by exploiting the symmetry property of the 
+.br
+hyperbole for more precise coordinates
+.br
+ $y = - \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+.PP
+\fBWarning\fP
+.RS 4
+The function also checks that the hyperbole parameters 
+.br
+are larger and different from zero in order to avoid errors 
+.br
+during mathematical calculations\&. If this were the case, 
+.br
+the function would block the program and return a fatal error
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhyperbole\fP Contains the hyperbole parameters 
+.br
+\fIx\fP Unknown to calculate the y 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated y
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Hyperbole\fP 
+.PP
+Analytic_Analytic_HyperboleType 
+.RE
+.PP
+
+.SS "int Analytic_LineFunction (\fBAnalytic_Line\fP line, float x)"
+
+.PP
+Mathematical function to get y\&. The function calculates the y with a mathematic formula
+.PP
+$y = mx + q$.PP
+\fBParameters\fP
+.RS 4
+\fIline\fP Contains the line parameters 
+.br
+\fIx\fP Unknown to calculate the y 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int The calculated y 
+.RE
+.PP
+
+.SS "float Analytic_ParabolaXFunction (\fBAnalytic_Parabola\fP parabola, float y)"
+
+.PP
+Mathematical function to get x of parables with horizontal symmetry axis\&. The function calculates the x with a mathematic formula
+.PP
+$x = ay^2 + by + c$.PP
+But the sdl plane is inverse so the used formula is
+.PP
+$x = - (ay^2 + by - c)$.PP
+\fBParameters\fP
+.RS 4
+\fIparabola\fP Contains the parabola parameters 
+.br
+\fIy\fP Unknown to calculate the x 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated x
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Parabola\fP 
+.PP
+\fBAnalytic_ParabolaType\fP 
+.RE
+.PP
+
+.SS "float Analytic_ParabolaYFunction (\fBAnalytic_Parabola\fP parabola, float x)"
+
+.PP
+Mathematical function to get y of parables with vertical symmetry axis\&. The function calculates the y with a mathematic formula
+.PP
+$y = ax^2 + bx + c$.PP
+All the parameters are transformed into their opposites because the sdl plane is inverse
+.br
+so the used formula is
+.PP
+$y = - ax^2 - bx - c$.PP
+\fBParameters\fP
+.RS 4
+\fIparabola\fP Contains the parabola parameters 
+.br
+\fIx\fP Unknown to calculate the y 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+float The calculated y
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBAnalytic_Parabola\fP 
+.PP
+\fBAnalytic_ParabolaType\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

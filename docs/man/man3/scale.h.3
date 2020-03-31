@@ -1,0 +1,208 @@
+.TH "analytic/scale.h" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+analytic/scale.h \- Header file of functions to scale/zoom\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBAnalytic_convertXAbsolute\fP (float x)"
+.br
+.RI "Convert an x relative into an x absolute\&. "
+.ti -1c
+.RI "int \fBAnalytic_convertYAbsolute\fP (float y)"
+.br
+.RI "Convert an y relative into an y absolute\&. "
+.ti -1c
+.RI "int \fBAnalytic_calculateDivisor\fP ()"
+.br
+.RI "Calculate the divisor thanks to the scale\&. "
+.ti -1c
+.RI "void \fBAnalytic_scaleIn\fP (SDL_Renderer *renderer)"
+.br
+.RI "Scale In the view\&. "
+.ti -1c
+.RI "void \fBAnalytic_scaleOut\fP (SDL_Renderer *renderer)"
+.br
+.RI "Scale Out the view\&. "
+.ti -1c
+.RI "bool \fBAnalytic_isXRelativeOK\fP (float x)"
+.br
+.RI "Function to check if a relative x is correct\&. "
+.ti -1c
+.RI "bool \fBAnalytic_isYRelativeOK\fP (float y)"
+.br
+.RI "Function to check if a relative y is correct\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file of functions to scale/zoom\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Marco Mihai Condrache (marcomihaicondrache@gmail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25-03-2020
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2020
+.RE
+.PP
+https://github.com/MarcoMihaiCondrache 
+.SH "Function Documentation"
+.PP 
+.SS "int Analytic_calculateDivisor ()"
+
+.PP
+Calculate the divisor thanks to the scale\&. This function calculates the divisor by multiplying the default divisor by the scale difference and by 100
+.PP
+$Divisor = DefaultDivisor * ScaleDifference * 100$.PP
+\fBReturns\fP
+.RS 4
+int Returns the calculated divisor based on scale
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSCALE\fP 
+.PP
+\fBDEFAULT_SCALE\fP 
+.RE
+.PP
+
+.SS "int Analytic_convertXAbsolute (float x)"
+
+.PP
+Convert an x relative into an x absolute\&. This function calculates absolute x by adding the x relative to half of SDL_WINDOW SIZE
+.PP
+$SDL\_WINDOW\_SIZE : 2 + XRelative$.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The relative x to convert 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int Returns the absolute x based on SDL_WINDOW_SIZE
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSDL_WINDOW_SIZE\fP 
+.RE
+.PP
+
+.SS "int Analytic_convertYAbsolute (float y)"
+
+.PP
+Convert an y relative into an y absolute\&. This function calculates absolute y by adding the y relative to half of SDL_WINDOW SIZE
+.PP
+$SDL\_WINDOW\_SIZE : 2 + YRelative$.PP
+\fBParameters\fP
+.RS 4
+\fIy\fP The relative x to convert 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int Returns the absolute y based on SDL_WINDOW_SIZE
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSDL_WINDOW_SIZE\fP 
+.RE
+.PP
+
+.SS "bool Analytic_isXRelativeOK (float x)"
+
+.PP
+Function to check if a relative x is correct\&. The function checks the bound of the plane
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The x to check 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true Returns true if the x is ok 
+.PP
+false Returns false if the x isn't ok 
+.RE
+.PP
+
+.SS "bool Analytic_isYRelativeOK (float y)"
+
+.PP
+Function to check if a relative y is correct\&. The function checks the bound of the plane
+.PP
+\fBParameters\fP
+.RS 4
+\fIy\fP The y to check 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true Returns true if the y is ok 
+.PP
+false Returns false if the y isn't ok 
+.RE
+.PP
+
+.SS "void Analytic_scaleIn (SDL_Renderer * renderer)"
+
+.PP
+Scale In the view\&. The function increases the scale and renders the plane again
+.PP
+\fBParameters\fP
+.RS 4
+\fIrenderer\fP Renderer to which to apply the scale
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSCALE\fP 
+.PP
+\fBDEFAULT_SCALE\fP 
+.RE
+.PP
+
+.SS "void Analytic_scaleOut (SDL_Renderer * renderer)"
+
+.PP
+Scale Out the view\&. The function decreases the scale and renders the plane again
+.PP
+\fBParameters\fP
+.RS 4
+\fIrenderer\fP Renderer to which to apply the scale
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSCALE\fP 
+.PP
+\fBDEFAULT_SCALE\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

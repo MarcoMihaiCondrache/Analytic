@@ -1,0 +1,113 @@
+.TH "analytic/plane.h" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+analytic/plane.h \- Header file for functions to manage the plane\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAnalytic_setAxes\fP (SDL_Color color, SDL_Renderer *renderer)"
+.br
+.RI "Function to draw the Axes on the plane\&. "
+.ti -1c
+.RI "void \fBAnalytic_setBackground\fP (SDL_Color color, SDL_Renderer *renderer)"
+.br
+.RI "Function to set the background of the plane\&. "
+.ti -1c
+.RI "void \fBAnalytic_initPlane\fP (SDL_Renderer *renderer)"
+.br
+.RI "Function to init the plane\&. "
+.ti -1c
+.RI "void \fBAnalytic_renderMethod\fP (SDL_Renderer *renderer)"
+.br
+.RI "Function to render the places\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file for functions to manage the plane\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Marco Mihai Condrache (marcomihaicondrache@gmail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25-03-2020
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2020
+.RE
+.PP
+https://github.com/MarcoMihaiCondrache 
+.SH "Function Documentation"
+.PP 
+.SS "void Analytic_initPlane (SDL_Renderer * renderer)"
+
+.PP
+Function to init the plane\&. The function sets the default values for the plane;
+.PP
+\fBParameters\fP
+.RS 4
+\fIrenderer\fP Renderer to which to init the plane 
+.RE
+.PP
+
+.SS "void Analytic_renderMethod (SDL_Renderer * renderer)"
+
+.PP
+Function to render the places\&. This function checks the data set and draws the places\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIrenderer\fP Renderer to which to render 
+.RE
+.PP
+
+.SS "void Analytic_setAxes (SDL_Color color, SDL_Renderer * renderer)"
+
+.PP
+Function to draw the Axes on the plane\&. The function draw point by point on defined 
+.br
+coordinates\&. Every DIVISOR pixels the function draw e red line 
+.br
+that is used to classify the unit
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color of the axes 
+.br
+\fIrenderer\fP Renderer to which to draw the axes 
+.RE
+.PP
+
+.SS "void Analytic_setBackground (SDL_Color color, SDL_Renderer * renderer)"
+
+.PP
+Function to set the background of the plane\&. The function clears the background and re-renderer the plane
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP The color or the background 
+.br
+\fIrenderer\fP Renderer to which to apply the background 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

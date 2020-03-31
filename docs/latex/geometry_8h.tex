@@ -1,0 +1,164 @@
+\hypertarget{geometry_8h}{}\doxysection{analytic/geometry.h File Reference}
+\label{geometry_8h}\index{analytic/geometry.h@{analytic/geometry.h}}
+
+
+Header file to include functions to draw places.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{geometry_8h_a91271cf91f67ee374615ad91f4ddff9f}{Analytic\+\_\+create\+Point}} (\mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}} position, S\+D\+L\+\_\+\+Color color, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to draw a point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{geometry_8h_a8f1d8e436b2a4c4a1a307270be8a479c}{Analytic\+\_\+create\+Line}} (\mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}} line, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to draw a straight line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{geometry_8h_a423bc0666f5da3db90e89204b3f36de3}{Analytic\+\_\+create\+Circumference}} (\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} circumference, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to create a Circumference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{geometry_8h_aea684c82b570b0f6b5ebd16d1ee672c4}{Analytic\+\_\+create\+Hyperbole}} (\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} hyperbole, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to draw an hyperbole. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{geometry_8h_a22dc585163e64ffc15c1b38c4edfdcbd}{Analytic\+\_\+create\+Parabola}} (\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} parabola, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to draw a parabola. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{geometry_8h_a7bcf2b79866a8b3387b1ab12eafe3635}{Analytic\+\_\+create\+Tangents}} (\mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}} point, \mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} circumference, S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Function to find tangents to a circumference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file to include functions to draw places. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{geometry_8h_a423bc0666f5da3db90e89204b3f36de3}\label{geometry_8h_a423bc0666f5da3db90e89204b3f36de3}} 
+\index{geometry.h@{geometry.h}!Analytic\_createCircumference@{Analytic\_createCircumference}}
+\index{Analytic\_createCircumference@{Analytic\_createCircumference}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_createCircumference()}{Analytic\_createCircumference()}}
+{\footnotesize\ttfamily void Analytic\+\_\+create\+Circumference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}}]{circumference,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to create a Circumference. 
+
+The function calculates the radius and the coordinates ~\newline
+of the center and then goes to draw the circumference ~\newline
+using the algorithm of the intermediate point that allows ~\newline
+to obtain good performances and also good precision ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em circumference} & Contains the circumference parameters \\
+\hline
+{\em renderer} & Renderer to which to draw the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_aea684c82b570b0f6b5ebd16d1ee672c4}\label{geometry_8h_aea684c82b570b0f6b5ebd16d1ee672c4}} 
+\index{geometry.h@{geometry.h}!Analytic\_createHyperbole@{Analytic\_createHyperbole}}
+\index{Analytic\_createHyperbole@{Analytic\_createHyperbole}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_createHyperbole()}{Analytic\_createHyperbole()}}
+{\footnotesize\ttfamily void Analytic\+\_\+create\+Hyperbole (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}}]{hyperbole,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to draw an hyperbole. 
+
+The function identifies the type of hyperbole and then ~\newline
+proceeds to the drawing, they draw a line between each ~\newline
+point calculated in order to obtain excellent precision ~\newline
+without wasting resources. ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em hyperbole} & Contains the hyperbole parameters \\
+\hline
+{\em renderer} & Renderer to which to draw the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_a8f1d8e436b2a4c4a1a307270be8a479c}\label{geometry_8h_a8f1d8e436b2a4c4a1a307270be8a479c}} 
+\index{geometry.h@{geometry.h}!Analytic\_createLine@{Analytic\_createLine}}
+\index{Analytic\_createLine@{Analytic\_createLine}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_createLine()}{Analytic\_createLine()}}
+{\footnotesize\ttfamily void Analytic\+\_\+create\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}}}]{line,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to draw a straight line. 
+
+This function identifies the type of line based ~\newline
+on the parameters provided and then draws the line point by point
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Contains the line parameters \\
+\hline
+{\em renderer} & Renderer to which to draw the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_a22dc585163e64ffc15c1b38c4edfdcbd}\label{geometry_8h_a22dc585163e64ffc15c1b38c4edfdcbd}} 
+\index{geometry.h@{geometry.h}!Analytic\_createParabola@{Analytic\_createParabola}}
+\index{Analytic\_createParabola@{Analytic\_createParabola}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_createParabola()}{Analytic\_createParabola()}}
+{\footnotesize\ttfamily void Analytic\+\_\+create\+Parabola (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}}}]{parabola,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to draw a parabola. 
+
+The function determines the position ~\newline
+of the parabola and renders point by point. ~\newline
+Finally, draw a line between each point to give a sense of continuity ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em parabola} & Contains the parabola parameters \\
+\hline
+{\em renderer} & Renderer to which to draw the line \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_a91271cf91f67ee374615ad91f4ddff9f}\label{geometry_8h_a91271cf91f67ee374615ad91f4ddff9f}} 
+\index{geometry.h@{geometry.h}!Analytic\_createPoint@{Analytic\_createPoint}}
+\index{Analytic\_createPoint@{Analytic\_createPoint}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_createPoint()}{Analytic\_createPoint()}}
+{\footnotesize\ttfamily void Analytic\+\_\+create\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}}}]{position,  }\item[{S\+D\+L\+\_\+\+Color}]{color,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to draw a point. 
+
+The function converts the relative position into an absolute and draws the point
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Relative position of the point \\
+\hline
+{\em color} & Color of the point \\
+\hline
+{\em renderer} & Renderer to which to draw the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_a7bcf2b79866a8b3387b1ab12eafe3635}\label{geometry_8h_a7bcf2b79866a8b3387b1ab12eafe3635}} 
+\index{geometry.h@{geometry.h}!Analytic\_createTangents@{Analytic\_createTangents}}
+\index{Analytic\_createTangents@{Analytic\_createTangents}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_createTangents()}{Analytic\_createTangents()}}
+{\footnotesize\ttfamily void Analytic\+\_\+create\+Tangents (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___position}{Analytic\+\_\+\+Position}}}]{point,  }\item[{\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}}]{circumference,  }\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Function to find tangents to a circumference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Starting point for straight lines \\
+\hline
+{\em circumference} & Contains the circumference parameters \\
+\hline
+{\em renderer} & Renderer to which to draw the line \\
+\hline
+\end{DoxyParams}

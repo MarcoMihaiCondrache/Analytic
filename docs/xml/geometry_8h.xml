@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="geometry_8h" kind="file" language="C++">
+    <compoundname>geometry.h</compoundname>
+    <includedby refid="geometry_8c" local="yes">analytic/src/geometry.c</includedby>
+    <includedby refid="plane_8c" local="yes">analytic/src/plane.c</includedby>
+    <includedby refid="draw_8c" local="no">draw.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>analytic/geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>draw.c</label>
+        <link refid="draw_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_createPoint</definition>
+        <argsstring>(Analytic_Position position, SDL_Color color, SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_createPoint</name>
+        <param>
+          <type><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>SDL_Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Function to draw a point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function converts the relative position into an absolute and draws the point</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Relative position of the point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color of the point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to draw the point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/geometry.h" line="26" column="13" bodyfile="analytic/src/geometry.c" bodystart="10" bodyend="14" declfile="analytic/geometry.h" declline="26" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1a8f1d8e436b2a4c4a1a307270be8a479c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_createLine</definition>
+        <argsstring>(Analytic_Line line, SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_createLine</name>
+        <param>
+          <type><ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref></type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Function to draw a straight line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function identifies the type of line based <linebreak/>
+on the parameters provided and then draws the line point by point</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the line parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to draw the line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/geometry.h" line="37" column="13" bodyfile="analytic/src/geometry.c" bodystart="16" bodyend="23" declfile="analytic/geometry.h" declline="37" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1a423bc0666f5da3db90e89204b3f36de3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_createCircumference</definition>
+        <argsstring>(Analytic_Circumference circumference, SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_createCircumference</name>
+        <param>
+          <type><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+          <declname>circumference</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Function to create a Circumference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function calculates the radius and the coordinates <linebreak/>
+of the center and then goes to draw the circumference <linebreak/>
+using the algorithm of the intermediate point that allows <linebreak/>
+to obtain good performances and also good precision <linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>circumference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the circumference parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to draw the line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/geometry.h" line="50" column="13" bodyfile="analytic/src/geometry.c" bodystart="50" bodyend="98" declfile="analytic/geometry.h" declline="50" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1aea684c82b570b0f6b5ebd16d1ee672c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_createHyperbole</definition>
+        <argsstring>(Analytic_Hyperbole hyperbole, SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_createHyperbole</name>
+        <param>
+          <type><ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref></type>
+          <declname>hyperbole</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Function to draw an hyperbole. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function identifies the type of hyperbole and then <linebreak/>
+proceeds to the drawing, they draw a line between each <linebreak/>
+point calculated in order to obtain excellent precision <linebreak/>
+without wasting resources. <linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hyperbole</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the hyperbole parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to draw the line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/geometry.h" line="63" column="13" bodyfile="analytic/src/geometry.c" bodystart="153" bodyend="221" declfile="analytic/geometry.h" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1a22dc585163e64ffc15c1b38c4edfdcbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_createParabola</definition>
+        <argsstring>(Analytic_Parabola parabola, SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_createParabola</name>
+        <param>
+          <type><ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref></type>
+          <declname>parabola</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Function to draw a parabola. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function determines the position <linebreak/>
+of the parabola and renders point by point. <linebreak/>
+Finally, draw a line between each point to give a sense of continuity <linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parabola</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the parabola parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to draw the line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/geometry.h" line="75" column="13" bodyfile="analytic/src/geometry.c" bodystart="25" bodyend="48" declfile="analytic/geometry.h" declline="75" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="geometry_8h_1a7bcf2b79866a8b3387b1ab12eafe3635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_createTangents</definition>
+        <argsstring>(Analytic_Position point, Analytic_Circumference circumference, SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_createTangents</name>
+        <param>
+          <type><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref></type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref></type>
+          <declname>circumference</declname>
+        </param>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Function to find tangents to a circumference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting point for straight lines </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>circumference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contains the circumference parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to draw the line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/geometry.h" line="84" column="13" bodyfile="analytic/src/geometry.c" bodystart="100" bodyend="151" declfile="analytic/geometry.h" declline="84" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file to include functions to draw places. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>25-03-2020</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020</para>
+</simplesect>
+<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>ANALYTIC_GEOMETRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANALYTIC_GEOMETRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(<ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/>position,<sp/>SDL_Color<sp/>color,<sp/>SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1a8f1d8e436b2a4c4a1a307270be8a479c" kindref="member">Analytic_createLine</ref>(<ref refid="struct_analytic___line" kindref="compound">Analytic_Line</ref><sp/>line,<sp/>SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1a423bc0666f5da3db90e89204b3f36de3" kindref="member">Analytic_createCircumference</ref>(<ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref><sp/>circumference,<sp/>SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1aea684c82b570b0f6b5ebd16d1ee672c4" kindref="member">Analytic_createHyperbole</ref>(<ref refid="struct_analytic___hyperbole" kindref="compound">Analytic_Hyperbole</ref><sp/>hyperbole,<sp/>SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1a22dc585163e64ffc15c1b38c4edfdcbd" kindref="member">Analytic_createParabola</ref>(<ref refid="struct_analytic___parabola" kindref="compound">Analytic_Parabola</ref><sp/>parabola,<sp/>SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1a7bcf2b79866a8b3387b1ab12eafe3635" kindref="member">Analytic_createTangents</ref>(<ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/>point,<sp/><ref refid="struct_analytic___circumference" kindref="compound">Analytic_Circumference</ref><sp/>circumference,<sp/>SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="analytic/geometry.h"/>
+  </compounddef>
+</doxygen>

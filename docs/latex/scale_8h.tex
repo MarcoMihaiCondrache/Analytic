@@ -1,0 +1,204 @@
+\hypertarget{scale_8h}{}\doxysection{analytic/scale.h File Reference}
+\label{scale_8h}\index{analytic/scale.h@{analytic/scale.h}}
+
+
+Header file of functions to scale/zoom.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{scale_8h_a1b94b66e4fd4dbf04d6de215caa52d5b}{Analytic\+\_\+convert\+X\+Absolute}} (float x)
+\begin{DoxyCompactList}\small\item\em Convert an x relative into an x absolute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{scale_8h_a172cef737d77c0147c24a74fa00be51c}{Analytic\+\_\+convert\+Y\+Absolute}} (float y)
+\begin{DoxyCompactList}\small\item\em Convert an y relative into an y absolute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{scale_8h_a5c4d4b9aafa3cb986417ce7302ff8d6a}{Analytic\+\_\+calculate\+Divisor}} ()
+\begin{DoxyCompactList}\small\item\em Calculate the divisor thanks to the scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{scale_8h_aba0b026e3eb373ffafabc41eb9b5159b}{Analytic\+\_\+scale\+In}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Scale In the view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{scale_8h_afcbdc4dd40ee1d37b3bc0e3d53dbaed3}{Analytic\+\_\+scale\+Out}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Scale Out the view. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{scale_8h_a4e63a4fe52c3a36f03346adeec9cedba}{Analytic\+\_\+is\+X\+Relative\+OK}} (float x)
+\begin{DoxyCompactList}\small\item\em Function to check if a relative x is correct. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{scale_8h_ada53a5722ff0085a087e802b09115555}{Analytic\+\_\+is\+Y\+Relative\+OK}} (float y)
+\begin{DoxyCompactList}\small\item\em Function to check if a relative y is correct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file of functions to scale/zoom. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{scale_8h_a5c4d4b9aafa3cb986417ce7302ff8d6a}\label{scale_8h_a5c4d4b9aafa3cb986417ce7302ff8d6a}} 
+\index{scale.h@{scale.h}!Analytic\_calculateDivisor@{Analytic\_calculateDivisor}}
+\index{Analytic\_calculateDivisor@{Analytic\_calculateDivisor}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_calculateDivisor()}{Analytic\_calculateDivisor()}}
+{\footnotesize\ttfamily int Analytic\+\_\+calculate\+Divisor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculate the divisor thanks to the scale. 
+
+This function calculates the divisor by multiplying the default divisor by the scale difference and by 100
+
+$Divisor = DefaultDivisor * ScaleDifference * 100$
+
+\begin{DoxyReturn}{Returns}
+int Returns the calculated divisor based on scale
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a11d946235bb0123edad7b8947df9ac8a}{S\+C\+A\+LE}} 
+
+\mbox{\hyperlink{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{scale_8h_a1b94b66e4fd4dbf04d6de215caa52d5b}\label{scale_8h_a1b94b66e4fd4dbf04d6de215caa52d5b}} 
+\index{scale.h@{scale.h}!Analytic\_convertXAbsolute@{Analytic\_convertXAbsolute}}
+\index{Analytic\_convertXAbsolute@{Analytic\_convertXAbsolute}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_convertXAbsolute()}{Analytic\_convertXAbsolute()}}
+{\footnotesize\ttfamily int Analytic\+\_\+convert\+X\+Absolute (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Convert an x relative into an x absolute. 
+
+This function calculates absolute x by adding the x relative to half of S\+D\+L\+\_\+\+W\+I\+N\+D\+OW S\+I\+ZE
+
+$SDL\_WINDOW\_SIZE : 2 + XRelative$
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The relative x to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the absolute x based on S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a3e0900de701e9d1d0acad5870bbe67c0}{S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{scale_8h_a172cef737d77c0147c24a74fa00be51c}\label{scale_8h_a172cef737d77c0147c24a74fa00be51c}} 
+\index{scale.h@{scale.h}!Analytic\_convertYAbsolute@{Analytic\_convertYAbsolute}}
+\index{Analytic\_convertYAbsolute@{Analytic\_convertYAbsolute}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_convertYAbsolute()}{Analytic\_convertYAbsolute()}}
+{\footnotesize\ttfamily int Analytic\+\_\+convert\+Y\+Absolute (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Convert an y relative into an y absolute. 
+
+This function calculates absolute y by adding the y relative to half of S\+D\+L\+\_\+\+W\+I\+N\+D\+OW S\+I\+ZE
+
+$SDL\_WINDOW\_SIZE : 2 + YRelative$
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The relative x to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the absolute y based on S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a3e0900de701e9d1d0acad5870bbe67c0}{S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{scale_8h_a4e63a4fe52c3a36f03346adeec9cedba}\label{scale_8h_a4e63a4fe52c3a36f03346adeec9cedba}} 
+\index{scale.h@{scale.h}!Analytic\_isXRelativeOK@{Analytic\_isXRelativeOK}}
+\index{Analytic\_isXRelativeOK@{Analytic\_isXRelativeOK}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_isXRelativeOK()}{Analytic\_isXRelativeOK()}}
+{\footnotesize\ttfamily bool Analytic\+\_\+is\+X\+Relative\+OK (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Function to check if a relative x is correct. 
+
+The function checks the bound of the plane
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Returns true if the x is ok 
+
+false Returns false if the x isn\textquotesingle{}t ok 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scale_8h_ada53a5722ff0085a087e802b09115555}\label{scale_8h_ada53a5722ff0085a087e802b09115555}} 
+\index{scale.h@{scale.h}!Analytic\_isYRelativeOK@{Analytic\_isYRelativeOK}}
+\index{Analytic\_isYRelativeOK@{Analytic\_isYRelativeOK}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_isYRelativeOK()}{Analytic\_isYRelativeOK()}}
+{\footnotesize\ttfamily bool Analytic\+\_\+is\+Y\+Relative\+OK (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Function to check if a relative y is correct. 
+
+The function checks the bound of the plane
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Returns true if the y is ok 
+
+false Returns false if the y isn\textquotesingle{}t ok 
+\end{DoxyReturn}
+\mbox{\Hypertarget{scale_8h_aba0b026e3eb373ffafabc41eb9b5159b}\label{scale_8h_aba0b026e3eb373ffafabc41eb9b5159b}} 
+\index{scale.h@{scale.h}!Analytic\_scaleIn@{Analytic\_scaleIn}}
+\index{Analytic\_scaleIn@{Analytic\_scaleIn}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_scaleIn()}{Analytic\_scaleIn()}}
+{\footnotesize\ttfamily void Analytic\+\_\+scale\+In (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Scale In the view. 
+
+The function increases the scale and renders the plane again
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Renderer to which to apply the scale\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a11d946235bb0123edad7b8947df9ac8a}{S\+C\+A\+LE}} 
+
+\mbox{\hyperlink{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{scale_8h_afcbdc4dd40ee1d37b3bc0e3d53dbaed3}\label{scale_8h_afcbdc4dd40ee1d37b3bc0e3d53dbaed3}} 
+\index{scale.h@{scale.h}!Analytic\_scaleOut@{Analytic\_scaleOut}}
+\index{Analytic\_scaleOut@{Analytic\_scaleOut}!scale.h@{scale.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_scaleOut()}{Analytic\_scaleOut()}}
+{\footnotesize\ttfamily void Analytic\+\_\+scale\+Out (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Scale Out the view. 
+
+The function decreases the scale and renders the plane again
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Renderer to which to apply the scale\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a11d946235bb0123edad7b8947df9ac8a}{S\+C\+A\+LE}} 
+
+\mbox{\hyperlink{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}} 
+\end{DoxySeeAlso}

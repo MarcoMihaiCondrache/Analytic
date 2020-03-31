@@ -1,0 +1,67 @@
+.TH "Analytic_Hyperbole" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Analytic_Hyperbole \- Hyperbole structure\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <global\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "\fBAnalytic_HyperboleType\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "float \fBa\fP"
+.br
+.ti -1c
+.RI "float \fBb\fP"
+.br
+.ti -1c
+.RI "float \fBk\fP"
+.br
+.ti -1c
+.RI "float \fBc\fP"
+.br
+.ti -1c
+.RI "float \fBd\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Hyperbole structure\&. 
+
+Hyperbole types supported:
+.PP
+.IP "\(bu" 2
+$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$
+.IP "\(bu" 2
+$\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$
+.IP "\(bu" 2
+$xy = k$
+.IP "\(bu" 2
+$y = \frac{ax + b}{cx + d}$ 
+.PP
+
+.SH "Field Documentation"
+.PP 
+.SS "float a"
+Coefficient of the base equation / homographic function 
+.SS "float b"
+Coefficient of the base equation / homographic function 
+.SS "float c"
+Coefficient of the homographic function 
+.SS "float d"
+Coefficient of the homographic function 
+.SS "float k"
+Coefficient of the equation xy = k 
+.SS "\fBAnalytic_HyperboleType\fP type"
+Type of the hyperbole 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

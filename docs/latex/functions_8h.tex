@@ -1,0 +1,363 @@
+\hypertarget{functions_8h}{}\doxysection{analytic/functions.h File Reference}
+\label{functions_8h}\index{analytic/functions.h@{analytic/functions.h}}
+
+
+Header file for the math functions used by the library.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{functions_8h_a6035d73bb5eb43e59b38cc63e2c63d82}{Analytic\+\_\+\+Line\+Function}} (\mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}} line, float x)
+\begin{DoxyCompactList}\small\item\em Mathematical function to get y. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a338af7326772bf75a1f3faff419e29b5}{Analytic\+\_\+\+Parabola\+Y\+Function}} (\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} parabola, float x)
+\begin{DoxyCompactList}\small\item\em Mathematical function to get y of parables with vertical symmetry axis. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a3d5ec75330f5ff3427823ed0c74c89ab}{Analytic\+\_\+\+Parabola\+X\+Function}} (\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} parabola, float y)
+\begin{DoxyCompactList}\small\item\em Mathematical function to get x of parables with horizontal symmetry axis. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a3f76b8b0d36bb8450732ac5b7ad1a863}{Analytic\+\_\+\+Circumference\+Radius\+Function}} (\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} circumference)
+\begin{DoxyCompactList}\small\item\em Mathematical function to calculate the radius of a circumference. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_abe5a4543009708604f165fc7db8bdd4c}{Analytic\+\_\+\+Circumference\+X\+Centre\+Function}} (\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} circumference)
+\begin{DoxyCompactList}\small\item\em Mathematical function to calculate the x of the centre of a circumference. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a92231210c9c966ede33e488827b542a0}{Analytic\+\_\+\+Circumference\+Y\+Centre\+Function}} (\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} circumference)
+\begin{DoxyCompactList}\small\item\em Mathematical function to calculate the y of the centre of a circumference. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a40c3be7865f7cc46313f47c5a29ac906}{Analytic\+\_\+\+Hyperbole\+Y\+Function}} (\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} hyperbole, float x)
+\begin{DoxyCompactList}\small\item\em Mathematical function to get y of hyperboles with vertical symmetry axis. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a17880b2292a03fb34fe9249bca44d5c8}{Analytic\+\_\+\+Hyperbole\+X\+Function}} (\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} hyperbole, float x)
+\begin{DoxyCompactList}\small\item\em Mathematical function to get y of hyperboles with horizontal symmetry axis. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_abca3c5edb5a119eb4976ec375cf3abea}{Analytic\+\_\+\+Hyperbole\+K\+Function}} (\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} hyperbole, float x)
+\begin{DoxyCompactList}\small\item\em Mathematical function to get y of equilateral hyperbolas. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a8505a4fc8732149bc6c3768bf4e91c3e}{Analytic\+\_\+\+Hyperbole\+Homographic\+Function}} (\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} hyperbole, float x)
+\begin{DoxyCompactList}\small\item\em Mathematical function to draw hyperbolas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the math functions used by the library. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{functions_8h_a3f76b8b0d36bb8450732ac5b7ad1a863}\label{functions_8h_a3f76b8b0d36bb8450732ac5b7ad1a863}} 
+\index{functions.h@{functions.h}!Analytic\_CircumferenceRadiusFunction@{Analytic\_CircumferenceRadiusFunction}}
+\index{Analytic\_CircumferenceRadiusFunction@{Analytic\_CircumferenceRadiusFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_CircumferenceRadiusFunction()}{Analytic\_CircumferenceRadiusFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Circumference\+Radius\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}}]{circumference }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to calculate the radius of a circumference. 
+
+The function calculates the radius with a mathematic formula
+
+$r = \sqrt{\frac{a^{2}}{4} + \frac{b^{2}}{4} - c}$
+
+\begin{DoxyWarning}{Warning}
+The function also checks for a negative radius. ~\newline
+In this case the program will exit returning a fatal error. ~\newline
+Before calling this function, check that the ~\newline
+given circumference is really a circumference!
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em circumference} & Contains the circumference parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated radius
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{functions_8h_abe5a4543009708604f165fc7db8bdd4c}\label{functions_8h_abe5a4543009708604f165fc7db8bdd4c}} 
+\index{functions.h@{functions.h}!Analytic\_CircumferenceXCentreFunction@{Analytic\_CircumferenceXCentreFunction}}
+\index{Analytic\_CircumferenceXCentreFunction@{Analytic\_CircumferenceXCentreFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_CircumferenceXCentreFunction()}{Analytic\_CircumferenceXCentreFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Circumference\+X\+Centre\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}}]{circumference }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to calculate the x of the centre of a circumference. 
+
+The function calculates the x with a mathematic formula
+
+$x = -\frac{a}{2}$
+
+
+\begin{DoxyParams}{Parameters}
+{\em circumference} & Contains the circumference parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated x
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{functions_8h_a92231210c9c966ede33e488827b542a0}\label{functions_8h_a92231210c9c966ede33e488827b542a0}} 
+\index{functions.h@{functions.h}!Analytic\_CircumferenceYCentreFunction@{Analytic\_CircumferenceYCentreFunction}}
+\index{Analytic\_CircumferenceYCentreFunction@{Analytic\_CircumferenceYCentreFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_CircumferenceYCentreFunction()}{Analytic\_CircumferenceYCentreFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Circumference\+Y\+Centre\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}}}]{circumference }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to calculate the y of the centre of a circumference. 
+
+The function calculates the y with a mathematic formula
+
+$y = -\frac{b}{2}$
+
+The result is transformed into its opposite because the S\+DL plan is inverse so
+
+$y = \frac{b}{2}$
+
+
+\begin{DoxyParams}{Parameters}
+{\em circumference} & Contains the circumference parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated y
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___circumference}{Analytic\+\_\+\+Circumference}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{functions_8h_a8505a4fc8732149bc6c3768bf4e91c3e}\label{functions_8h_a8505a4fc8732149bc6c3768bf4e91c3e}} 
+\index{functions.h@{functions.h}!Analytic\_HyperboleHomographicFunction@{Analytic\_HyperboleHomographicFunction}}
+\index{Analytic\_HyperboleHomographicFunction@{Analytic\_HyperboleHomographicFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_HyperboleHomographicFunction()}{Analytic\_HyperboleHomographicFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Hyperbole\+Homographic\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}}]{hyperbole,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to draw hyperbolas. 
+
+The function calculates the y with a mathematic formula
+
+$y = \frac{ax + b}{cx + d}$
+
+\begin{DoxyWarning}{Warning}
+The function also checks that c is different from 0 and that there is no proportion between the parameters (ad = db). In the case it stops the program and returns a fatal error. So first please check the hyperbola parameters
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em hyperbole} & Contains the hyperbole parameters \\
+\hline
+{\em x} & Unknown to calculate the y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_abca3c5edb5a119eb4976ec375cf3abea}\label{functions_8h_abca3c5edb5a119eb4976ec375cf3abea}} 
+\index{functions.h@{functions.h}!Analytic\_HyperboleKFunction@{Analytic\_HyperboleKFunction}}
+\index{Analytic\_HyperboleKFunction@{Analytic\_HyperboleKFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_HyperboleKFunction()}{Analytic\_HyperboleKFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Hyperbole\+K\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}}]{hyperbole,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to get y of equilateral hyperbolas. 
+
+The function calculates the y with a mathematic formula
+
+$xy = k$
+
+So to extract the y we use
+
+$y = \frac{k}{x}$
+
+\begin{DoxyWarning}{Warning}
+When x=0 the formula returns NaN;
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em hyperbole} & Contains the hyperbole parameters \\
+\hline
+{\em x} & Unknown to calculate the y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_a17880b2292a03fb34fe9249bca44d5c8}\label{functions_8h_a17880b2292a03fb34fe9249bca44d5c8}} 
+\index{functions.h@{functions.h}!Analytic\_HyperboleXFunction@{Analytic\_HyperboleXFunction}}
+\index{Analytic\_HyperboleXFunction@{Analytic\_HyperboleXFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_HyperboleXFunction()}{Analytic\_HyperboleXFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Hyperbole\+X\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}}]{hyperbole,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to get y of hyperboles with horizontal symmetry axis. 
+
+The function calculates the y with a mathematic formula
+
+$y = \pm \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+
+The function calculates the second y and the first is drawn by exploiting the symmetry property of the hyperbole for more precise coordinates
+
+$y = - \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+
+\begin{DoxyWarning}{Warning}
+The function also checks that the hyperbole parameters ~\newline
+are larger and different from zero in order to avoid errors ~\newline
+during mathematical calculations. If this were the case, ~\newline
+the function would block the program and return a fatal error
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em hyperbole} & Contains the hyperbole parameters \\
+\hline
+{\em x} & Unknown to calculate the y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated y
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} 
+
+\mbox{\hyperlink{analytic_2global_8h_ab73e7d4dd747c31293420cd98a14c8ae}{Analytic\+\_\+\+Hyperbole\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{functions_8h_a40c3be7865f7cc46313f47c5a29ac906}\label{functions_8h_a40c3be7865f7cc46313f47c5a29ac906}} 
+\index{functions.h@{functions.h}!Analytic\_HyperboleYFunction@{Analytic\_HyperboleYFunction}}
+\index{Analytic\_HyperboleYFunction@{Analytic\_HyperboleYFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_HyperboleYFunction()}{Analytic\_HyperboleYFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Hyperbole\+Y\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}}}]{hyperbole,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to get y of hyperboles with vertical symmetry axis. 
+
+The function calculates the y with a mathematic formula
+
+$y = \pm \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+
+The function calculates the second y and the first ~\newline
+is drawn by exploiting the symmetry property of the ~\newline
+hyperbole for more precise coordinates~\newline
+ $y = - \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+
+\begin{DoxyWarning}{Warning}
+The function also checks that the hyperbole parameters ~\newline
+are larger and different from zero in order to avoid errors ~\newline
+during mathematical calculations. If this were the case, ~\newline
+the function would block the program and return a fatal error
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em hyperbole} & Contains the hyperbole parameters \\
+\hline
+{\em x} & Unknown to calculate the y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated y
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___hyperbole}{Analytic\+\_\+\+Hyperbole}} 
+
+Analytic\+\_\+\+Analytic\+\_\+\+Hyperbole\+Type 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{functions_8h_a6035d73bb5eb43e59b38cc63e2c63d82}\label{functions_8h_a6035d73bb5eb43e59b38cc63e2c63d82}} 
+\index{functions.h@{functions.h}!Analytic\_LineFunction@{Analytic\_LineFunction}}
+\index{Analytic\_LineFunction@{Analytic\_LineFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_LineFunction()}{Analytic\_LineFunction()}}
+{\footnotesize\ttfamily int Analytic\+\_\+\+Line\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___line}{Analytic\+\_\+\+Line}}}]{line,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to get y. 
+
+The function calculates the y with a mathematic formula
+
+$y = mx + q$
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Contains the line parameters \\
+\hline
+{\em x} & Unknown to calculate the y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The calculated y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_a3d5ec75330f5ff3427823ed0c74c89ab}\label{functions_8h_a3d5ec75330f5ff3427823ed0c74c89ab}} 
+\index{functions.h@{functions.h}!Analytic\_ParabolaXFunction@{Analytic\_ParabolaXFunction}}
+\index{Analytic\_ParabolaXFunction@{Analytic\_ParabolaXFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_ParabolaXFunction()}{Analytic\_ParabolaXFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Parabola\+X\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}}}]{parabola,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to get x of parables with horizontal symmetry axis. 
+
+The function calculates the x with a mathematic formula
+
+$x = ay^2 + by + c$
+
+But the sdl plane is inverse so the used formula is
+
+$x = - (ay^2 + by - c)$
+
+
+\begin{DoxyParams}{Parameters}
+{\em parabola} & Contains the parabola parameters \\
+\hline
+{\em y} & Unknown to calculate the x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated x
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} 
+
+\mbox{\hyperlink{analytic_2global_8h_a447a35b01759e8cb5ba438c5d72f54b4}{Analytic\+\_\+\+Parabola\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{functions_8h_a338af7326772bf75a1f3faff419e29b5}\label{functions_8h_a338af7326772bf75a1f3faff419e29b5}} 
+\index{functions.h@{functions.h}!Analytic\_ParabolaYFunction@{Analytic\_ParabolaYFunction}}
+\index{Analytic\_ParabolaYFunction@{Analytic\_ParabolaYFunction}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_ParabolaYFunction()}{Analytic\_ParabolaYFunction()}}
+{\footnotesize\ttfamily float Analytic\+\_\+\+Parabola\+Y\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}}}]{parabola,  }\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Mathematical function to get y of parables with vertical symmetry axis. 
+
+The function calculates the y with a mathematic formula
+
+$y = ax^2 + bx + c$
+
+All the parameters are transformed into their opposites because the sdl plane is inverse~\newline
+so the used formula is
+
+$y = - ax^2 - bx - c$
+
+
+\begin{DoxyParams}{Parameters}
+{\em parabola} & Contains the parabola parameters \\
+\hline
+{\em x} & Unknown to calculate the y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float The calculated y
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_analytic___parabola}{Analytic\+\_\+\+Parabola}} 
+
+\mbox{\hyperlink{analytic_2global_8h_a447a35b01759e8cb5ba438c5d72f54b4}{Analytic\+\_\+\+Parabola\+Type}} 
+\end{DoxySeeAlso}

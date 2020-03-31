@@ -1,0 +1,179 @@
+.TH "analytic/analytic.h" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+analytic/analytic.h \- Header file for setting library variables\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAnalytic_setDivisor\fP (float _DIVISOR)"
+.br
+.RI "Set the divisor variable\&. "
+.ti -1c
+.RI "void \fBAnalytic_setScale\fP (float _SCALE)"
+.br
+.RI "Set the scale variable\&. "
+.ti -1c
+.RI "void \fBAnalytic_setWindowSize\fP (int _SDL_WINDOW_SIZE)"
+.br
+.RI "Set the Windows Size variable\&. "
+.ti -1c
+.RI "void \fBAnalytic_setTerminalOutput\fP (bool _TERMINAL_OUTPUT)"
+.br
+.RI "Set the TERMINAL_OUTPUT variable\&. "
+.ti -1c
+.RI "void \fBAnalytic_setDataSet\fP (int INDEX, bool VALUE)"
+.br
+.RI "set a value from the data set "
+.ti -1c
+.RI "void \fBAnalytic_initDataSet\fP ()"
+.br
+.RI "Function to init the data set\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file for setting library variables\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Marco Mihai Condrache (marcomihaicondrache@gmail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25-03-2020
+.RE
+.PP
+This API supports the following features:
+.IP "\(bu" 2
+setting divisor
+.IP "\(bu" 2
+setting scale
+.IP "\(bu" 2
+setting window size
+.IP "\(bu" 2
+setting terminal output
+.IP "\(bu" 2
+init the data set
+.IP "\(bu" 2
+set the data set
+.PP
+.PP
+These functions must be called from the main thread\&.
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2020
+.RE
+.PP
+https://github.com/MarcoMihaiCondrache 
+.SH "Function Documentation"
+.PP 
+.SS "void Analytic_initDataSet ()"
+
+.PP
+Function to init the data set\&. This function will set all the data from the set to false
+.PP
+\fBSee also\fP
+.RS 4
+\fBSINGLE\fP 
+.RE
+.PP
+
+.SS "void Analytic_setDataSet (int INDEX, bool VALUE)"
+
+.PP
+set a value from the data set This function sets the data given from the INDEX to a bool value
+.PP
+\fBParameters\fP
+.RS 4
+\fIINDEX\fP 
+.br
+\fIVALUE\fP 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSINGLE\fP 
+.RE
+.PP
+
+.SS "void Analytic_setDivisor (float _DIVISOR)"
+
+.PP
+Set the divisor variable\&. Usually is used to set the divisor to the default value
+.PP
+\fBParameters\fP
+.RS 4
+\fI_DIVISOR\fP 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDEFAULT_DIVISOR\fP 
+.RE
+.PP
+
+.SS "void Analytic_setScale (float _SCALE)"
+
+.PP
+Set the scale variable\&. Usually is used to set the scale to the default value
+.PP
+\fBParameters\fP
+.RS 4
+\fI_SCALE\fP 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBDEFAULT_SCALE\fP 
+.RE
+.PP
+
+.SS "void Analytic_setTerminalOutput (bool _TERMINAL_OUTPUT)"
+
+.PP
+Set the TERMINAL_OUTPUT variable\&. This function sets the variable TERMINAL_OUTPUT to a bool value
+.PP
+\fBParameters\fP
+.RS 4
+\fI_TERMINAL_OUTPUT\fP 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBTERMINAL_OUTPUT\fP 
+.RE
+.PP
+
+.SS "void Analytic_setWindowSize (int _SDL_WINDOW_SIZE)"
+
+.PP
+Set the Windows Size variable\&. This function sets the variable SDL_WINDOW_SIZE to a variable
+.PP
+\fBParameters\fP
+.RS 4
+\fI_SDL_WINDOW_SIZE\fP 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBSDL_WINDOW_SIZE\fP 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scale_8c" kind="file" language="C++">
+    <compoundname>scale.c</compoundname>
+    <includes refid="log_8h" local="yes">../../log/log.h</includes>
+    <includes refid="analytic_2global_8h" local="yes">../global.h</includes>
+    <includes refid="scale_8h" local="yes">../scale.h</includes>
+    <includes refid="plane_8h" local="yes">../plane.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="8">
+        <label>../scale.h</label>
+        <link refid="scale_8h"/>
+      </node>
+      <node id="6">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="1">
+        <label>analytic/src/scale.c</label>
+        <link refid="scale_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../global.h</label>
+        <link refid="analytic_2global_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../plane.h</label>
+        <link refid="plane_8h"/>
+      </node>
+      <node id="2">
+        <label>../../log/log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="scale_8c_1ad6f90aea8631c8a06a5a2e8564762778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_convertXAbsolute</definition>
+        <argsstring>(float XRelative)</argsstring>
+        <name>Analytic_convertXAbsolute</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+          <defname>XRelative</defname>
+        </param>
+        <briefdescription>
+<para>Convert an x relative into an x absolute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates absolute x by adding the x relative to half of SDL_WINDOW SIZE</para>
+<para><formula id="19">$SDL\_WINDOW\_SIZE : 2 + XRelative$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative x to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Returns the absolute x based on SDL_WINDOW_SIZE</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="6" column="5" bodyfile="analytic/src/scale.c" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8c_1a01b243cff69ca3df349c69431b189053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_convertYAbsolute</definition>
+        <argsstring>(float YRelative)</argsstring>
+        <name>Analytic_convertYAbsolute</name>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+          <defname>YRelative</defname>
+        </param>
+        <briefdescription>
+<para>Convert an y relative into an y absolute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates absolute y by adding the y relative to half of SDL_WINDOW SIZE</para>
+<para><formula id="20">$SDL\_WINDOW\_SIZE : 2 + YRelative$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative x to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Returns the absolute y based on SDL_WINDOW_SIZE</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="11" column="5" bodyfile="analytic/src/scale.c" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8c_1a4e63a4fe52c3a36f03346adeec9cedba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Analytic_isXRelativeOK</definition>
+        <argsstring>(float x)</argsstring>
+        <name>Analytic_isXRelativeOK</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Function to check if a relative x is correct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function checks the bound of the plane</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Returns true if the x is ok </para>
+</simplesect>
+<simplesect kind="return"><para>false Returns false if the x isn&apos;t ok </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="16" column="6" bodyfile="analytic/src/scale.c" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8c_1ada53a5722ff0085a087e802b09115555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Analytic_isYRelativeOK</definition>
+        <argsstring>(float y)</argsstring>
+        <name>Analytic_isYRelativeOK</name>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Function to check if a relative y is correct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function checks the bound of the plane</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Returns true if the y is ok </para>
+</simplesect>
+<simplesect kind="return"><para>false Returns false if the y isn&apos;t ok </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="23" column="6" bodyfile="analytic/src/scale.c" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8c_1aba0b026e3eb373ffafabc41eb9b5159b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_scaleIn</definition>
+        <argsstring>(SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_scaleIn</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Scale In the view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function increases the scale and renders the plane again</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to apply the scale</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="30" column="6" bodyfile="analytic/src/scale.c" bodystart="30" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8c_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_scaleOut</definition>
+        <argsstring>(SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_scaleOut</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Scale Out the view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function decreases the scale and renders the plane again</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to apply the scale</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="42" column="6" bodyfile="analytic/src/scale.c" bodystart="42" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8c_1a5c4d4b9aafa3cb986417ce7302ff8d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_calculateDivisor</definition>
+        <argsstring>()</argsstring>
+        <name>Analytic_calculateDivisor</name>
+        <briefdescription>
+<para>Calculate the divisor thanks to the scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the divisor by multiplying the default divisor by the scale difference and by 100</para>
+<para><formula id="21">$Divisor = DefaultDivisor * ScaleDifference * 100$</formula></para>
+<para><simplesect kind="return"><para>int Returns the calculated divisor based on scale</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/scale.c" line="57" column="5" bodyfile="analytic/src/scale.c" bodystart="57" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../../log/log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../global.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../scale.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../plane.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a1b94b66e4fd4dbf04d6de215caa52d5b" kindref="member">Analytic_convertXAbsolute</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>XRelative)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(((<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2)<sp/>+<sp/>XRelative));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a172cef737d77c0147c24a74fa00be51c" kindref="member">Analytic_convertYAbsolute</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>YRelative)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(((<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2)<sp/>+<sp/>YRelative));</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a4e63a4fe52c3a36f03346adeec9cedba" kindref="member">Analytic_isXRelativeOK</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="scale_8h_1a1b94b66e4fd4dbf04d6de215caa52d5b" kindref="member">Analytic_convertXAbsolute</ref>(x)<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/><ref refid="scale_8h_1a1b94b66e4fd4dbf04d6de215caa52d5b" kindref="member">Analytic_convertXAbsolute</ref>(x)<sp/>&lt;=<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1ada53a5722ff0085a087e802b09115555" kindref="member">Analytic_isYRelativeOK</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="scale_8h_1a172cef737d77c0147c24a74fa00be51c" kindref="member">Analytic_convertYAbsolute</ref>(y)<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/><ref refid="scale_8h_1a172cef737d77c0147c24a74fa00be51c" kindref="member">Analytic_convertYAbsolute</ref>(y)<sp/>&lt;=<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1aba0b026e3eb373ffafabc41eb9b5159b" kindref="member">Analytic_scaleIn</ref>(SDL_Renderer<sp/>*renderer)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref><sp/>+=<sp/>0.01;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderSetScale(renderer,<sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>,<sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="plane_8h_1ac4e4ccd12bf4d819be77f35138b1be39" kindref="member">Analytic_initPlane</ref>(renderer);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="plane_8h_1aef4c54bb7462953d8d287d27f8a51758" kindref="member">Analytic_renderMethod</ref>(renderer);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kindref="member">TERMINAL_OUTPUT</ref>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Scale<sp/>Factor:<sp/>%.1f<sp/>+&quot;</highlight><highlight class="normal">,<sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" kindref="member">Analytic_scaleOut</ref>(SDL_Renderer<sp/>*renderer)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref><sp/>&gt;<sp/><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref><sp/>-=<sp/>0.01;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_RenderSetScale(renderer,<sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>,<sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="plane_8h_1ac4e4ccd12bf4d819be77f35138b1be39" kindref="member">Analytic_initPlane</ref>(renderer);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="plane_8h_1aef4c54bb7462953d8d287d27f8a51758" kindref="member">Analytic_renderMethod</ref>(renderer);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kindref="member">TERMINAL_OUTPUT</ref>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Scale<sp/>Factor:<sp/>%.1f<sp/>-&quot;</highlight><highlight class="normal">,<sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a5c4d4b9aafa3cb986417ce7302ff8d6a" kindref="member">Analytic_calculateDivisor</ref>()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref><sp/>!=<sp/><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>round(<ref refid="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" kindref="member">DEFAULT_DIVISOR</ref><sp/>*<sp/>round((<ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref><sp/>-<sp/><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref>)<sp/>*<sp/>100));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" kindref="member">DEFAULT_DIVISOR</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="analytic/src/scale.c"/>
+  </compounddef>
+</doxygen>

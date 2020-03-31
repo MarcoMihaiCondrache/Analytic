@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="draw_8c" kind="file" language="C++">
+    <compoundname>draw.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdarg.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">assert.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">SDL2/SDL.h</includes>
+    <includes refid="analytic_8h" local="no">analytic/analytic.h</includes>
+    <includes refid="analytic_2global_8h" local="no">analytic/global.h</includes>
+    <includes refid="scale_8h" local="no">analytic/scale.h</includes>
+    <includes refid="functions_8h" local="no">analytic/functions.h</includes>
+    <includes refid="geometry_8h" local="no">analytic/geometry.h</includes>
+    <includes refid="plane_8h" local="no">analytic/plane.h</includes>
+    <includes refid="log_8h" local="no">log/log.h</includes>
+    <includes refid="input_8h" local="no">ui/input.h</includes>
+    <includes refid="output_8h" local="no">ui/output.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdarg.h</label>
+      </node>
+      <node id="18">
+        <label>ui/input.h</label>
+        <link refid="input_8h"/>
+      </node>
+      <node id="7">
+        <label>assert.h</label>
+      </node>
+      <node id="14">
+        <label>analytic/functions.h</label>
+        <link refid="functions_8h"/>
+      </node>
+      <node id="11">
+        <label>analytic/analytic.h</label>
+        <link refid="analytic_8h"/>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="13">
+        <label>analytic/scale.h</label>
+        <link refid="scale_8h"/>
+      </node>
+      <node id="8">
+        <label>errno.h</label>
+      </node>
+      <node id="15">
+        <label>analytic/geometry.h</label>
+        <link refid="geometry_8h"/>
+      </node>
+      <node id="1">
+        <label>draw.c</label>
+        <link refid="draw_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="19">
+        <label>ui/output.h</label>
+        <link refid="output_8h"/>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="12">
+        <label>analytic/global.h</label>
+        <link refid="analytic_2global_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>analytic/plane.h</label>
+        <link refid="plane_8h"/>
+      </node>
+      <node id="17">
+        <label>log/log.h</label>
+        <link refid="log_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="draw_8c_1a8de3ed741dadc9c979a4ff17c0a9116e" prot="public" static="no">
+        <name>NDEBUG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="draw.c" line="20" column="9" bodyfile="draw.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="draw_8c_1a51f528deaaeb973f417b46a2ec36f850" prot="public" static="no">
+        <name>SDL_MAIN_HANDLED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="draw.c" line="25" column="9" bodyfile="draw.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="draw_8c_1abf9e6b7e6f15df4b525a2e7705ba3089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char const *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Main method of the program. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Main method of the program, controls the windo <linebreak/>
+and manages external inputs and events such as the <linebreak/>
+control on the mouse wheel <linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="draw.c" line="60" column="5" bodyfile="draw.c" bodystart="60" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Analytic, a simple program for the graphic representation of the most common geometric places: Straight lines, Circumferences, Hyperbolas and Parables. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>25-03-2020</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020</para>
+</simplesect>
+<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NDEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDL_MAIN_HANDLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SDL2/SDL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="analytic_8h" kindref="compound">analytic/analytic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="analytic_2global_8h" kindref="compound">analytic/global.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="scale_8h" kindref="compound">analytic/scale.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="functions_8h" kindref="compound">analytic/functions.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="geometry_8h" kindref="compound">analytic/geometry.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="plane_8h" kindref="compound">analytic/plane.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;log/log.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="input_8h" kindref="compound">ui/input.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="output_8h" kindref="compound">ui/output.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__linux__)<sp/>||<sp/>defined(__unix__)<sp/>||<sp/>defined(__APPLE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Sleep(x)<sp/>usleep((x)*1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="draw_8c_1abf9e6b7e6f15df4b525a2e7705ba3089" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>quit;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/>*log_file;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Event<sp/>event;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Window<sp/>*window;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Renderer<sp/>*renderer;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">init:;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>quit<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>log_file<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>window<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>renderer<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1ab7ba4146e49c2fadea470b9a955d1f43" kindref="member">Analytic_setScale</ref>(<ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1ab826206fc9bcfb04b3f882d78e9c2e52" kindref="member">Analytic_setDivisor</ref>(<ref refid="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" kindref="member">DEFAULT_DIVISOR</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a6c06f4df99cf2c9fc4bc1a24b688abe3" kindref="member">Analytic_setWindowSize</ref>(800);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1ae61088b3078a2530f978af1bedf51413" kindref="member">Analytic_setTerminalOutput</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a37cfa23d5daf2d72901a4712de9bcf63" kindref="member">Analytic_initDataSet</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>log_file<sp/>=<sp/>fopen(</highlight><highlight class="stringliteral">&quot;logs.txt&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;a&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>log_set_fp(log_file);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>log_set_level(LOG_INFO);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>log_set_quiet(!<ref refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kindref="member">TERMINAL_OUTPUT</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>log_set_specs(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>log_set_date(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*menu1options[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;Draw<sp/>a<sp/>straight<sp/>line&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Draw<sp/>a<sp/>circumference&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Draw<sp/>tangents<sp/>to<sp/>a<sp/>circumference<sp/>passing<sp/>through<sp/>a<sp/>point&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Draw<sp/>a<sp/>parabola&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Draw<sp/>an<sp/>hyperbole&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Exit&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>place<sp/>=<sp/><ref refid="output_8h_1a1c8eb6e6978cb305edd16e606b009ccd" kindref="member">Ui_handleMenu</ref>(</highlight><highlight class="stringliteral">&quot;What<sp/>do<sp/>you<sp/>want<sp/>to<sp/>do?:&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Select<sp/>an<sp/>option:&quot;</highlight><highlight class="normal">,<sp/>menu1options,<sp/>6,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(place)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_LINE_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>straight<sp/>line<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>y<sp/>=<sp/>mx<sp/>+<sp/>q\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>m<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" kindref="member">m</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>q<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" kindref="member">q</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" kindref="member">m</ref><sp/>==<sp/>0<sp/>&amp;&amp;<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" kindref="member">q</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kindref="member">Ui_showWarningDialog</ref>(</highlight><highlight class="stringliteral">&quot;You<sp/>are<sp/>going<sp/>to<sp/>draw<sp/>the<sp/>vertical<sp/>axe!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_CIRCUMFERENCE_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>circumference<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>x^2<sp/>+<sp/>y^2<sp/>+<sp/>ax<sp/>+<sp/>by<sp/>+<sp/>c<sp/>=<sp/>0\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>a<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>b<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>c<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref><sp/>==<sp/>0<sp/>&amp;&amp;<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref><sp/>==<sp/>0<sp/>&amp;&amp;<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kindref="member">Ui_showWarningDialog</ref>(</highlight><highlight class="stringliteral">&quot;You<sp/>are<sp/>going<sp/>to<sp/>draw<sp/>a<sp/>point!<sp/>(radius<sp/>=<sp/>0)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_POSITION_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_CIRCUMFERENCE_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;We<sp/>need<sp/>a<sp/>point<sp/>and<sp/>circumference<sp/>(x^2<sp/>+<sp/>y^2<sp/>+<sp/>ax<sp/>+<sp/>by<sp/>+<sp/>c<sp/>=<sp/>0)<sp/>to<sp/>find<sp/>the<sp/>tagents&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>x<sp/>of<sp/>the<sp/>point<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" kindref="member">position</ref>.<ref refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" kindref="member">x</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>y<sp/>of<sp/>the<sp/>point<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" kindref="member">position</ref>.<ref refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>a<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>b<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>c<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref><sp/>==<sp/>0<sp/>&amp;&amp;<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref><sp/>==<sp/>0<sp/>&amp;&amp;<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>.<ref refid="struct_analytic___circumference_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kindref="member">Ui_showWarningDialog</ref>(</highlight><highlight class="stringliteral">&quot;You<sp/>are<sp/>going<sp/>to<sp/>draw<sp/>a<sp/>point!<sp/>(radius<sp/>=<sp/>0)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_PARABOLA_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parabolaTypes[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;Equation:<sp/>y<sp/>=<sp/>ax^2<sp/>+<sp/>bx<sp/>+<sp/>c&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Equation:<sp/>x<sp/>=<sp/>ay^2<sp/>+<sp/>by<sp/>+<sp/>c&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type<sp/>=<sp/><ref refid="output_8h_1a1c8eb6e6978cb305edd16e606b009ccd" kindref="member">Ui_handleMenu</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>select<sp/>the<sp/>type<sp/>of<sp/>the<sp/>parabola&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Select<sp/>an<sp/>option&quot;</highlight><highlight class="normal">,<sp/>parabolaTypes,<sp/>2,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1a4ea833de8cbe1d97da852130706ec899" kindref="member">type</ref><sp/>=<sp/>type<sp/>==<sp/>0<sp/>?<sp/>Analytic_ParabolaY<sp/>:<sp/>Analytic_ParabolaX;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(type<sp/>==<sp/>0<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>parabola<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>y<sp/>=<sp/>ax^2<sp/>+<sp/>bx<sp/>+<sp/>c\n&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>parabola<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>x<sp/>=<sp/>ay^2<sp/>+<sp/>by<sp/>+<sp/>c\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>a<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>b<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>c<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kindref="member">Ui_showWarningDialog</ref>(</highlight><highlight class="stringliteral">&quot;You<sp/>are<sp/>going<sp/>to<sp/>draw<sp/>a<sp/>line!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_PARABOLA_DATASET,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_LINE_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" kindref="member">m</ref><sp/>=<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" kindref="member">q</ref><sp/>=<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" kindref="member">m</ref><sp/>=<sp/>-1<sp/>/<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>.<ref refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" kindref="member">q</ref><sp/>=<sp/>-1<sp/>*<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>.<ref refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(ANALYTIC_HYPERBOLE_DATASET,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parabolaTypes[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;Equation:<sp/>(x^2<sp/>/<sp/>a^2)<sp/>-<sp/>(y^2<sp/>/<sp/>b^2)<sp/>=<sp/>1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Equation:<sp/>(x^2<sp/>/<sp/>a^2)<sp/>-<sp/>(y^2<sp/>/<sp/>b^2)<sp/>=<sp/>-1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Equation:<sp/>xy<sp/>=<sp/>k&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Homographic<sp/>Function:<sp/>y<sp/>=<sp/>(ax<sp/>+<sp/>b)<sp/>/<sp/>(cx<sp/>+<sp/>d)&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type<sp/>=<sp/><ref refid="output_8h_1a1c8eb6e6978cb305edd16e606b009ccd" kindref="member">Ui_handleMenu</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>select<sp/>the<sp/>type<sp/>of<sp/>the<sp/>hyperbole&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Select<sp/>an<sp/>option&quot;</highlight><highlight class="normal">,<sp/>parabolaTypes,<sp/>4,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" kindref="member">type</ref><sp/>=<sp/>Analytic_HyperboleY;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>hyperbole<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>(x^2<sp/>/<sp/>a^2)<sp/>-<sp/>(y^2<sp/>/<sp/>b^2)<sp/>=<sp/>1\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>a^2<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>b^2<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" kindref="member">type</ref><sp/>=<sp/>Analytic_HyperboleX;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>hyperbole<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>(x^2<sp/>/<sp/>a^2)<sp/>-<sp/>(y^2<sp/>/<sp/>b^2)<sp/>=<sp/>-1\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>a^2<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>b^2<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" kindref="member">type</ref><sp/>=<sp/>Analytic_HyperboleK;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;The<sp/>hyperbole<sp/>equation<sp/>must<sp/>be<sp/>in<sp/>the<sp/>following<sp/>form:<sp/>xy<sp/>=<sp/>k\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>k<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" kindref="member">k</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" kindref="member">type</ref><sp/>=<sp/>Analytic_HyperboleHomographic;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;We<sp/>are<sp/>going<sp/>to<sp/>use<sp/>the<sp/>function:<sp/>y<sp/>=<sp/>(ax<sp/>+<sp/>b)<sp/>/<sp/>(cx<sp/>+<sp/>d)\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>a<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" kindref="member">a</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>b<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" kindref="member">b</ref>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>c<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>coefficient<sp/>d<sp/>(numbers<sp/>with<sp/>a<sp/>maximum<sp/>of<sp/>6<sp/>digits<sp/>after<sp/>the<sp/>comma<sp/>are<sp/>accepted)&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>.<ref refid="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" kindref="member">d</ref>);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nThe<sp/>rendering<sp/>has<sp/>been<sp/>started<sp/>in<sp/>a<sp/>new<sp/>window...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_SUCCESS;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Init(SDL_INIT_EVENTS);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>window<sp/>=<sp/>SDL_CreateWindow(</highlight><highlight class="stringliteral">&quot;Analytic<sp/>Window&quot;</highlight><highlight class="normal">,<sp/>SDL_WINDOWPOS_CENTERED,<sp/>SDL_WINDOWPOS_CENTERED,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>,<sp/>SDL_WINDOW_OPENGL);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>renderer<sp/>=<sp/>SDL_CreateRenderer(window,<sp/>-1,<sp/>SDL_RENDERER_ACCELERATED);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEBUG<sp/>ASSERT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(window<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(renderer<sp/>!=<sp/>NULL);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(!quit);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>DEBUG<sp/>ASSERT<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>ERROR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(window<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;Window<sp/>error:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>SDL_GetError());</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(renderer<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log_error(</highlight><highlight class="stringliteral">&quot;Renderer<sp/>error:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>SDL_GetError());</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>ERROR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="plane_8h_1ac4e4ccd12bf4d819be77f35138b1be39" kindref="member">Analytic_initPlane</ref>(renderer);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="plane_8h_1aef4c54bb7462953d8d287d27f8a51758" kindref="member">Analytic_renderMethod</ref>(renderer);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!quit)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(SDL_PollEvent(&amp;event))</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(event.type)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_QUIT:</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_MOUSEWHEEL:</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.wheel.y<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scale_8h_1aba0b026e3eb373ffafabc41eb9b5159b" kindref="member">Analytic_scaleIn</ref>(renderer);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.wheel.y<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scale_8h_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" kindref="member">Analytic_scaleOut</ref>(renderer);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_8h_1ab826206fc9bcfb04b3f882d78e9c2e52" kindref="member">Analytic_setDivisor</ref>(<ref refid="scale_8h_1a5c4d4b9aafa3cb986417ce7302ff8d6a" kindref="member">Analytic_calculateDivisor</ref>());</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="stringliteral">&quot;\nQuit<sp/>interrupt<sp/>received&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyRenderer(renderer);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyWindow(window);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Quit();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(log_file);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>init;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="draw.c"/>
+  </compounddef>
+</doxygen>

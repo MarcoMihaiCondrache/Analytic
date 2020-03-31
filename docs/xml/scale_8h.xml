@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scale_8h" kind="file" language="C++">
+    <compoundname>scale.h</compoundname>
+    <includedby refid="geometry_8c" local="yes">analytic/src/geometry.c</includedby>
+    <includedby refid="scale_8c" local="yes">analytic/src/scale.c</includedby>
+    <includedby refid="draw_8c" local="no">draw.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>analytic/scale.h</label>
+        <link refid="scale_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>draw.c</label>
+        <link refid="draw_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="scale_8h_1a1b94b66e4fd4dbf04d6de215caa52d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_convertXAbsolute</definition>
+        <argsstring>(float x)</argsstring>
+        <name>Analytic_convertXAbsolute</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Convert an x relative into an x absolute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates absolute x by adding the x relative to half of SDL_WINDOW SIZE</para>
+<para><formula id="19">$SDL\_WINDOW\_SIZE : 2 + XRelative$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative x to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Returns the absolute x based on SDL_WINDOW_SIZE</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="29" column="12" bodyfile="analytic/src/scale.c" bodystart="6" bodyend="9" declfile="analytic/scale.h" declline="29" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8h_1a172cef737d77c0147c24a74fa00be51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_convertYAbsolute</definition>
+        <argsstring>(float y)</argsstring>
+        <name>Analytic_convertYAbsolute</name>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Convert an y relative into an y absolute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates absolute y by adding the y relative to half of SDL_WINDOW SIZE</para>
+<para><formula id="20">$SDL\_WINDOW\_SIZE : 2 + YRelative$</formula></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relative x to convert </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Returns the absolute y based on SDL_WINDOW_SIZE</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="44" column="12" bodyfile="analytic/src/scale.c" bodystart="11" bodyend="14" declfile="analytic/scale.h" declline="44" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8h_1a5c4d4b9aafa3cb986417ce7302ff8d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Analytic_calculateDivisor</definition>
+        <argsstring>()</argsstring>
+        <name>Analytic_calculateDivisor</name>
+        <briefdescription>
+<para>Calculate the divisor thanks to the scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the divisor by multiplying the default divisor by the scale difference and by 100</para>
+<para><formula id="21">$Divisor = DefaultDivisor * ScaleDifference * 100$</formula></para>
+<para><simplesect kind="return"><para>int Returns the calculated divisor based on scale</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="59" column="12" bodyfile="analytic/src/scale.c" bodystart="57" bodyend="63" declfile="analytic/scale.h" declline="59" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8h_1aba0b026e3eb373ffafabc41eb9b5159b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_scaleIn</definition>
+        <argsstring>(SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_scaleIn</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Scale In the view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function increases the scale and renders the plane again</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to apply the scale</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="71" column="13" bodyfile="analytic/src/scale.c" bodystart="30" bodyend="40" declfile="analytic/scale.h" declline="71" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8h_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_scaleOut</definition>
+        <argsstring>(SDL_Renderer *renderer)</argsstring>
+        <name>Analytic_scaleOut</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+<para>Scale Out the view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function decreases the scale and renders the plane again</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renderer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Renderer to which to apply the scale</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="83" column="13" bodyfile="analytic/src/scale.c" bodystart="42" bodyend="55" declfile="analytic/scale.h" declline="83" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8h_1a4e63a4fe52c3a36f03346adeec9cedba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Analytic_isXRelativeOK</definition>
+        <argsstring>(float x)</argsstring>
+        <name>Analytic_isXRelativeOK</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Function to check if a relative x is correct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function checks the bound of the plane</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Returns true if the x is ok </para>
+</simplesect>
+<simplesect kind="return"><para>false Returns false if the x isn&apos;t ok </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="94" column="13" bodyfile="analytic/src/scale.c" bodystart="16" bodyend="21" declfile="analytic/scale.h" declline="94" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="scale_8h_1ada53a5722ff0085a087e802b09115555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Analytic_isYRelativeOK</definition>
+        <argsstring>(float y)</argsstring>
+        <name>Analytic_isYRelativeOK</name>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Function to check if a relative y is correct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The function checks the bound of the plane</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y to check </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true Returns true if the y is ok </para>
+</simplesect>
+<simplesect kind="return"><para>false Returns false if the y isn&apos;t ok </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/scale.h" line="105" column="13" bodyfile="analytic/src/scale.c" bodystart="23" bodyend="28" declfile="analytic/scale.h" declline="105" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Header file of functions to scale/zoom. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>25-03-2020</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020</para>
+</simplesect>
+<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>ANALYTIC_SCALE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ANALYTIC_SCALE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a1b94b66e4fd4dbf04d6de215caa52d5b" kindref="member">Analytic_convertXAbsolute</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a172cef737d77c0147c24a74fa00be51c" kindref="member">Analytic_convertYAbsolute</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a5c4d4b9aafa3cb986417ce7302ff8d6a" kindref="member">Analytic_calculateDivisor</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1aba0b026e3eb373ffafabc41eb9b5159b" kindref="member">Analytic_scaleIn</ref>(SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1afcbdc4dd40ee1d37b3bc0e3d53dbaed3" kindref="member">Analytic_scaleOut</ref>(SDL_Renderer<sp/>*renderer);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1a4e63a4fe52c3a36f03346adeec9cedba" kindref="member">Analytic_isXRelativeOK</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="scale_8h_1ada53a5722ff0085a087e802b09115555" kindref="member">Analytic_isYRelativeOK</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="analytic/scale.h"/>
+  </compounddef>
+</doxygen>

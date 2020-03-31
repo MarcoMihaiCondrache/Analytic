@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_analytic___parabola" kind="struct" language="C++" prot="public">
+    <compoundname>Analytic_Parabola</compoundname>
+    <includes refid="analytic_2global_8h" local="no">global.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_analytic___parabola_1a4ea833de8cbe1d97da852130706ec899" prot="public" static="no" mutable="no">
+        <type><ref refid="analytic_2global_8h_1a447a35b01759e8cb5ba438c5d72f54b4" kindref="member">Analytic_ParabolaType</ref></type>
+        <definition>Analytic_ParabolaType type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type of the parabola </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="178" column="27" bodyfile="analytic/global.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>First Coefficient of the equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="179" column="11" bodyfile="analytic/global.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Second Coefficient of the equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="180" column="11" bodyfile="analytic/global.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Third Coefficient of the equation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/global.h" line="181" column="11" bodyfile="analytic/global.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parabola structure <formula id="1">$y = ax^2 + bx + c$</formula> or <formula id="3">$x = ay^2 + by + c$</formula>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="analytic/global.h" line="177" column="1" bodyfile="analytic/global.h" bodystart="176" bodyend="182"/>
+    <listofallmembers>
+      <member refid="struct_analytic___parabola_1a4aec1a5be9d9a4a394a2e49e9744286e" prot="public" virt="non-virtual"><scope>Analytic_Parabola</scope><name>a</name></member>
+      <member refid="struct_analytic___parabola_1a83fc1af92e29717b4513d121b0c72c7d" prot="public" virt="non-virtual"><scope>Analytic_Parabola</scope><name>b</name></member>
+      <member refid="struct_analytic___parabola_1ae78103ab33f03590e84ff7bc735629d7" prot="public" virt="non-virtual"><scope>Analytic_Parabola</scope><name>c</name></member>
+      <member refid="struct_analytic___parabola_1a4ea833de8cbe1d97da852130706ec899" prot="public" virt="non-virtual"><scope>Analytic_Parabola</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ui_2global_8h" kind="file" language="C++">
+    <compoundname>global.h</compoundname>
+    <includedby refid="input_8c" local="yes">ui/src/input.c</includedby>
+    <includedby refid="output_8c" local="yes">ui/src/output.c</includedby>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ui_2global_8h_1a8f1b998f57a3bd99d4d0e43e94e22841" prot="public" static="no">
+        <name>TRAILING</name>
+        <initializer>&quot;~ &gt;&gt;&gt; &quot;</initializer>
+        <briefdescription>
+<para>Defines the indicator to be printed before a scanf. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ui/global.h" line="17" column="9" bodyfile="ui/global.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" prot="public" static="no">
+        <name>CLEAR</name>
+        <initializer>&quot;clear&quot;</initializer>
+        <briefdescription>
+<para>Defines the command to use to clear the console (The preprocessor result depends on the operating system) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ui/global.h" line="26" column="9" bodyfile="ui/global.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UI global file contains global definitions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>25-03-2020</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2020</para>
+</simplesect>
+<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="17" refid="ui_2global_8h_1a8f1b998f57a3bd99d4d0e43e94e22841" refkind="member"><highlight class="preprocessor">#define<sp/>TRAILING<sp/>&quot;~<sp/>&gt;&gt;&gt;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLEAR<sp/>&quot;cls&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//In<sp/>any<sp/>other<sp/>OS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLEAR<sp/>&quot;clear&quot;</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ui/global.h"/>
+  </compounddef>
+</doxygen>

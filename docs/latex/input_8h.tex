@@ -1,0 +1,59 @@
+\hypertarget{input_8h}{}\doxysection{ui/input.h File Reference}
+\label{input_8h}\index{ui/input.h@{ui/input.h}}
+
+
+Header file for ui input functions.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{input_8h_af14ccc0f6e3f0511b2228e981c184869}{Ui\+\_\+read\+Input}} (const char $\ast$L\+E\+A\+N\+D\+I\+NG, const char $\ast$F\+O\+R\+M\+AT,...)
+\begin{DoxyCompactList}\small\item\em Function to read an user input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for ui input functions. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{input_8h_af14ccc0f6e3f0511b2228e981c184869}\label{input_8h_af14ccc0f6e3f0511b2228e981c184869}} 
+\index{input.h@{input.h}!Ui\_readInput@{Ui\_readInput}}
+\index{Ui\_readInput@{Ui\_readInput}!input.h@{input.h}}
+\doxysubsubsection{\texorpdfstring{Ui\_readInput()}{Ui\_readInput()}}
+{\footnotesize\ttfamily int Ui\+\_\+read\+Input (\begin{DoxyParamCaption}\item[{const char $\ast$}]{L\+E\+A\+N\+D\+I\+NG,  }\item[{const char $\ast$}]{F\+O\+R\+M\+AT,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Function to read an user input. 
+
+This function use the standard IO library to create something more modern and sample. It prints a text that can be for example what the user have to enter. After this there is the T\+R\+A\+I\+L\+I\+NG, the string printed on the same line of the scanf.
+
+
+\begin{DoxyParams}{Parameters}
+{\em L\+E\+A\+N\+D\+I\+NG} & Text to print before the input request \\
+\hline
+{\em F\+O\+R\+M\+AT} & The format of the input to read \\
+\hline
+{\em ...} & Parameters to use in the format string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The operation result
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{ui_2global_8h_a8f1b998f57a3bd99d4d0e43e94e22841}{T\+R\+A\+I\+L\+I\+NG}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,121 @@
+\hypertarget{output_8h}{}\doxysection{ui/output.h File Reference}
+\label{output_8h}\index{ui/output.h@{ui/output.h}}
+
+
+Header file for ui output functions.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{output_8h_a890c3b9485ab4118590dd471f4762197}{Ui\+\_\+show\+Warning\+Dialog}} (const char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Function to display a warning dialog. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{output_8h_ada732a53693bdb968ea3885c60089e9f}{Ui\+\_\+print\+With\+New\+Line}} (const char $\ast$msg,...)
+\begin{DoxyCompactList}\small\item\em Function to print a message and adding a new line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{output_8h_a53477a547a3921b54fb3a8d49ea2ea6e}{Ui\+\_\+clear}} ()
+\begin{DoxyCompactList}\small\item\em Function to clear the console. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{output_8h_a1c8eb6e6978cb305edd16e606b009ccd}{Ui\+\_\+handle\+Menu}} (const char $\ast$leading\+Msg, const char $\ast$selection\+Msg, const char $\ast$items\mbox{[}$\,$\mbox{]}, int items\+Count, bool clear)
+\begin{DoxyCompactList}\small\item\em Function to handle a menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for ui output functions. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{output_8h_a53477a547a3921b54fb3a8d49ea2ea6e}\label{output_8h_a53477a547a3921b54fb3a8d49ea2ea6e}} 
+\index{output.h@{output.h}!Ui\_clear@{Ui\_clear}}
+\index{Ui\_clear@{Ui\_clear}!output.h@{output.h}}
+\doxysubsubsection{\texorpdfstring{Ui\_clear()}{Ui\_clear()}}
+{\footnotesize\ttfamily void Ui\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to clear the console. 
+
+This function uses the clear command defined in the global file and with a system call clears the console \mbox{\Hypertarget{output_8h_a1c8eb6e6978cb305edd16e606b009ccd}\label{output_8h_a1c8eb6e6978cb305edd16e606b009ccd}} 
+\index{output.h@{output.h}!Ui\_handleMenu@{Ui\_handleMenu}}
+\index{Ui\_handleMenu@{Ui\_handleMenu}!output.h@{output.h}}
+\doxysubsubsection{\texorpdfstring{Ui\_handleMenu()}{Ui\_handleMenu()}}
+{\footnotesize\ttfamily int Ui\+\_\+handle\+Menu (\begin{DoxyParamCaption}\item[{const char $\ast$}]{leading\+Msg,  }\item[{const char $\ast$}]{selection\+Msg,  }\item[{const char $\ast$}]{items\mbox{[}$\,$\mbox{]},  }\item[{int}]{items\+Count,  }\item[{bool}]{clear }\end{DoxyParamCaption})}
+
+
+
+Function to handle a menu. 
+
+This function shows the available options on the screen and ~\newline
+through a call Ui\+\_\+read\+Input puts the selection on hold. If ~\newline
+the selected element does not exist, the function re-\/proposes ~\newline
+the menu and this is where the clear parameter acts. If true, ~\newline
+the function deletes the old text of the console and re-\/proposes ~\newline
+it following the wrong selection ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em leading\+Msg} & Text to print before the menu \\
+\hline
+{\em selection\+Msg} & Text to print before the input request (after the menu) \\
+\hline
+{\em items} & Items of the menu \\
+\hline
+{\em items\+Count} & The number of the items \\
+\hline
+{\em clear} & Bool that defines if the menu has to clear every time the console \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The selected item
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{ui_2global_8h_a611cc9b5f655508482f3d7a9751c182a}{C\+L\+E\+AR}} 
+
+\mbox{\hyperlink{input_8h_af14ccc0f6e3f0511b2228e981c184869}{Ui\+\_\+read\+Input}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{output_8h_ada732a53693bdb968ea3885c60089e9f}\label{output_8h_ada732a53693bdb968ea3885c60089e9f}} 
+\index{output.h@{output.h}!Ui\_printWithNewLine@{Ui\_printWithNewLine}}
+\index{Ui\_printWithNewLine@{Ui\_printWithNewLine}!output.h@{output.h}}
+\doxysubsubsection{\texorpdfstring{Ui\_printWithNewLine()}{Ui\_printWithNewLine()}}
+{\footnotesize\ttfamily void Ui\+\_\+print\+With\+New\+Line (\begin{DoxyParamCaption}\item[{const char $\ast$}]{msg,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Function to print a message and adding a new line. 
+
+This function use the standard IO library print a message and to add a new line after it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The format of the message \\
+\hline
+{\em ...} & The arguments to apply to the format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{output_8h_a890c3b9485ab4118590dd471f4762197}\label{output_8h_a890c3b9485ab4118590dd471f4762197}} 
+\index{output.h@{output.h}!Ui\_showWarningDialog@{Ui\_showWarningDialog}}
+\index{Ui\_showWarningDialog@{Ui\_showWarningDialog}!output.h@{output.h}}
+\doxysubsubsection{\texorpdfstring{Ui\_showWarningDialog()}{Ui\_showWarningDialog()}}
+{\footnotesize\ttfamily void Ui\+\_\+show\+Warning\+Dialog (\begin{DoxyParamCaption}\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Function to display a warning dialog. 
+
+This function uses the S\+DL library to display a simple warning dialog with a \char`\"{}\+O\+K\char`\"{} button and a custom message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message for the user \\
+\hline
+\end{DoxyParams}

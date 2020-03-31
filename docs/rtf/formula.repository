@@ -1,0 +1,22 @@
+\_form#0:$y = mx + q$
+\_form#1:$y = ax^2 + bx + c$
+\_form#2:$y = - ax^2 - bx - c$
+\_form#3:$x = ay^2 + by + c$
+\_form#4:$x = - (ay^2 + by - c)$
+\_form#5:$r = \sqrt{\frac{a^{2}}{4} + \frac{b^{2}}{4} - c}$
+\_form#6:$x = -\frac{a}{2}$
+\_form#7:$y = -\frac{b}{2}$
+\_form#8:$y = \frac{b}{2}$
+\_form#9:$y = \pm \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+\_form#10:$y = - \sqrt{-b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+\_form#11:$y = \pm \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+\_form#12:$y = - \sqrt{b^{2} + \frac{a^{2}}{b^{2}}x^{2}}$
+\_form#13:$xy = k$
+\_form#14:$y = \frac{k}{x}$
+\_form#15:$y = \frac{ax + b}{cx + d}$
+\_form#16:$x^2 + y^2 + ax + by + c = 0$
+\_form#17:$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$
+\_form#18:$\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$
+\_form#19:$SDL\_WINDOW\_SIZE : 2 + XRelative$
+\_form#20:$SDL\_WINDOW\_SIZE : 2 + YRelative$
+\_form#21:$Divisor = DefaultDivisor * ScaleDifference * 100$

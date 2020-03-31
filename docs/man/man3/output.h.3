@@ -1,0 +1,132 @@
+.TH "ui/output.h" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ui/output.h \- Header file for ui output functions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBUi_showWarningDialog\fP (const char *msg)"
+.br
+.RI "Function to display a warning dialog\&. "
+.ti -1c
+.RI "void \fBUi_printWithNewLine\fP (const char *msg,\&.\&.\&.)"
+.br
+.RI "Function to print a message and adding a new line\&. "
+.ti -1c
+.RI "void \fBUi_clear\fP ()"
+.br
+.RI "Function to clear the console\&. "
+.ti -1c
+.RI "int \fBUi_handleMenu\fP (const char *leadingMsg, const char *selectionMsg, const char *items[], int itemsCount, bool clear)"
+.br
+.RI "Function to handle a menu\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file for ui output functions\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Marco Mihai Condrache (marcomihaicondrache@gmail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25-03-2020
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2020
+.RE
+.PP
+https://github.com/MarcoMihaiCondrache 
+.SH "Function Documentation"
+.PP 
+.SS "void Ui_clear ()"
+
+.PP
+Function to clear the console\&. This function uses the clear command defined in the global file and with a system call clears the console 
+.SS "int Ui_handleMenu (const char * leadingMsg, const char * selectionMsg, const char * items[], int itemsCount, bool clear)"
+
+.PP
+Function to handle a menu\&. This function shows the available options on the screen and 
+.br
+through a call Ui_readInput puts the selection on hold\&. If 
+.br
+the selected element does not exist, the function re-proposes 
+.br
+the menu and this is where the clear parameter acts\&. If true, 
+.br
+the function deletes the old text of the console and re-proposes 
+.br
+it following the wrong selection 
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIleadingMsg\fP Text to print before the menu 
+.br
+\fIselectionMsg\fP Text to print before the input request (after the menu) 
+.br
+\fIitems\fP Items of the menu 
+.br
+\fIitemsCount\fP The number of the items 
+.br
+\fIclear\fP Bool that defines if the menu has to clear every time the console 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int The selected item
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBCLEAR\fP 
+.PP
+\fBUi_readInput\fP 
+.RE
+.PP
+
+.SS "void Ui_printWithNewLine (const char * msg,  \&.\&.\&.)"
+
+.PP
+Function to print a message and adding a new line\&. This function use the standard IO library print a message and to add a new line after it\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fImsg\fP The format of the message 
+.br
+\fI\&.\&.\&.\fP The arguments to apply to the format 
+.RE
+.PP
+
+.SS "void Ui_showWarningDialog (const char * msg)"
+
+.PP
+Function to display a warning dialog\&. This function uses the SDL library to display a simple warning dialog with a 'OK' button and a custom message\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fImsg\fP The message for the user 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

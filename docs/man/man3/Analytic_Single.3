@@ -1,0 +1,56 @@
+.TH "Analytic_Single" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Analytic_Single \- Structure that defines the data set to render\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <global\&.h>\fP
+.SS "Data Fields"
+
+.in +1c
+.ti -1c
+.RI "bool \fBdataSet\fP [4]"
+.br
+.ti -1c
+.RI "\fBAnalytic_Position\fP \fBposition\fP"
+.br
+.ti -1c
+.RI "\fBAnalytic_Line\fP \fBline\fP"
+.br
+.ti -1c
+.RI "\fBAnalytic_Circumference\fP \fBcircumference\fP"
+.br
+.ti -1c
+.RI "\fBAnalytic_Parabola\fP \fBparabola\fP"
+.br
+.ti -1c
+.RI "\fBAnalytic_Hyperbole\fP \fBhyperbole\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Structure that defines the data set to render\&. 
+
+This structure contains an array of bool values, everyone indicates if a place contains the data to render if not it will not be rendered\&. 
+.SH "Field Documentation"
+.PP 
+.SS "\fBAnalytic_Circumference\fP circumference"
+Circumference of the data set (tangent and simple) 
+.SS "bool dataSet[4]"
+Array that contains the status of the places 
+.SS "\fBAnalytic_Hyperbole\fP hyperbole"
+Hyperbole of the data set 
+.SS "\fBAnalytic_Line\fP line"
+Line of the data set (tangets and simple) 
+.SS "\fBAnalytic_Parabola\fP parabola"
+Parabola of the data set 
+.SS "\fBAnalytic_Position\fP position"
+Position of the data set (for the tangents) 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

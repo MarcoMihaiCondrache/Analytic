@@ -1,0 +1,175 @@
+.TH "analytic/geometry.h" 3 "Fri Mar 27 2020" "Version 1.0" "Analytic" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+analytic/geometry.h \- Header file to include functions to draw places\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAnalytic_createPoint\fP (\fBAnalytic_Position\fP position, SDL_Color color, SDL_Renderer *renderer)"
+.br
+.RI "Function to draw a point\&. "
+.ti -1c
+.RI "void \fBAnalytic_createLine\fP (\fBAnalytic_Line\fP line, SDL_Renderer *renderer)"
+.br
+.RI "Function to draw a straight line\&. "
+.ti -1c
+.RI "void \fBAnalytic_createCircumference\fP (\fBAnalytic_Circumference\fP circumference, SDL_Renderer *renderer)"
+.br
+.RI "Function to create a Circumference\&. "
+.ti -1c
+.RI "void \fBAnalytic_createHyperbole\fP (\fBAnalytic_Hyperbole\fP hyperbole, SDL_Renderer *renderer)"
+.br
+.RI "Function to draw an hyperbole\&. "
+.ti -1c
+.RI "void \fBAnalytic_createParabola\fP (\fBAnalytic_Parabola\fP parabola, SDL_Renderer *renderer)"
+.br
+.RI "Function to draw a parabola\&. "
+.ti -1c
+.RI "void \fBAnalytic_createTangents\fP (\fBAnalytic_Position\fP point, \fBAnalytic_Circumference\fP circumference, SDL_Renderer *renderer)"
+.br
+.RI "Function to find tangents to a circumference\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Header file to include functions to draw places\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Marco Mihai Condrache (marcomihaicondrache@gmail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25-03-2020
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2020
+.RE
+.PP
+https://github.com/MarcoMihaiCondrache 
+.SH "Function Documentation"
+.PP 
+.SS "void Analytic_createCircumference (\fBAnalytic_Circumference\fP circumference, SDL_Renderer * renderer)"
+
+.PP
+Function to create a Circumference\&. The function calculates the radius and the coordinates 
+.br
+of the center and then goes to draw the circumference 
+.br
+using the algorithm of the intermediate point that allows 
+.br
+to obtain good performances and also good precision 
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcircumference\fP Contains the circumference parameters 
+.br
+\fIrenderer\fP Renderer to which to draw the line 
+.RE
+.PP
+
+.SS "void Analytic_createHyperbole (\fBAnalytic_Hyperbole\fP hyperbole, SDL_Renderer * renderer)"
+
+.PP
+Function to draw an hyperbole\&. The function identifies the type of hyperbole and then 
+.br
+proceeds to the drawing, they draw a line between each 
+.br
+point calculated in order to obtain excellent precision 
+.br
+without wasting resources\&. 
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhyperbole\fP Contains the hyperbole parameters 
+.br
+\fIrenderer\fP Renderer to which to draw the line 
+.RE
+.PP
+
+.SS "void Analytic_createLine (\fBAnalytic_Line\fP line, SDL_Renderer * renderer)"
+
+.PP
+Function to draw a straight line\&. This function identifies the type of line based 
+.br
+on the parameters provided and then draws the line point by point
+.PP
+\fBParameters\fP
+.RS 4
+\fIline\fP Contains the line parameters 
+.br
+\fIrenderer\fP Renderer to which to draw the line 
+.RE
+.PP
+
+.SS "void Analytic_createParabola (\fBAnalytic_Parabola\fP parabola, SDL_Renderer * renderer)"
+
+.PP
+Function to draw a parabola\&. The function determines the position 
+.br
+of the parabola and renders point by point\&. 
+.br
+Finally, draw a line between each point to give a sense of continuity 
+.br
+ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIparabola\fP Contains the parabola parameters 
+.br
+\fIrenderer\fP Renderer to which to draw the line 
+.RE
+.PP
+
+.SS "void Analytic_createPoint (\fBAnalytic_Position\fP position, SDL_Color color, SDL_Renderer * renderer)"
+
+.PP
+Function to draw a point\&. The function converts the relative position into an absolute and draws the point
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP Relative position of the point 
+.br
+\fIcolor\fP Color of the point 
+.br
+\fIrenderer\fP Renderer to which to draw the point 
+.RE
+.PP
+
+.SS "void Analytic_createTangents (\fBAnalytic_Position\fP point, \fBAnalytic_Circumference\fP circumference, SDL_Renderer * renderer)"
+
+.PP
+Function to find tangents to a circumference\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoint\fP Starting point for straight lines 
+.br
+\fIcircumference\fP Contains the circumference parameters 
+.br
+\fIrenderer\fP Renderer to which to draw the line 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Analytic from the source code\&.

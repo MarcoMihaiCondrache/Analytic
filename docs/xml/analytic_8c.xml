@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="analytic_8c" kind="file" language="C++">
+    <compoundname>analytic.c</compoundname>
+    <includes refid="analytic_2global_8h" local="yes">../global.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>analytic/src/analytic.c</label>
+        <link refid="analytic_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="2">
+        <label>../global.h</label>
+        <link refid="analytic_2global_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="analytic_8c_1a37cfa23d5daf2d72901a4712de9bcf63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_initDataSet</definition>
+        <argsstring>()</argsstring>
+        <name>Analytic_initDataSet</name>
+        <briefdescription>
+<para>Function to init the data set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function will set all the data from the set to false</para>
+<para><simplesect kind="see"><para><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/analytic.c" line="3" column="6" bodyfile="analytic/src/analytic.c" bodystart="3" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="analytic_8c_1a35f7f9f64fa0a10bd79d4fe4e5476915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_setDataSet</definition>
+        <argsstring>(int INDEX, bool VALUE)</argsstring>
+        <name>Analytic_setDataSet</name>
+        <param>
+          <type>int</type>
+          <declname>INDEX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>VALUE</declname>
+        </param>
+        <briefdescription>
+<para>set a value from the data set </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the data given from the INDEX to a bool value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INDEX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VALUE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/analytic.c" line="11" column="6" bodyfile="analytic/src/analytic.c" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="analytic_8c_1ab826206fc9bcfb04b3f882d78e9c2e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_setDivisor</definition>
+        <argsstring>(float _DIVISOR)</argsstring>
+        <name>Analytic_setDivisor</name>
+        <param>
+          <type>float</type>
+          <declname>_DIVISOR</declname>
+        </param>
+        <briefdescription>
+<para>Set the divisor variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usually is used to set the divisor to the default value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_DIVISOR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a4d96c811f24cd3d9dee15953fc10c764" kindref="member">DEFAULT_DIVISOR</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/analytic.c" line="16" column="6" bodyfile="analytic/src/analytic.c" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="analytic_8c_1ab7ba4146e49c2fadea470b9a955d1f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_setScale</definition>
+        <argsstring>(float _SCALE)</argsstring>
+        <name>Analytic_setScale</name>
+        <param>
+          <type>float</type>
+          <declname>_SCALE</declname>
+        </param>
+        <briefdescription>
+<para>Set the scale variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Usually is used to set the scale to the default value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_SCALE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a43588505c7e50a0bd5b69f7554a4be79" kindref="member">DEFAULT_SCALE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/analytic.c" line="21" column="6" bodyfile="analytic/src/analytic.c" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="analytic_8c_1a6c06f4df99cf2c9fc4bc1a24b688abe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_setWindowSize</definition>
+        <argsstring>(int _SDL_WINDOW_SIZE)</argsstring>
+        <name>Analytic_setWindowSize</name>
+        <param>
+          <type>int</type>
+          <declname>_SDL_WINDOW_SIZE</declname>
+        </param>
+        <briefdescription>
+<para>Set the Windows Size variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the variable SDL_WINDOW_SIZE to a variable</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_SDL_WINDOW_SIZE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/analytic.c" line="26" column="6" bodyfile="analytic/src/analytic.c" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="analytic_8c_1ae61088b3078a2530f978af1bedf51413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Analytic_setTerminalOutput</definition>
+        <argsstring>(bool _TERMINAL_OUTPUT)</argsstring>
+        <name>Analytic_setTerminalOutput</name>
+        <param>
+          <type>bool</type>
+          <declname>_TERMINAL_OUTPUT</declname>
+        </param>
+        <briefdescription>
+<para>Set the TERMINAL_OUTPUT variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the variable TERMINAL_OUTPUT to a bool value</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_TERMINAL_OUTPUT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kindref="member">TERMINAL_OUTPUT</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="analytic/src/analytic.c" line="31" column="6" bodyfile="analytic/src/analytic.c" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../global.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="analytic_8h_1a37cfa23d5daf2d72901a4712de9bcf63" kindref="member">Analytic_initDataSet</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>5;<sp/>i++)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[i]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="analytic_8h_1a35f7f9f64fa0a10bd79d4fe4e5476915" kindref="member">Analytic_setDataSet</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>INDEX,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VALUE)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[INDEX]<sp/>=<sp/>VALUE;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="analytic_8h_1ab826206fc9bcfb04b3f882d78e9c2e52" kindref="member">Analytic_setDivisor</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_DIVISOR)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref><sp/>=<sp/>_DIVISOR;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="analytic_8h_1ab7ba4146e49c2fadea470b9a955d1f43" kindref="member">Analytic_setScale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>_SCALE)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a11d946235bb0123edad7b8947df9ac8a" kindref="member">SCALE</ref><sp/>=<sp/>_SCALE;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="analytic_8h_1a6c06f4df99cf2c9fc4bc1a24b688abe3" kindref="member">Analytic_setWindowSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_SDL_WINDOW_SIZE)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>=<sp/>_SDL_WINDOW_SIZE;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="analytic_8h_1ae61088b3078a2530f978af1bedf51413" kindref="member">Analytic_setTerminalOutput</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_TERMINAL_OUTPUT)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="analytic_2global_8h_1ae52d6857be5bab413d6e69ec275c1265" kindref="member">TERMINAL_OUTPUT</ref><sp/>=<sp/>_TERMINAL_OUTPUT;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="analytic/src/analytic.c"/>
+  </compounddef>
+</doxygen>

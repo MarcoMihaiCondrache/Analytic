@@ -1,0 +1,171 @@
+\hypertarget{analytic_8h}{}\doxysection{analytic/analytic.h File Reference}
+\label{analytic_8h}\index{analytic/analytic.h@{analytic/analytic.h}}
+
+
+Header file for setting library variables.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{analytic_8h_ab826206fc9bcfb04b3f882d78e9c2e52}{Analytic\+\_\+set\+Divisor}} (float \+\_\+\+D\+I\+V\+I\+S\+OR)
+\begin{DoxyCompactList}\small\item\em Set the divisor variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{analytic_8h_ab7ba4146e49c2fadea470b9a955d1f43}{Analytic\+\_\+set\+Scale}} (float \+\_\+\+S\+C\+A\+LE)
+\begin{DoxyCompactList}\small\item\em Set the scale variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{analytic_8h_a6c06f4df99cf2c9fc4bc1a24b688abe3}{Analytic\+\_\+set\+Window\+Size}} (int \+\_\+\+S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE)
+\begin{DoxyCompactList}\small\item\em Set the Windows Size variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{analytic_8h_ae61088b3078a2530f978af1bedf51413}{Analytic\+\_\+set\+Terminal\+Output}} (bool \+\_\+\+T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT)
+\begin{DoxyCompactList}\small\item\em Set the T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{analytic_8h_a35f7f9f64fa0a10bd79d4fe4e5476915}{Analytic\+\_\+set\+Data\+Set}} (int I\+N\+D\+EX, bool V\+A\+L\+UE)
+\begin{DoxyCompactList}\small\item\em set a value from the data set \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{analytic_8h_a37cfa23d5daf2d72901a4712de9bcf63}{Analytic\+\_\+init\+Data\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Function to init the data set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for setting library variables. 
+
+\begin{DoxyAuthor}{Author}
+Marco Mihai Condrache (\href{mailto:marcomihaicondrache@gmail.com}{\texttt{ marcomihaicondrache@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25-\/03-\/2020
+\end{DoxyDate}
+This A\+PI supports the following features\+:
+\begin{DoxyItemize}
+\item setting divisor
+\item setting scale
+\item setting window size
+\item setting terminal output
+\item init the data set
+\item set the data set
+\end{DoxyItemize}
+
+These functions must be called from the main thread.
+
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020
+\end{DoxyCopyright}
+\href{https://github.com/MarcoMihaiCondrache}{\texttt{ https\+://github.\+com/\+Marco\+Mihai\+Condrache}} 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{analytic_8h_a37cfa23d5daf2d72901a4712de9bcf63}\label{analytic_8h_a37cfa23d5daf2d72901a4712de9bcf63}} 
+\index{analytic.h@{analytic.h}!Analytic\_initDataSet@{Analytic\_initDataSet}}
+\index{Analytic\_initDataSet@{Analytic\_initDataSet}!analytic.h@{analytic.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_initDataSet()}{Analytic\_initDataSet()}}
+{\footnotesize\ttfamily void Analytic\+\_\+init\+Data\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to init the data set. 
+
+This function will set all the data from the set to false
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a7a035146b05dc590fece4a070811ab18}{S\+I\+N\+G\+LE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_8h_a35f7f9f64fa0a10bd79d4fe4e5476915}\label{analytic_8h_a35f7f9f64fa0a10bd79d4fe4e5476915}} 
+\index{analytic.h@{analytic.h}!Analytic\_setDataSet@{Analytic\_setDataSet}}
+\index{Analytic\_setDataSet@{Analytic\_setDataSet}!analytic.h@{analytic.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setDataSet()}{Analytic\_setDataSet()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Data\+Set (\begin{DoxyParamCaption}\item[{int}]{I\+N\+D\+EX,  }\item[{bool}]{V\+A\+L\+UE }\end{DoxyParamCaption})}
+
+
+
+set a value from the data set 
+
+This function sets the data given from the I\+N\+D\+EX to a bool value
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+N\+D\+EX} & \\
+\hline
+{\em V\+A\+L\+UE} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a7a035146b05dc590fece4a070811ab18}{S\+I\+N\+G\+LE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_8h_ab826206fc9bcfb04b3f882d78e9c2e52}\label{analytic_8h_ab826206fc9bcfb04b3f882d78e9c2e52}} 
+\index{analytic.h@{analytic.h}!Analytic\_setDivisor@{Analytic\_setDivisor}}
+\index{Analytic\_setDivisor@{Analytic\_setDivisor}!analytic.h@{analytic.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setDivisor()}{Analytic\_setDivisor()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Divisor (\begin{DoxyParamCaption}\item[{float}]{\+\_\+\+D\+I\+V\+I\+S\+OR }\end{DoxyParamCaption})}
+
+
+
+Set the divisor variable. 
+
+Usually is used to set the divisor to the default value
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+D\+I\+V\+I\+S\+OR} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a4d96c811f24cd3d9dee15953fc10c764}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+I\+V\+I\+S\+OR}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_8h_ab7ba4146e49c2fadea470b9a955d1f43}\label{analytic_8h_ab7ba4146e49c2fadea470b9a955d1f43}} 
+\index{analytic.h@{analytic.h}!Analytic\_setScale@{Analytic\_setScale}}
+\index{Analytic\_setScale@{Analytic\_setScale}!analytic.h@{analytic.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setScale()}{Analytic\_setScale()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Scale (\begin{DoxyParamCaption}\item[{float}]{\+\_\+\+S\+C\+A\+LE }\end{DoxyParamCaption})}
+
+
+
+Set the scale variable. 
+
+Usually is used to set the scale to the default value
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+S\+C\+A\+LE} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a43588505c7e50a0bd5b69f7554a4be79}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_8h_ae61088b3078a2530f978af1bedf51413}\label{analytic_8h_ae61088b3078a2530f978af1bedf51413}} 
+\index{analytic.h@{analytic.h}!Analytic\_setTerminalOutput@{Analytic\_setTerminalOutput}}
+\index{Analytic\_setTerminalOutput@{Analytic\_setTerminalOutput}!analytic.h@{analytic.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setTerminalOutput()}{Analytic\_setTerminalOutput()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Terminal\+Output (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+\+T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT }\end{DoxyParamCaption})}
+
+
+
+Set the T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT variable. 
+
+This function sets the variable T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT to a bool value
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_ae52d6857be5bab413d6e69ec275c1265}{T\+E\+R\+M\+I\+N\+A\+L\+\_\+\+O\+U\+T\+P\+UT}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{analytic_8h_a6c06f4df99cf2c9fc4bc1a24b688abe3}\label{analytic_8h_a6c06f4df99cf2c9fc4bc1a24b688abe3}} 
+\index{analytic.h@{analytic.h}!Analytic\_setWindowSize@{Analytic\_setWindowSize}}
+\index{Analytic\_setWindowSize@{Analytic\_setWindowSize}!analytic.h@{analytic.h}}
+\doxysubsubsection{\texorpdfstring{Analytic\_setWindowSize()}{Analytic\_setWindowSize()}}
+{\footnotesize\ttfamily void Analytic\+\_\+set\+Window\+Size (\begin{DoxyParamCaption}\item[{int}]{\+\_\+\+S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE }\end{DoxyParamCaption})}
+
+
+
+Set the Windows Size variable. 
+
+This function sets the variable S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE to a variable
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{analytic_2global_8h_a3e0900de701e9d1d0acad5870bbe67c0}{S\+D\+L\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE}} 
+\end{DoxySeeAlso}
