@@ -1,7 +1,6 @@
 # Analytic
 
 [![GitHub license](https://img.shields.io/github/license/MarcoMihaiCondrache/Analytic)](https://github.com/MarcoMihaiCondrache/Analytic)
-[![GitHub forks](https://img.shields.io/github/forks/MarcoMihaiCondrache/Analytic)](https://github.com/MarcoMihaiCondrache/Analytic/network)
 
 Analytic, a simple program for the graphic representation of the most common geometric places: Straight lines, Circumferences, Hyperbolas and Parables
 
