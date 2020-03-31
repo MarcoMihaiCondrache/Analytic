@@ -15,6 +15,14 @@ Linux
 $ ./compile.sh
 ```
 
+## Execute
+
+Linux
+
+```bash
+$ ./draw
+```
+
 ## Demo
 
 Main Menu
