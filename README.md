@@ -39,7 +39,7 @@ Default Window with zoom
 
 ## Documentation
 
-The default documentation can be found in the [docs](https://github.com/MarcoMihaiCondrache/Analytic/docs) folder
+The default documentation can be found in the [docs](https://github.com/MarcoMihaiCondrache/Analytic/tree/master/docs) folder
 
 ## Tests Documentation
 The program has been tested extensively and effectively.
