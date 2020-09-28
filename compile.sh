@@ -4,6 +4,7 @@ mkdir -p lib
 
 #START COMPILING ANALYTIC
 cd analytic
+mkdir -p src/obj
 gcc -c -o src/obj/functions.o src/functions.c
 gcc -c -o src/obj/geometry.o src/geometry.c
 gcc -c -o src/obj/plane.o src/plane.c
@@ -16,6 +17,7 @@ cd ..
 
 #START COMPILING LOG
 cd log
+mkdir -p src/obj
 gcc -c -o src/obj/log.o src/log.c -DLOG_USE_COLOR
 cd ../lib
 ar cr liblog.a ../log/src/obj/log.o
@@ -24,6 +26,7 @@ cd ..
 
 #START COMPILING UI
 cd ui
+mkdir -p src/obj
 gcc -c -o src/obj/input.o src/input.c
 gcc -c -o src/obj/output.o src/output.c
 cd ../lib
