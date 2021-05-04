@@ -81,6 +81,7 @@ extern void Analytic_createParabola(Analytic_Parabola parabola, SDL_Renderer *re
  * @param circumference Contains the circumference parameters
  * @param renderer Renderer to which to draw the line
  */
-extern void Analytic_createTangents(Analytic_Position point, Analytic_Circumference circumference, SDL_Renderer *renderer);
+extern void
+Analytic_createTangents(Analytic_Position point, Analytic_Circumference circumference, SDL_Renderer *renderer);
 
 #endif

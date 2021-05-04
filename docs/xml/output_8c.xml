@@ -1,362 +1,1202 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="output_8c" kind="file" language="C++">
-    <compoundname>output.c</compoundname>
-    <includes local="no">stdio.h</includes>
-    <includes local="no">stdlib.h</includes>
-    <includes local="no">stdbool.h</includes>
-    <includes local="no">stdarg.h</includes>
-    <includes local="no">SDL2/SDL.h</includes>
-    <includes refid="ui_2global_8h" local="yes">../global.h</includes>
-    <includes refid="output_8h" local="yes">../output.h</includes>
-    <includes refid="input_8h" local="yes">../input.h</includes>
-    <incdepgraph>
-      <node id="4">
-        <label>stdbool.h</label>
-      </node>
-      <node id="5">
-        <label>stdarg.h</label>
-      </node>
-      <node id="9">
-        <label>../input.h</label>
-        <link refid="input_8h"/>
-      </node>
-      <node id="3">
-        <label>stdlib.h</label>
-      </node>
-      <node id="7">
-        <label>../global.h</label>
-        <link refid="ui_2global_8h"/>
-      </node>
-      <node id="6">
-        <label>SDL2/SDL.h</label>
-      </node>
-      <node id="1">
-        <label>ui/src/output.c</label>
-        <link refid="output_8c"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>../output.h</label>
-        <link refid="output_8h"/>
-      </node>
-      <node id="2">
-        <label>stdio.h</label>
-      </node>
-    </incdepgraph>
-      <sectiondef kind="var">
-      <memberdef kind="variable" id="output_8c_1af5478c04f03d2085f1d9d981eb7afd64" prot="public" static="no" mutable="no">
-        <type>const SDL_MessageBoxColorScheme</type>
-        <definition>const SDL_MessageBoxColorScheme colorScheme</definition>
-        <argsstring></argsstring>
-        <name>colorScheme</name>
-        <initializer>= {
-    {
-        {0, 0, 0},
-        {255, 255, 255},
-        {255, 255, 0},
-        {0, 0, 255},
-        {255, 0, 255},
-    },
-}</initializer>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="output_8c" kind="file" language="C++">
+        <compoundname>output.c</compoundname>
+        <includes local="no">stdio.h</includes>
+        <includes local="no">stdlib.h</includes>
+        <includes local="no">stdbool.h</includes>
+        <includes local="no">stdarg.h</includes>
+        <includes local="no">SDL2/SDL.h</includes>
+        <includes refid="ui_2global_8h" local="yes">../global.h</includes>
+        <includes refid="output_8h" local="yes">../output.h</includes>
+        <includes refid="input_8h" local="yes">../input.h</includes>
+        <incdepgraph>
+            <node id="4">
+                <label>stdbool.h</label>
+            </node>
+            <node id="5">
+                <label>stdarg.h</label>
+            </node>
+            <node id="9">
+                <label>../input.h</label>
+                <link refid="input_8h"/>
+            </node>
+            <node id="3">
+                <label>stdlib.h</label>
+            </node>
+            <node id="7">
+                <label>../global.h</label>
+                <link refid="ui_2global_8h"/>
+            </node>
+            <node id="6">
+                <label>SDL2/SDL.h</label>
+            </node>
+            <node id="1">
+                <label>ui/src/output.c</label>
+                <link refid="output_8c"/>
+                <childnode refid="2" relation="include">
+                </childnode>
+                <childnode refid="3" relation="include">
+                </childnode>
+                <childnode refid="4" relation="include">
+                </childnode>
+                <childnode refid="5" relation="include">
+                </childnode>
+                <childnode refid="6" relation="include">
+                </childnode>
+                <childnode refid="7" relation="include">
+                </childnode>
+                <childnode refid="8" relation="include">
+                </childnode>
+                <childnode refid="9" relation="include">
+                </childnode>
+            </node>
+            <node id="8">
+                <label>../output.h</label>
+                <link refid="output_8h"/>
+            </node>
+            <node id="2">
+                <label>stdio.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="var">
+            <memberdef kind="variable" id="output_8c_1af5478c04f03d2085f1d9d981eb7afd64" prot="public" static="no"
+                       mutable="no">
+                <type>const SDL_MessageBoxColorScheme</type>
+                <definition>const SDL_MessageBoxColorScheme colorScheme</definition>
+                <argsstring></argsstring>
+                <name>colorScheme</name>
+                <initializer>= {
+                    {
+                    {0, 0, 0},
+                    {255, 255, 255},
+                    {255, 255, 0},
+                    {0, 0, 255},
+                    {255, 0, 255},
+                    },
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/src/output.c" line="10" column="33" bodyfile="ui/src/output.c" bodystart="10"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="output_8c_1a12d2732eb7b59efbf02ae7035f0e9229" prot="public" static="no"
+                       mutable="no">
+                <type>const SDL_MessageBoxButtonData</type>
+                <definition>const SDL_MessageBoxButtonData warningButtons[]</definition>
+                <argsstring>[]</argsstring>
+                <name>warningButtons</name>
+                <initializer>= {
+                    {SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT, 1, &quot;OK&quot;},
+                    }
+                </initializer>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/src/output.c" line="20" column="32" bodyfile="ui/src/output.c" bodystart="20"
+                          bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="output_8c_1a890c3b9485ab4118590dd471f4762197" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Ui_showWarningDialog</definition>
+                <argsstring>(const char *msg)</argsstring>
+                <name>Ui_showWarningDialog</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>msg</declname>
+                </param>
+                <briefdescription>
+                    <para>Function to display a warning dialog.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This function uses the SDL library to display a simple warning dialog with a &quot;OK&quot;
+                        button and a custom message.
+                    </para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>msg</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The message for the user</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/src/output.c" line="24" column="6" bodyfile="ui/src/output.c" bodystart="24"
+                          bodyend="40"/>
+            </memberdef>
+            <memberdef kind="function" id="output_8c_1ada732a53693bdb968ea3885c60089e9f" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Ui_printWithNewLine</definition>
+                <argsstring>(const char *msg,...)</argsstring>
+                <name>Ui_printWithNewLine</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>msg</declname>
+                </param>
+                <param>
+                    <type>...</type>
+                </param>
+                <briefdescription>
+                    <para>Function to print a message and adding a new line.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This function use the standard IO library print a message and to add a new line after it.
+                    </para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>msg</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The format of the message</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>...</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The arguments to apply to the format</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/src/output.c" line="42" column="6" bodyfile="ui/src/output.c" bodystart="42"
+                          bodyend="50"/>
+            </memberdef>
+            <memberdef kind="function" id="output_8c_1a1c8eb6e6978cb305edd16e606b009ccd" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int Ui_handleMenu</definition>
+                <argsstring>(const char *leadingMsg, const char *selectionMsg, const char *items[], int itemsCount, bool
+                    clear)
+                </argsstring>
+                <name>Ui_handleMenu</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>leadingMsg</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>selectionMsg</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>items</declname>
+                    <array>[]</array>
+                </param>
+                <param>
+                    <type>int</type>
+                    <declname>itemsCount</declname>
+                </param>
+                <param>
+                    <type>bool</type>
+                    <declname>clear</declname>
+                </param>
+                <briefdescription>
+                    <para>Function to handle a menu.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This function shows the available options on the screen and
+                        <linebreak/>
+                        through a call Ui_readInput puts the selection on hold. If
+                        <linebreak/>
+                        the selected element does not exist, the function re-proposes
+                        <linebreak/>
+                        the menu and this is where the clear parameter acts. If true,
+                        <linebreak/>
+                        the function deletes the old text of the console and re-proposes
+                        <linebreak/>
+                        it following the wrong selection
+                        <linebreak/>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>leadingMsg</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Text to print before the menu</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>selectionMsg</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Text to print before the input request (after the menu)</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>items</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Items of the menu</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>itemsCount</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The number of the items</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>clear</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Bool that defines if the menu has to clear every time the console</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>int The selected item</para>
+                        </simplesect>
+                        <simplesect kind="see">
+                            <para>
+                                <ref refid="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" kindref="member">CLEAR
+                                </ref>
+                            </para>
+                        </simplesect>
+                        <simplesect kind="see">
+                            <para>
+                                <ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput
+                                </ref>
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/src/output.c" line="52" column="5" bodyfile="ui/src/output.c" bodystart="52"
+                          bodyend="72"/>
+            </memberdef>
+            <memberdef kind="function" id="output_8c_1a53477a547a3921b54fb3a8d49ea2ea6e" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Ui_clear</definition>
+                <argsstring>()</argsstring>
+                <name>Ui_clear</name>
+                <briefdescription>
+                    <para>Function to clear the console.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This function uses the clear command defined in the global file and with a system call clears
+                        the console
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/src/output.c" line="74" column="6" bodyfile="ui/src/output.c" bodystart="74"
+                          bodyend="77"/>
+            </memberdef>
+        </sectiondef>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/src/output.c" line="10" column="33" bodyfile="ui/src/output.c" bodystart="10" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="output_8c_1a12d2732eb7b59efbf02ae7035f0e9229" prot="public" static="no" mutable="no">
-        <type>const SDL_MessageBoxButtonData</type>
-        <definition>const SDL_MessageBoxButtonData warningButtons[]</definition>
-        <argsstring>[]</argsstring>
-        <name>warningButtons</name>
-        <initializer>= {
-    {SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT, 1, &quot;OK&quot;},
-}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/src/output.c" line="20" column="32" bodyfile="ui/src/output.c" bodystart="20" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="output_8c_1a890c3b9485ab4118590dd471f4762197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Ui_showWarningDialog</definition>
-        <argsstring>(const char *msg)</argsstring>
-        <name>Ui_showWarningDialog</name>
-        <param>
-          <type>const char *</type>
-          <declname>msg</declname>
-        </param>
-        <briefdescription>
-<para>Function to display a warning dialog. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This function uses the SDL library to display a simple warning dialog with a &quot;OK&quot; button and a custom message.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The message for the user </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/src/output.c" line="24" column="6" bodyfile="ui/src/output.c" bodystart="24" bodyend="40"/>
-      </memberdef>
-      <memberdef kind="function" id="output_8c_1ada732a53693bdb968ea3885c60089e9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Ui_printWithNewLine</definition>
-        <argsstring>(const char *msg,...)</argsstring>
-        <name>Ui_printWithNewLine</name>
-        <param>
-          <type>const char *</type>
-          <declname>msg</declname>
-        </param>
-        <param>
-          <type>...</type>
-        </param>
-        <briefdescription>
-<para>Function to print a message and adding a new line. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This function use the standard IO library print a message and to add a new line after it.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>msg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The format of the message </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>...</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The arguments to apply to the format </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/src/output.c" line="42" column="6" bodyfile="ui/src/output.c" bodystart="42" bodyend="50"/>
-      </memberdef>
-      <memberdef kind="function" id="output_8c_1a1c8eb6e6978cb305edd16e606b009ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int Ui_handleMenu</definition>
-        <argsstring>(const char *leadingMsg, const char *selectionMsg, const char *items[], int itemsCount, bool clear)</argsstring>
-        <name>Ui_handleMenu</name>
-        <param>
-          <type>const char *</type>
-          <declname>leadingMsg</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>selectionMsg</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>items</declname>
-          <array>[]</array>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>itemsCount</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>clear</declname>
-        </param>
-        <briefdescription>
-<para>Function to handle a menu. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This function shows the available options on the screen and <linebreak/>
-through a call Ui_readInput puts the selection on hold. If <linebreak/>
-the selected element does not exist, the function re-proposes <linebreak/>
-the menu and this is where the clear parameter acts. If true, <linebreak/>
-the function deletes the old text of the console and re-proposes <linebreak/>
-it following the wrong selection <linebreak/>
- <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>leadingMsg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to print before the menu </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>selectionMsg</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to print before the input request (after the menu) </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>items</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Items of the menu </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>itemsCount</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The number of the items </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>clear</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Bool that defines if the menu has to clear every time the console </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>int The selected item</para>
-</simplesect>
-<simplesect kind="see"><para><ref refid="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" kindref="member">CLEAR</ref> </para>
-</simplesect>
-<simplesect kind="see"><para><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref> </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/src/output.c" line="52" column="5" bodyfile="ui/src/output.c" bodystart="52" bodyend="72"/>
-      </memberdef>
-      <memberdef kind="function" id="output_8c_1a53477a547a3921b54fb3a8d49ea2ea6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Ui_clear</definition>
-        <argsstring>()</argsstring>
-        <name>Ui_clear</name>
-        <briefdescription>
-<para>Function to clear the console. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This function uses the clear command defined in the global file and with a system call clears the console </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/src/output.c" line="74" column="6" bodyfile="ui/src/output.c" bodystart="74" bodyend="77"/>
-      </memberdef>
-      </sectiondef>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SDL2/SDL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../global.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../output.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../input.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_MessageBoxColorScheme<sp/>colorScheme<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{0,<sp/>0,<sp/>0},</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{255,<sp/>255,<sp/>255},</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{255,<sp/>255,<sp/>0},</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{0,<sp/>0,<sp/>255},</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{255,<sp/>0,<sp/>255},</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
-<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_MessageBoxButtonData<sp/>warningButtons[]<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT,<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;OK&quot;</highlight><highlight class="normal">},</highlight></codeline>
-<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kindref="member">Ui_showWarningDialog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*msg)</highlight></codeline>
-<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SDL_MessageBoxData<sp/>messageboxdata<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_MESSAGEBOX_WARNING,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>.flags<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>.window<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Warning&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>.title<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>.message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_arraysize(warningButtons),<sp/></highlight><highlight class="comment">/*<sp/>.numbuttons<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>warningButtons,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>.buttons<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;colorScheme<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>.colorScheme<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buttonid;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SDL_ShowMessageBox(&amp;messageboxdata,<sp/>&amp;buttonid)<sp/>&lt;<sp/>0)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SDL_Log(</highlight><highlight class="stringliteral">&quot;error<sp/>displaying<sp/>message<sp/>box&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*msg,<sp/>...)</highlight></codeline>
-<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>va_list<sp/>args;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>va_start(args,<sp/>msg);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>vprintf(msg,<sp/>args);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>va_end(args);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="output_8h_1a1c8eb6e6978cb305edd16e606b009ccd" kindref="member">Ui_handleMenu</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*leadingMsg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*selectionMsg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*items[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>itemsCount,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clear)</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selectedOption<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clear)</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(leadingMsg);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>itemsCount;<sp/>i++)</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d<sp/>-<sp/>&quot;</highlight><highlight class="normal">,<sp/>i);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>(items[i]);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(selectionMsg,<sp/></highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;selectedOption);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(selectedOption<sp/>&lt;<sp/>0<sp/>||<sp/>selectedOption<sp/>&gt;=<sp/>itemsCount);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clear)</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>selectedOption;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>()</highlight></codeline>
-<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>system(<ref refid="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" kindref="member">CLEAR</ref>);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-    </programlisting>
-    <location file="ui/src/output.c"/>
-  </compounddef>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;stdarg.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&lt;SDL2/SDL.h&gt;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;../global.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;../output.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;../input.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>SDL_MessageBoxColorScheme<sp/>colorScheme<sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{0,<sp/>0,<sp/>0},
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{255,<sp/>255,<sp/>255},
+                </highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{255,<sp/>255,<sp/>0},
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{0,<sp/>0,<sp/>255},
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{255,<sp/>0,<sp/>255},
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>},
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal"></highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>SDL_MessageBoxButtonData<sp/>warningButtons[]<sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT,<sp/>1,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;OK&quot;</highlight>
+                <highlight class="normal">},</highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal">};</highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="output_8h_1a890c3b9485ab4118590dd471f4762197" kindref="member">
+                        Ui_showWarningDialog</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*msg)
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal"><sp/>SDL_MessageBoxData<sp/>messageboxdata<sp/>=<sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_MESSAGEBOX_WARNING,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.flags<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>NULL,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.window<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;Warning&quot;</highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.title<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>msg,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.message<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_arraysize(warningButtons),
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.numbuttons<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>warningButtons,
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.buttons<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>&amp;colorScheme
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="comment">/*<sp/>.colorScheme<sp/>*/
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>};
+                </highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>buttonid;
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(SDL_ShowMessageBox(&amp;messageboxdata,<sp/>&amp;buttonid)<sp/>&lt;<sp/>
+                    0)
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_Log(
+                </highlight>
+                <highlight class="stringliteral">&quot;error<sp/>displaying<sp/>message<sp/>box&quot;
+                </highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>
+                    (
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*msg,<sp/>...)
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>va_list<sp/>args;
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>va_start(args,<sp/>msg);
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>vprintf(msg,<sp/>args);
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;\n&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>va_end(args);
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="output_8h_1a1c8eb6e6978cb305edd16e606b009ccd" kindref="member">Ui_handleMenu</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*leadingMsg,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*selectionMsg,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*items[],
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>itemsCount,
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">bool</highlight>
+                <highlight class="normal"><sp/>clear)
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>selectedOption<sp/>=<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">do</highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(clear)
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>
+                    (leadingMsg);
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;\n&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>itemsCount;<sp/>i++)
+                </highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;%d<sp/>-<sp/>&quot;
+                </highlight>
+                <highlight class="normal">,<sp/>i);
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="output_8h_1ada732a53693bdb968ea3885c60089e9f" kindref="member">Ui_printWithNewLine</ref>
+                    (items[i]);
+                </highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>printf(
+                </highlight>
+                <highlight class="stringliteral">&quot;\n&quot;</highlight>
+                <highlight class="normal">);</highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>
+                    (selectionMsg,
+                    <sp/>
+                </highlight>
+                <highlight class="stringliteral">&quot;%d&quot;</highlight>
+                <highlight class="normal">,<sp/>&amp;selectedOption);
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">while</highlight>
+                <highlight class="normal"><sp/>(selectedOption<sp/>&lt;<sp/>0<sp/>||<sp/>selectedOption<sp/>&gt;=<sp/>
+                    itemsCount);
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(clear)
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>();
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">return</highlight>
+                <highlight class="normal"><sp/>selectedOption;
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="output_8h_1a53477a547a3921b54fb3a8d49ea2ea6e" kindref="member">Ui_clear</ref>()
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>system(<ref refid="ui_2global_8h_1a611cc9b5f655508482f3d7a9751c182a" kindref="member">
+                    CLEAR</ref>);
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">}</highlight>
+            </codeline>
+        </programlisting>
+        <location file="ui/src/output.c"/>
+    </compounddef>
 </doxygen>

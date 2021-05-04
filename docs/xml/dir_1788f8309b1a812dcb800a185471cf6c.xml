@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="dir_1788f8309b1a812dcb800a185471cf6c" kind="dir">
-    <compoundname>ui</compoundname>
-    <innerdir refid="dir_141134a55e20d5b2929e699c0bb11230">ui/src</innerdir>
-    <innerfile refid="ui_2global_8h">global.h</innerfile>
-    <innerfile refid="input_8h">input.h</innerfile>
-    <innerfile refid="output_8h">output.h</innerfile>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="ui/"/>
-  </compounddef>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="dir_1788f8309b1a812dcb800a185471cf6c" kind="dir">
+        <compoundname>ui</compoundname>
+        <innerdir refid="dir_141134a55e20d5b2929e699c0bb11230">ui/src</innerdir>
+        <innerfile refid="ui_2global_8h">global.h</innerfile>
+        <innerfile refid="input_8h">input.h</innerfile>
+        <innerfile refid="output_8h">output.h</innerfile>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <location file="ui/"/>
+    </compounddef>
 </doxygen>

@@ -1,288 +1,1193 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="plane_8c" kind="file" language="C++">
-    <compoundname>plane.c</compoundname>
-    <includes refid="log_8h" local="yes">../../log/log.h</includes>
-    <includes refid="analytic_2global_8h" local="yes">../global.h</includes>
-    <includes refid="plane_8h" local="yes">../plane.h</includes>
-    <includes refid="geometry_8h" local="yes">../geometry.h</includes>
-    <incdepgraph>
-      <node id="7">
-        <label>stdbool.h</label>
-      </node>
-      <node id="4">
-        <label>stdarg.h</label>
-      </node>
-      <node id="9">
-        <label>../geometry.h</label>
-        <link refid="geometry_8h"/>
-      </node>
-      <node id="6">
-        <label>SDL2/SDL.h</label>
-      </node>
-      <node id="1">
-        <label>analytic/src/plane.c</label>
-        <link refid="plane_8c"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>../global.h</label>
-        <link refid="analytic_2global_8h"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>../plane.h</label>
-        <link refid="plane_8h"/>
-      </node>
-      <node id="2">
-        <label>../../log/log.h</label>
-        <link refid="log_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>stdio.h</label>
-      </node>
-    </incdepgraph>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="plane_8c_1ae62ae1fafbdf2386e362bf8013c09654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Analytic_setBackground</definition>
-        <argsstring>(SDL_Color color, SDL_Renderer *renderer)</argsstring>
-        <name>Analytic_setBackground</name>
-        <param>
-          <type>SDL_Color</type>
-          <declname>color</declname>
-        </param>
-        <param>
-          <type>SDL_Renderer *</type>
-          <declname>renderer</declname>
-        </param>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="plane_8c" kind="file" language="C++">
+        <compoundname>plane.c</compoundname>
+        <includes refid="log_8h" local="yes">../../log/log.h</includes>
+        <includes refid="analytic_2global_8h" local="yes">../global.h</includes>
+        <includes refid="plane_8h" local="yes">../plane.h</includes>
+        <includes refid="geometry_8h" local="yes">../geometry.h</includes>
+        <incdepgraph>
+            <node id="7">
+                <label>stdbool.h</label>
+            </node>
+            <node id="4">
+                <label>stdarg.h</label>
+            </node>
+            <node id="9">
+                <label>../geometry.h</label>
+                <link refid="geometry_8h"/>
+            </node>
+            <node id="6">
+                <label>SDL2/SDL.h</label>
+            </node>
+            <node id="1">
+                <label>analytic/src/plane.c</label>
+                <link refid="plane_8c"/>
+                <childnode refid="2" relation="include">
+                </childnode>
+                <childnode refid="5" relation="include">
+                </childnode>
+                <childnode refid="8" relation="include">
+                </childnode>
+                <childnode refid="9" relation="include">
+                </childnode>
+            </node>
+            <node id="5">
+                <label>../global.h</label>
+                <link refid="analytic_2global_8h"/>
+                <childnode refid="6" relation="include">
+                </childnode>
+                <childnode refid="7" relation="include">
+                </childnode>
+            </node>
+            <node id="8">
+                <label>../plane.h</label>
+                <link refid="plane_8h"/>
+            </node>
+            <node id="2">
+                <label>../../log/log.h</label>
+                <link refid="log_8h_source"/>
+                <childnode refid="3" relation="include">
+                </childnode>
+                <childnode refid="4" relation="include">
+                </childnode>
+            </node>
+            <node id="3">
+                <label>stdio.h</label>
+            </node>
+        </incdepgraph>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="plane_8c_1ae62ae1fafbdf2386e362bf8013c09654" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Analytic_setBackground</definition>
+                <argsstring>(SDL_Color color, SDL_Renderer *renderer)</argsstring>
+                <name>Analytic_setBackground</name>
+                <param>
+                    <type>SDL_Color</type>
+                    <declname>color</declname>
+                </param>
+                <param>
+                    <type>SDL_Renderer *</type>
+                    <declname>renderer</declname>
+                </param>
+                <briefdescription>
+                    <para>Function to set the background of the plane.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>The function clears the background and re-renderer the plane</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>color</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The color or the background</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>renderer</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Renderer to which to apply the background</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/src/plane.c" line="6" column="6" bodyfile="analytic/src/plane.c" bodystart="6"
+                          bodyend="10"/>
+            </memberdef>
+            <memberdef kind="function" id="plane_8c_1a33aba8b285d58bbe789701e6fc308bd8" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Analytic_setAxes</definition>
+                <argsstring>(SDL_Color color, SDL_Renderer *renderer)</argsstring>
+                <name>Analytic_setAxes</name>
+                <param>
+                    <type>SDL_Color</type>
+                    <declname>color</declname>
+                </param>
+                <param>
+                    <type>SDL_Renderer *</type>
+                    <declname>renderer</declname>
+                </param>
+                <briefdescription>
+                    <para>Function to draw the Axes on the plane.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>The function draw point by point on defined
+                        <linebreak/>
+                        coordinates. Every DIVISOR pixels the function draw e red line
+                        <linebreak/>
+                        that is used to classify the unit
+                    </para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>color</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The color of the axes</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>renderer</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Renderer to which to draw the axes</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/src/plane.c" line="12" column="6" bodyfile="analytic/src/plane.c"
+                          bodystart="12" bodyend="55"/>
+            </memberdef>
+            <memberdef kind="function" id="plane_8c_1ac4e4ccd12bf4d819be77f35138b1be39" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Analytic_initPlane</definition>
+                <argsstring>(SDL_Renderer *renderer)</argsstring>
+                <name>Analytic_initPlane</name>
+                <param>
+                    <type>SDL_Renderer *</type>
+                    <declname>renderer</declname>
+                </param>
+                <briefdescription>
+                    <para>Function to init the plane.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>The function sets the default values for the plane;</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>renderer</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Renderer to which to init the plane</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/src/plane.c" line="57" column="6" bodyfile="analytic/src/plane.c"
+                          bodystart="57" bodyend="61"/>
+            </memberdef>
+            <memberdef kind="function" id="plane_8c_1aef4c54bb7462953d8d287d27f8a51758" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>void</type>
+                <definition>void Analytic_renderMethod</definition>
+                <argsstring>(SDL_Renderer *renderer)</argsstring>
+                <name>Analytic_renderMethod</name>
+                <param>
+                    <type>SDL_Renderer *</type>
+                    <declname>renderer</declname>
+                </param>
+                <briefdescription>
+                    <para>Function to render the places.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This function checks the data set and draws the places.</para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>renderer</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Renderer to which to render</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/src/plane.c" line="63" column="6" bodyfile="analytic/src/plane.c"
+                          bodystart="63" bodyend="77"/>
+            </memberdef>
+        </sectiondef>
         <briefdescription>
-<para>Function to set the background of the plane. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function clears the background and re-renderer the plane</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>color</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The color or the background </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>renderer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Renderer to which to apply the background </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/src/plane.c" line="6" column="6" bodyfile="analytic/src/plane.c" bodystart="6" bodyend="10"/>
-      </memberdef>
-      <memberdef kind="function" id="plane_8c_1a33aba8b285d58bbe789701e6fc308bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Analytic_setAxes</definition>
-        <argsstring>(SDL_Color color, SDL_Renderer *renderer)</argsstring>
-        <name>Analytic_setAxes</name>
-        <param>
-          <type>SDL_Color</type>
-          <declname>color</declname>
-        </param>
-        <param>
-          <type>SDL_Renderer *</type>
-          <declname>renderer</declname>
-        </param>
-        <briefdescription>
-<para>Function to draw the Axes on the plane. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>The function draw point by point on defined <linebreak/>
-coordinates. Every DIVISOR pixels the function draw e red line <linebreak/>
-that is used to classify the unit</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>color</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The color of the axes </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>renderer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Renderer to which to draw the axes </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/src/plane.c" line="12" column="6" bodyfile="analytic/src/plane.c" bodystart="12" bodyend="55"/>
-      </memberdef>
-      <memberdef kind="function" id="plane_8c_1ac4e4ccd12bf4d819be77f35138b1be39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Analytic_initPlane</definition>
-        <argsstring>(SDL_Renderer *renderer)</argsstring>
-        <name>Analytic_initPlane</name>
-        <param>
-          <type>SDL_Renderer *</type>
-          <declname>renderer</declname>
-        </param>
-        <briefdescription>
-<para>Function to init the plane. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>The function sets the default values for the plane;</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>renderer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Renderer to which to init the plane </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/src/plane.c" line="57" column="6" bodyfile="analytic/src/plane.c" bodystart="57" bodyend="61"/>
-      </memberdef>
-      <memberdef kind="function" id="plane_8c_1aef4c54bb7462953d8d287d27f8a51758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Analytic_renderMethod</definition>
-        <argsstring>(SDL_Renderer *renderer)</argsstring>
-        <name>Analytic_renderMethod</name>
-        <param>
-          <type>SDL_Renderer *</type>
-          <declname>renderer</declname>
-        </param>
-        <briefdescription>
-<para>Function to render the places. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This function checks the data set and draws the places.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>renderer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Renderer to which to render </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/src/plane.c" line="63" column="6" bodyfile="analytic/src/plane.c" bodystart="63" bodyend="77"/>
-      </memberdef>
-      </sectiondef>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../../log/log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../global.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../plane.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="plane_8h_1ae62ae1fafbdf2386e362bf8013c09654" kindref="member">Analytic_setBackground</ref>(SDL_Color<sp/>color,<sp/>SDL_Renderer<sp/>*renderer)</highlight></codeline>
-<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetRenderDrawColor(renderer,<sp/>color.r,<sp/>color.g,<sp/>color.b,<sp/>color.a);</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderClear(renderer);</highlight></codeline>
-<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="plane_8h_1a33aba8b285d58bbe789701e6fc308bd8" kindref="member">Analytic_setAxes</ref>(SDL_Color<sp/>color,<sp/>SDL_Renderer<sp/>*renderer)</highlight></codeline>
-<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_SetRenderDrawColor(renderer,<sp/>color.r,<sp/>color.g,<sp/>color.b,<sp/>color.a);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>-(<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2);<sp/>y<sp/>&lt;<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2;<sp/>y++)</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/>position<sp/>=<sp/>{x,<sp/>y};</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(y<sp/>%<sp/><ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref><sp/>==<sp/>0)</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x<sp/>=<sp/>x<sp/>-<sp/>5;<sp/>x<sp/>&lt;<sp/>5;<sp/>x++)</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/>position2<sp/>=<sp/>{x,<sp/>y};</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position2.<ref refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" kindref="member">y</ref><sp/>=<sp/>y<sp/>*<sp/>-1;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>5;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(position,<sp/>color,<sp/>renderer);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>-(<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2);<sp/>x<sp/>&lt;<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2;<sp/>x++)</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/>position<sp/>=<sp/>{x,<sp/>y};</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>%<sp/><ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref><sp/>==<sp/>0)</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y<sp/>=<sp/>y<sp/>-<sp/>5;<sp/>y<sp/>&lt;<sp/>5;<sp/>y++)</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref><sp/>position2<sp/>=<sp/>{x,<sp/>y};</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position2.<ref refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" kindref="member">x</ref><sp/>=<sp/>x<sp/>*<sp/>-1;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>-=<sp/>5;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">Analytic_createPoint</ref>(position,<sp/>color,<sp/>renderer);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderDrawLine(renderer,<sp/>(<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2)<sp/>-<sp/>7,<sp/>10,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2,<sp/>0);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderDrawLine(renderer,<sp/>(<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2)<sp/>+<sp/>7,<sp/>10,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2,<sp/>0);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderDrawLine(renderer,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>-<sp/>10,<sp/>(<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2)<sp/>-<sp/>7,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderDrawLine(renderer,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>-<sp/>10,<sp/>(<ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2)<sp/>+<sp/>7,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref>,<sp/><ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">SDL_WINDOW_SIZE</ref><sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="plane_8h_1ac4e4ccd12bf4d819be77f35138b1be39" kindref="member">Analytic_initPlane</ref>(SDL_Renderer<sp/>*renderer)</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="plane_8h_1ae62ae1fafbdf2386e362bf8013c09654" kindref="member">Analytic_setBackground</ref>(black,<sp/>renderer);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="plane_8h_1a33aba8b285d58bbe789701e6fc308bd8" kindref="member">Analytic_setAxes</ref>(white,<sp/>renderer);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="plane_8h_1aef4c54bb7462953d8d287d27f8a51758" kindref="member">Analytic_renderMethod</ref>(SDL_Renderer<sp/>*renderer)</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[ANALYTIC_POSITION_DATASET]<sp/>&amp;&amp;<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[ANALYTIC_CIRCUMFERENCE_DATASET])</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a7bcf2b79866a8b3387b1ab12eafe3635" kindref="member">Analytic_createTangents</ref>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5" kindref="member">position</ref>,<sp/><ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>,<sp/>renderer);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[ANALYTIC_LINE_DATASET])</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a8f1d8e436b2a4c4a1a307270be8a479c" kindref="member">Analytic_createLine</ref>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>,<sp/>renderer);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[ANALYTIC_CIRCUMFERENCE_DATASET])</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a423bc0666f5da3db90e89204b3f36de3" kindref="member">Analytic_createCircumference</ref>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">circumference</ref>,<sp/>renderer);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[ANALYTIC_PARABOLA_DATASET])</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a22dc585163e64ffc15c1b38c4edfdcbd" kindref="member">Analytic_createParabola</ref>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c" kindref="member">parabola</ref>,<sp/>renderer);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">dataSet</ref>[ANALYTIC_HYPERBOLE_DATASET])</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1aea684c82b570b0f6b5ebd16d1ee672c4" kindref="member">Analytic_createHyperbole</ref>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446" kindref="member">hyperbole</ref>,<sp/>renderer);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="stringliteral">&quot;Rendering<sp/>with<sp/>zoom:<sp/>%dx&quot;</highlight><highlight class="normal">,<sp/><ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref><sp/>/<sp/>10);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderPresent(renderer);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-    </programlisting>
-    <location file="analytic/src/plane.c"/>
-  </compounddef>
+        <programlisting>
+            <codeline lineno="1">
+                <highlight class="preprocessor">#include<sp/>&quot;../../log/log.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="2">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;../global.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="3">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;../plane.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="4">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#include<sp/>&quot;../geometry.h&quot;
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="5">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="6">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="plane_8h_1ae62ae1fafbdf2386e362bf8013c09654" kindref="member">
+                        Analytic_setBackground</ref>(SDL_Color<sp/>color,<sp/>SDL_Renderer<sp/>*renderer)
+                </highlight>
+            </codeline>
+            <codeline lineno="7">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="8">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_SetRenderDrawColor(renderer,<sp/>color.r,<sp/>color.g,<sp/>color.b,<sp/>color.a);
+                </highlight>
+            </codeline>
+            <codeline lineno="9">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_RenderClear(renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="10">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="11">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="12">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="plane_8h_1a33aba8b285d58bbe789701e6fc308bd8" kindref="member">Analytic_setAxes</ref>
+                    (SDL_Color<sp/>color,<sp/>SDL_Renderer<sp/>*renderer)
+                </highlight>
+            </codeline>
+            <codeline lineno="13">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_SetRenderDrawColor(renderer,<sp/>color.r,<sp/>color.g,<sp/>color.b,<sp/>color.a);
+                </highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>x<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="16">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y<sp/>=<sp/>-(
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2);<sp/>y<sp/>&lt;<sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2;<sp/>y++)
+                </highlight>
+            </codeline>
+            <codeline lineno="17">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="18">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref>
+                    <sp/>position<sp/>=<sp/>{x,<sp/>y};
+                </highlight>
+            </codeline>
+            <codeline lineno="19">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(y<sp/>%
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref>
+                    <sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="20">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="21">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(x<sp/>=<sp/>x<sp/>-<sp/>5;<sp/>x<sp/>&lt;<sp/>5;<sp/>x++)
+                </highlight>
+            </codeline>
+            <codeline lineno="22">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="23">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref>
+                    <sp/>position2<sp/>=<sp/>{x,<sp/>y};
+                </highlight>
+            </codeline>
+            <codeline lineno="24">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">
+                        Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="25">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>position2.
+                    <ref refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" kindref="member">y</ref>
+                    <sp/>=<sp/>y<sp/>*<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="26">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">
+                        Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="27">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="28">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>x<sp/>-=<sp/>5;
+                </highlight>
+            </codeline>
+            <codeline lineno="29">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="30">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">
+                        Analytic_createPoint</ref>(position,<sp/>color,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="31">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>y<sp/>=<sp/>0;
+                </highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal"><sp/>x<sp/>=<sp/>-(
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2);<sp/>x<sp/>&lt;<sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2;<sp/>x++)
+                </highlight>
+            </codeline>
+            <codeline lineno="35">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="36">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref>
+                    <sp/>position<sp/>=<sp/>{x,<sp/>y};
+                </highlight>
+            </codeline>
+            <codeline lineno="37">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(x<sp/>%
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref>
+                    <sp/>==<sp/>0)
+                </highlight>
+            </codeline>
+            <codeline lineno="38">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="39">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">for</highlight>
+                <highlight class="normal"><sp/>(y<sp/>=<sp/>y<sp/>-<sp/>5;<sp/>y<sp/>&lt;<sp/>5;<sp/>y++)
+                </highlight>
+            </codeline>
+            <codeline lineno="40">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>{
+                </highlight>
+            </codeline>
+            <codeline lineno="41">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="struct_analytic___position" kindref="compound">Analytic_Position</ref>
+                    <sp/>position2<sp/>=<sp/>{x,<sp/>y};
+                </highlight>
+            </codeline>
+            <codeline lineno="42">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">
+                        Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="43">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>position2.
+                    <ref refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" kindref="member">x</ref>
+                    <sp/>=<sp/>x<sp/>*<sp/>-1;
+                </highlight>
+            </codeline>
+            <codeline lineno="44">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">
+                        Analytic_createPoint</ref>(position2,<sp/>red,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="45">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="46">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>y<sp/>-=<sp/>5;
+                </highlight>
+            </codeline>
+            <codeline lineno="47">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="48">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a91271cf91f67ee374615ad91f4ddff9f" kindref="member">
+                        Analytic_createPoint</ref>(position,<sp/>color,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="49">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>}
+                </highlight>
+            </codeline>
+            <codeline lineno="50">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="51">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_RenderDrawLine(renderer,<sp/>(
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2)<sp/>-<sp/>7,<sp/>10,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="52">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_RenderDrawLine(renderer,<sp/>(
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2)<sp/>+<sp/>7,<sp/>10,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2,<sp/>0);
+                </highlight>
+            </codeline>
+            <codeline lineno="53">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_RenderDrawLine(renderer,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>-<sp/>10,<sp/>(
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2)<sp/>-<sp/>7,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE</ref>,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2);
+                </highlight>
+            </codeline>
+            <codeline lineno="54">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_RenderDrawLine(renderer,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>-<sp/>10,<sp/>(
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2)<sp/>+<sp/>7,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE</ref>,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a3e0900de701e9d1d0acad5870bbe67c0" kindref="member">
+                        SDL_WINDOW_SIZE
+                    </ref>
+                    <sp/>/<sp/>2);
+                </highlight>
+            </codeline>
+            <codeline lineno="55">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="56">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="57">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="plane_8h_1ac4e4ccd12bf4d819be77f35138b1be39" kindref="member">Analytic_initPlane</ref>
+                    (SDL_Renderer<sp/>*renderer)
+                </highlight>
+            </codeline>
+            <codeline lineno="58">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="59">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="plane_8h_1ae62ae1fafbdf2386e362bf8013c09654" kindref="member">
+                        Analytic_setBackground</ref>(black,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="60">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="plane_8h_1a33aba8b285d58bbe789701e6fc308bd8" kindref="member">Analytic_setAxes</ref>
+                    (white,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="61">
+                <highlight class="normal">}</highlight>
+            </codeline>
+            <codeline lineno="62">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="63">
+                <highlight class="normal"></highlight>
+                <highlight class="keywordtype">void</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="plane_8h_1aef4c54bb7462953d8d287d27f8a51758" kindref="member">
+                        Analytic_renderMethod</ref>(SDL_Renderer<sp/>*renderer)
+                </highlight>
+            </codeline>
+            <codeline lineno="64">
+                <highlight class="normal">{</highlight>
+            </codeline>
+            <codeline lineno="65">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18"
+                                                     kindref="member">SINGLE</ref>.<ref
+                        refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">
+                    dataSet</ref>[ANALYTIC_POSITION_DATASET]<sp/>&amp;&amp;<sp/>
+                    <ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>
+                    .<ref refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">
+                        dataSet</ref>[ANALYTIC_CIRCUMFERENCE_DATASET])
+                </highlight>
+            </codeline>
+            <codeline lineno="66">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a7bcf2b79866a8b3387b1ab12eafe3635" kindref="member">
+                        Analytic_createTangents</ref>(<ref
+                        refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">
+                    SINGLE</ref>.<ref refid="struct_analytic___single_1a1102699c826023a9e4d4eef30263dff5"
+                                      kindref="member">position</ref>,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">SINGLE</ref>
+                    .<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149" kindref="member">
+                    circumference</ref>,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="67">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18"
+                                                     kindref="member">SINGLE</ref>.<ref
+                        refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">
+                    dataSet</ref>[ANALYTIC_LINE_DATASET])
+                </highlight>
+            </codeline>
+            <codeline lineno="68">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a8f1d8e436b2a4c4a1a307270be8a479c" kindref="member">
+                        Analytic_createLine</ref>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18"
+                                                       kindref="member">SINGLE</ref>.<ref
+                        refid="struct_analytic___single_1a64b1e368ae5efda3e953579f09307012" kindref="member">line</ref>,
+                    <sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="69">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18"
+                                                     kindref="member">SINGLE</ref>.<ref
+                        refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">
+                    dataSet</ref>[ANALYTIC_CIRCUMFERENCE_DATASET])
+                </highlight>
+            </codeline>
+            <codeline lineno="70">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a423bc0666f5da3db90e89204b3f36de3" kindref="member">
+                        Analytic_createCircumference</ref>(<ref
+                        refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">
+                    SINGLE</ref>.<ref refid="struct_analytic___single_1ae292102f069b509ed4834ff59b6a8149"
+                                      kindref="member">circumference</ref>,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="71">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18"
+                                                     kindref="member">SINGLE</ref>.<ref
+                        refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">
+                    dataSet</ref>[ANALYTIC_PARABOLA_DATASET])
+                </highlight>
+            </codeline>
+            <codeline lineno="72">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1a22dc585163e64ffc15c1b38c4edfdcbd" kindref="member">
+                        Analytic_createParabola</ref>(<ref
+                        refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">
+                    SINGLE</ref>.<ref refid="struct_analytic___single_1aa8976d21354aea233adc267a71056a4c"
+                                      kindref="member">parabola</ref>,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="73">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                </highlight>
+                <highlight class="keywordflow">if</highlight>
+                <highlight class="normal"><sp/>(<ref refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18"
+                                                     kindref="member">SINGLE</ref>.<ref
+                        refid="struct_analytic___single_1a69667882f304d73f0c391cfb9bda7054" kindref="member">
+                    dataSet</ref>[ANALYTIC_HYPERBOLE_DATASET])
+                </highlight>
+            </codeline>
+            <codeline lineno="74">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <ref refid="geometry_8h_1aea684c82b570b0f6b5ebd16d1ee672c4" kindref="member">
+                        Analytic_createHyperbole</ref>(<ref
+                        refid="analytic_2global_8h_1a7a035146b05dc590fece4a070811ab18" kindref="member">
+                    SINGLE</ref>.<ref refid="struct_analytic___single_1ace86c643912227afeb37f05d06511446"
+                                      kindref="member">hyperbole</ref>,<sp/>renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="75">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>log_debug(
+                </highlight>
+                <highlight class="stringliteral">&quot;Rendering<sp/>with<sp/>zoom:<sp/>%dx&quot;
+                </highlight>
+                <highlight class="normal">,
+                    <sp/>
+                    <ref refid="analytic_2global_8h_1aa7a31ad64d830ee62750ac6bc1303442" kindref="member">DIVISOR</ref>
+                    <sp/>/<sp/>10);
+                </highlight>
+            </codeline>
+            <codeline lineno="76">
+                <highlight class="normal">
+                    <sp/>
+                    <sp/>
+                    <sp/>
+                    <sp/>SDL_RenderPresent(renderer);
+                </highlight>
+            </codeline>
+            <codeline lineno="77">
+                <highlight class="normal">}</highlight>
+            </codeline>
+        </programlisting>
+        <location file="analytic/src/plane.c"/>
+    </compounddef>
 </doxygen>

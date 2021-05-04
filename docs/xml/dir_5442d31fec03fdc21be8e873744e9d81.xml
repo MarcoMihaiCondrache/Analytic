@@ -1,18 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="dir_5442d31fec03fdc21be8e873744e9d81" kind="dir">
-    <compoundname>analytic</compoundname>
-    <innerdir refid="dir_67d2e13ca3f01184a214626909208d62">analytic/src</innerdir>
-    <innerfile refid="analytic_8h">analytic.h</innerfile>
-    <innerfile refid="functions_8h">functions.h</innerfile>
-    <innerfile refid="geometry_8h">geometry.h</innerfile>
-    <innerfile refid="analytic_2global_8h">global.h</innerfile>
-    <innerfile refid="plane_8h">plane.h</innerfile>
-    <innerfile refid="scale_8h">scale.h</innerfile>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="analytic/"/>
-  </compounddef>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="dir_5442d31fec03fdc21be8e873744e9d81" kind="dir">
+        <compoundname>analytic</compoundname>
+        <innerdir refid="dir_67d2e13ca3f01184a214626909208d62">analytic/src</innerdir>
+        <innerfile refid="analytic_8h">analytic.h</innerfile>
+        <innerfile refid="functions_8h">functions.h</innerfile>
+        <innerfile refid="geometry_8h">geometry.h</innerfile>
+        <innerfile refid="analytic_2global_8h">global.h</innerfile>
+        <innerfile refid="plane_8h">plane.h</innerfile>
+        <innerfile refid="scale_8h">scale.h</innerfile>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <location file="analytic/"/>
+    </compounddef>
 </doxygen>

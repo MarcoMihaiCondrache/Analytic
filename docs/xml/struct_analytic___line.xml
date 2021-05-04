@@ -1,47 +1,60 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="struct_analytic___line" kind="struct" language="C++" prot="public">
-    <compoundname>Analytic_Line</compoundname>
-    <includes refid="analytic_2global_8h" local="no">global.h</includes>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float m</definition>
-        <argsstring></argsstring>
-        <name>m</name>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="struct_analytic___line" kind="struct" language="C++" prot="public">
+        <compoundname>Analytic_Line</compoundname>
+        <includes refid="analytic_2global_8h" local="no">global.h</includes>
+        <sectiondef kind="public-attrib">
+            <memberdef kind="variable" id="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float m</definition>
+                <argsstring></argsstring>
+                <name>m</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Straight line coefficient</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="133" column="11" bodyfile="analytic/global.h" bodystart="133"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float q</definition>
+                <argsstring></argsstring>
+                <name>q</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Known term of the line</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="134" column="11" bodyfile="analytic/global.h" bodystart="134"
+                          bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
         <briefdescription>
+            <para>Straight Line Structure ( <formula id="0">$y = mx + q$</formula>)
+            </para>
         </briefdescription>
         <detaileddescription>
-<para>Straight line coefficient </para>
         </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="133" column="11" bodyfile="analytic/global.h" bodystart="133" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float q</definition>
-        <argsstring></argsstring>
-        <name>q</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Known term of the line </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="134" column="11" bodyfile="analytic/global.h" bodystart="134" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-    <briefdescription>
-<para>Straight Line Structure ( <formula id="0">$y = mx + q$</formula>) </para>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="analytic/global.h" line="132" column="1" bodyfile="analytic/global.h" bodystart="131" bodyend="135"/>
-    <listofallmembers>
-      <member refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" prot="public" virt="non-virtual"><scope>Analytic_Line</scope><name>m</name></member>
-      <member refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" prot="public" virt="non-virtual"><scope>Analytic_Line</scope><name>q</name></member>
-    </listofallmembers>
-  </compounddef>
+        <location file="analytic/global.h" line="132" column="1" bodyfile="analytic/global.h" bodystart="131"
+                  bodyend="135"/>
+        <listofallmembers>
+            <member refid="struct_analytic___line_1ac51334f57ef8b81c0629c9421798c344" prot="public" virt="non-virtual">
+                <scope>Analytic_Line</scope>
+                <name>m</name>
+            </member>
+            <member refid="struct_analytic___line_1a0a19a0620af7373e3ddba0ce4e1058e1" prot="public" virt="non-virtual">
+                <scope>Analytic_Line</scope>
+                <name>q</name>
+            </member>
+        </listofallmembers>
+    </compounddef>
 </doxygen>

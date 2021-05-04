@@ -1,103 +1,166 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="input_8h" kind="file" language="C++">
-    <compoundname>input.h</compoundname>
-    <includedby refid="draw_8c" local="no">draw.c</includedby>
-    <includedby refid="input_8c" local="yes">ui/src/input.c</includedby>
-    <includedby refid="output_8c" local="yes">ui/src/output.c</includedby>
-    <invincdepgraph>
-      <node id="1">
-        <label>ui/input.h</label>
-        <link refid="input_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>draw.c</label>
-        <link refid="draw_8c"/>
-      </node>
-    </invincdepgraph>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="input_8h_1af14ccc0f6e3f0511b2228e981c184869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int Ui_readInput</definition>
-        <argsstring>(const char *LEANDING, const char *FORMAT,...)</argsstring>
-        <name>Ui_readInput</name>
-        <param>
-          <type>const char *</type>
-          <declname>LEANDING</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>FORMAT</declname>
-        </param>
-        <param>
-          <type>...</type>
-        </param>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="input_8h" kind="file" language="C++">
+        <compoundname>input.h</compoundname>
+        <includedby refid="draw_8c" local="no">draw.c</includedby>
+        <includedby refid="input_8c" local="yes">ui/src/input.c</includedby>
+        <includedby refid="output_8c" local="yes">ui/src/output.c</includedby>
+        <invincdepgraph>
+            <node id="1">
+                <label>ui/input.h</label>
+                <link refid="input_8h"/>
+                <childnode refid="2" relation="include">
+                </childnode>
+            </node>
+            <node id="2">
+                <label>draw.c</label>
+                <link refid="draw_8c"/>
+            </node>
+        </invincdepgraph>
+        <sectiondef kind="func">
+            <memberdef kind="function" id="input_8h_1af14ccc0f6e3f0511b2228e981c184869" prot="public" static="no"
+                       const="no" explicit="no" inline="no" virt="non-virtual">
+                <type>int</type>
+                <definition>int Ui_readInput</definition>
+                <argsstring>(const char *LEANDING, const char *FORMAT,...)</argsstring>
+                <name>Ui_readInput</name>
+                <param>
+                    <type>const char *</type>
+                    <declname>LEANDING</declname>
+                </param>
+                <param>
+                    <type>const char *</type>
+                    <declname>FORMAT</declname>
+                </param>
+                <param>
+                    <type>...</type>
+                </param>
+                <briefdescription>
+                    <para>Function to read an user input.</para>
+                </briefdescription>
+                <detaileddescription>
+                    <para>This function use the standard IO library to create something more modern and sample. It
+                        prints a text that can be for example what the user have to enter. After this there is the
+                        TRAILING, the string printed on the same line of the scanf.
+                    </para>
+                    <para>
+                        <parameterlist kind="param">
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>LEANDING</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Text to print before the input request</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>FORMAT</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>The format of the input to read</para>
+                                </parameterdescription>
+                            </parameteritem>
+                            <parameteritem>
+                                <parameternamelist>
+                                    <parametername>...</parametername>
+                                </parameternamelist>
+                                <parameterdescription>
+                                    <para>Parameters to use in the format string</para>
+                                </parameterdescription>
+                            </parameteritem>
+                        </parameterlist>
+                        <simplesect kind="return">
+                            <para>int The operation result</para>
+                        </simplesect>
+                        <simplesect kind="see">
+                            <para>
+                                <ref refid="ui_2global_8h_1a8f1b998f57a3bd99d4d0e43e94e22841" kindref="member">
+                                    TRAILING
+                                </ref>
+                            </para>
+                        </simplesect>
+                    </para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="ui/input.h" line="32" column="12" bodyfile="ui/src/input.c" bodystart="10" bodyend="26"
+                          declfile="ui/input.h" declline="32" declcolumn="12"/>
+            </memberdef>
+        </sectiondef>
         <briefdescription>
-<para>Function to read an user input. </para>
+            <para>Header file for ui input functions.</para>
         </briefdescription>
         <detaileddescription>
-<para>This function use the standard IO library to create something more modern and sample. It prints a text that can be for example what the user have to enter. After this there is the TRAILING, the string printed on the same line of the scanf.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>LEANDING</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Text to print before the input request </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>FORMAT</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The format of the input to read </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>...</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Parameters to use in the format string</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>int The operation result</para>
-</simplesect>
-<simplesect kind="see"><para><ref refid="ui_2global_8h_1a8f1b998f57a3bd99d4d0e43e94e22841" kindref="member">TRAILING</ref> </para>
-</simplesect>
-</para>
+            <para>
+                <simplesect kind="author">
+                    <para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">
+                        marcomihaicondrache@gmail.com</ulink>)
+                    </para>
+                </simplesect>
+                <simplesect kind="version">
+                    <para>1.0</para>
+                </simplesect>
+                <simplesect kind="date">
+                    <para>25-03-2020</para>
+                </simplesect>
+                <simplesect kind="copyright">
+                    <para>Copyright (c) 2020</para>
+                </simplesect>
+                <ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink>
+            </para>
         </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ui/input.h" line="32" column="12" bodyfile="ui/src/input.c" bodystart="10" bodyend="26" declfile="ui/input.h" declline="32" declcolumn="12"/>
-      </memberdef>
-      </sectiondef>
-    <briefdescription>
-<para>Header file for ui input functions. </para>
-    </briefdescription>
-    <detaileddescription>
-<para><simplesect kind="author"><para>Marco Mihai Condrache (<ulink url="mailto:marcomihaicondrache@gmail.com">marcomihaicondrache@gmail.com</ulink>) </para>
-</simplesect>
-<simplesect kind="version"><para>1.0 </para>
-</simplesect>
-<simplesect kind="date"><para>25-03-2020</para>
-</simplesect>
-<simplesect kind="copyright"><para>Copyright (c) 2020</para>
-</simplesect>
-<ulink url="https://github.com/MarcoMihaiCondrache">https://github.com/MarcoMihaiCondrache</ulink> </para>
-    </detaileddescription>
-    <programlisting>
-<codeline lineno="1"></codeline>
-<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>UI_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UI_INPUT_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*LEANDING,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*FORMAT,<sp/>...);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-    </programlisting>
-    <location file="ui/input.h"/>
-  </compounddef>
+        <programlisting>
+            <codeline lineno="1"></codeline>
+            <codeline lineno="13">
+                <highlight class="preprocessor">#ifndef<sp/>UI_INPUT_H
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="14">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#define<sp/>UI_INPUT_H
+                </highlight>
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="15">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="32">
+                <highlight class="keyword">extern</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">int</highlight>
+                <highlight class="normal">
+                    <sp/>
+                    <ref refid="input_8h_1af14ccc0f6e3f0511b2228e981c184869" kindref="member">Ui_readInput</ref>(
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*LEANDING,
+                    <sp/>
+                </highlight>
+                <highlight class="keyword">const</highlight>
+                <highlight class="normal">
+                    <sp/>
+                </highlight>
+                <highlight class="keywordtype">char</highlight>
+                <highlight class="normal"><sp/>*FORMAT,<sp/>...);
+                </highlight>
+            </codeline>
+            <codeline lineno="33">
+                <highlight class="normal"></highlight>
+            </codeline>
+            <codeline lineno="34">
+                <highlight class="normal"></highlight>
+                <highlight class="preprocessor">#endif</highlight>
+            </codeline>
+        </programlisting>
+        <location file="ui/input.h"/>
+    </compounddef>
 </doxygen>

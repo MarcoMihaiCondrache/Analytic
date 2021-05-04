@@ -1,115 +1,174 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="struct_analytic___hyperbole" kind="struct" language="C++" prot="public">
-    <compoundname>Analytic_Hyperbole</compoundname>
-    <includes refid="analytic_2global_8h" local="no">global.h</includes>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" prot="public" static="no" mutable="no">
-        <type><ref refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" kindref="member">Analytic_HyperboleType</ref></type>
-        <definition>Analytic_HyperboleType type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="struct_analytic___hyperbole" kind="struct" language="C++" prot="public">
+        <compoundname>Analytic_Hyperbole</compoundname>
+        <includes refid="analytic_2global_8h" local="no">global.h</includes>
+        <sectiondef kind="public-attrib">
+            <memberdef kind="variable" id="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" prot="public"
+                       static="no" mutable="no">
+                <type>
+                    <ref refid="analytic_2global_8h_1ab73e7d4dd747c31293420cd98a14c8ae" kindref="member">
+                        Analytic_HyperboleType
+                    </ref>
+                </type>
+                <definition>Analytic_HyperboleType type</definition>
+                <argsstring></argsstring>
+                <name>type</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Type of the hyperbole</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="164" column="28" bodyfile="analytic/global.h" bodystart="164"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float a</definition>
+                <argsstring></argsstring>
+                <name>a</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Coefficient of the base equation / homographic function</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="165" column="11" bodyfile="analytic/global.h" bodystart="165"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float b</definition>
+                <argsstring></argsstring>
+                <name>b</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Coefficient of the base equation / homographic function</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="166" column="11" bodyfile="analytic/global.h" bodystart="166"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float k</definition>
+                <argsstring></argsstring>
+                <name>k</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Coefficient of the equation xy = k</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="167" column="11" bodyfile="analytic/global.h" bodystart="167"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float c</definition>
+                <argsstring></argsstring>
+                <name>c</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Coefficient of the homographic function</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="168" column="11" bodyfile="analytic/global.h" bodystart="168"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float d</definition>
+                <argsstring></argsstring>
+                <name>d</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Coefficient of the homographic function</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="169" column="11" bodyfile="analytic/global.h" bodystart="169"
+                          bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
         <briefdescription>
+            <para>Hyperbole structure.</para>
         </briefdescription>
         <detaileddescription>
-<para>Type of the hyperbole </para>
+            <para>Hyperbole types supported:</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>
+                            <formula id="17">$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$</formula>
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>
+                            <formula id="18">$\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$</formula>
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>
+                            <formula id="13">$xy = k$</formula>
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para>
+                            <formula id="15">$y = \frac{ax + b}{cx + d}$</formula>
+                        </para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="164" column="28" bodyfile="analytic/global.h" bodystart="164" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float a</definition>
-        <argsstring></argsstring>
-        <name>a</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Coefficient of the base equation / homographic function </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="165" column="11" bodyfile="analytic/global.h" bodystart="165" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float b</definition>
-        <argsstring></argsstring>
-        <name>b</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Coefficient of the base equation / homographic function </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="166" column="11" bodyfile="analytic/global.h" bodystart="166" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float k</definition>
-        <argsstring></argsstring>
-        <name>k</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Coefficient of the equation xy = k </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="167" column="11" bodyfile="analytic/global.h" bodystart="167" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float c</definition>
-        <argsstring></argsstring>
-        <name>c</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Coefficient of the homographic function </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="168" column="11" bodyfile="analytic/global.h" bodystart="168" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float d</definition>
-        <argsstring></argsstring>
-        <name>d</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Coefficient of the homographic function </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="169" column="11" bodyfile="analytic/global.h" bodystart="169" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-    <briefdescription>
-<para>Hyperbole structure. </para>
-    </briefdescription>
-    <detaileddescription>
-<para>Hyperbole types supported:</para>
-<para><itemizedlist>
-<listitem><para><formula id="17">$\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$</formula></para>
-</listitem><listitem><para><formula id="18">$\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$</formula></para>
-</listitem><listitem><para><formula id="13">$xy = k$</formula></para>
-</listitem><listitem><para><formula id="15">$y = \frac{ax + b}{cx + d}$</formula> </para>
-</listitem></itemizedlist>
-</para>
-    </detaileddescription>
-    <location file="analytic/global.h" line="163" column="1" bodyfile="analytic/global.h" bodystart="162" bodyend="170"/>
-    <listofallmembers>
-      <member refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" prot="public" virt="non-virtual"><scope>Analytic_Hyperbole</scope><name>a</name></member>
-      <member refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" prot="public" virt="non-virtual"><scope>Analytic_Hyperbole</scope><name>b</name></member>
-      <member refid="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" prot="public" virt="non-virtual"><scope>Analytic_Hyperbole</scope><name>c</name></member>
-      <member refid="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" prot="public" virt="non-virtual"><scope>Analytic_Hyperbole</scope><name>d</name></member>
-      <member refid="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" prot="public" virt="non-virtual"><scope>Analytic_Hyperbole</scope><name>k</name></member>
-      <member refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" prot="public" virt="non-virtual"><scope>Analytic_Hyperbole</scope><name>type</name></member>
-    </listofallmembers>
-  </compounddef>
+        <location file="analytic/global.h" line="163" column="1" bodyfile="analytic/global.h" bodystart="162"
+                  bodyend="170"/>
+        <listofallmembers>
+            <member refid="struct_analytic___hyperbole_1a4aec1a5be9d9a4a394a2e49e9744286e" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Hyperbole</scope>
+                <name>a</name>
+            </member>
+            <member refid="struct_analytic___hyperbole_1a83fc1af92e29717b4513d121b0c72c7d" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Hyperbole</scope>
+                <name>b</name>
+            </member>
+            <member refid="struct_analytic___hyperbole_1ae78103ab33f03590e84ff7bc735629d7" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Hyperbole</scope>
+                <name>c</name>
+            </member>
+            <member refid="struct_analytic___hyperbole_1a3fbbd8a3959e76a2bc3455d3bade52dc" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Hyperbole</scope>
+                <name>d</name>
+            </member>
+            <member refid="struct_analytic___hyperbole_1a9fc4cca635a26c692681a7071e379aa7" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Hyperbole</scope>
+                <name>k</name>
+            </member>
+            <member refid="struct_analytic___hyperbole_1a97f046b32491dc439326d6e31b1e1f0b" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Hyperbole</scope>
+                <name>type</name>
+            </member>
+        </listofallmembers>
+    </compounddef>
 </doxygen>

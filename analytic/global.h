@@ -13,7 +13,7 @@
 #ifndef ANALYTIC_GLOBAL_H
 #define ANALYTIC_GLOBAL_H
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include <stdbool.h>
 
 /**
@@ -80,8 +80,7 @@ static const SDL_Color yellow = {0xF5, 0xF2, 0x42, 0xFF};
  * 
  * @see SINGLE
  */
-typedef enum
-{
+typedef enum {
     ANALYTIC_POSITION_DATASET,
     ANALYTIC_LINE_DATASET,
     ANALYTIC_CIRCUMFERENCE_DATASET,
@@ -94,8 +93,7 @@ typedef enum
  * 
  *  @see Analytic_Parabola
  */
-typedef enum
-{
+typedef enum {
     Analytic_ParabolaX,
     Analytic_ParabolaY
 } Analytic_ParabolaType;
@@ -105,8 +103,7 @@ typedef enum
  * 
  *  @see Analytic_Hyperbole
  */
-typedef enum
-{
+typedef enum {
     Analytic_HyperboleX,
     Analytic_HyperboleY,
     Analytic_HyperboleK,
@@ -118,8 +115,7 @@ typedef enum
  * 
  *  @see Analytic_Position
  */
-typedef enum
-{
+typedef enum {
     Analytic_PositionRelative,
     Analytic_PositionAbsolute
 } Analytic_PositionType;
@@ -128,8 +124,7 @@ typedef enum
  * @brief Straight Line Structure (\f$y = mx + q\f$)
  * 
  */
-typedef struct Analytic_Line
-{
+typedef struct Analytic_Line {
     float m; /**< Straight line coefficient */
     float q; /**< Known term of the line */
 } Analytic_Line;
@@ -138,8 +133,7 @@ typedef struct Analytic_Line
  * @brief Circumference structure (\f$x^2 + y^2 + ax + by + c = 0\f$)
  * 
  */
-typedef struct Analytic_Circumference
-{
+typedef struct Analytic_Circumference {
     float a; /**< First Coefficient of the equation */
     float b; /**< Second Coefficient of the equation */
     float c; /**< Third Coefficient of the equation */
@@ -159,8 +153,7 @@ typedef struct Analytic_Circumference
  * * \f$y = \frac{ax + b}{cx + d}\f$
  * 
  */
-typedef struct Analytic_Hyperbole
-{
+typedef struct Analytic_Hyperbole {
     Analytic_HyperboleType type; /**< Type of the hyperbole */
     float a;                     /**< Coefficient of the base equation / homographic function */
     float b;                     /**< Coefficient of the base equation / homographic function */
@@ -173,8 +166,7 @@ typedef struct Analytic_Hyperbole
  * @brief Parabola structure \f$y = ax^2 + bx + c\f$ or \f$x = ay^2 + by + c\f$
  * 
  */
-typedef struct Analytic_Parabola
-{
+typedef struct Analytic_Parabola {
     Analytic_ParabolaType type; /**< Type of the parabola */
     float a;                    /**< First Coefficient of the equation */
     float b;                    /**< Second Coefficient of the equation */
@@ -185,8 +177,7 @@ typedef struct Analytic_Parabola
  * @brief Position structure (Contains the coordinates of a point)
  * 
  */
-typedef struct Analytic_Position
-{
+typedef struct Analytic_Position {
     float x; /**< X coordinate */
     float y; /**< Y coordinate */
 } Analytic_Position;
@@ -198,8 +189,7 @@ typedef struct Analytic_Position
  * if a place contains the data to render if not it will not be rendered.
  * 
  */
-typedef struct Analytic_Single
-{
+typedef struct Analytic_Single {
     bool dataSet[4];                      /**< Array that contains the status of the places */
     Analytic_Position position;           /**< Position of the data set (for the tangents) */
     Analytic_Line line;                   /**< Line of the data set (tangets and simple) */

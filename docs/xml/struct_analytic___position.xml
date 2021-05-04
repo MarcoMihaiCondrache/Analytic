@@ -1,47 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="struct_analytic___position" kind="struct" language="C++" prot="public">
-    <compoundname>Analytic_Position</compoundname>
-    <includes refid="analytic_2global_8h" local="no">global.h</includes>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float x</definition>
-        <argsstring></argsstring>
-        <name>x</name>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="struct_analytic___position" kind="struct" language="C++" prot="public">
+        <compoundname>Analytic_Position</compoundname>
+        <includes refid="analytic_2global_8h" local="no">global.h</includes>
+        <sectiondef kind="public-attrib">
+            <memberdef kind="variable" id="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float x</definition>
+                <argsstring></argsstring>
+                <name>x</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>X coordinate</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="190" column="11" bodyfile="analytic/global.h" bodystart="190"
+                          bodyend="-1"/>
+            </memberdef>
+            <memberdef kind="variable" id="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" prot="public"
+                       static="no" mutable="no">
+                <type>float</type>
+                <definition>float y</definition>
+                <argsstring></argsstring>
+                <name>y</name>
+                <briefdescription>
+                </briefdescription>
+                <detaileddescription>
+                    <para>Y coordinate</para>
+                </detaileddescription>
+                <inbodydescription>
+                </inbodydescription>
+                <location file="analytic/global.h" line="191" column="11" bodyfile="analytic/global.h" bodystart="191"
+                          bodyend="-1"/>
+            </memberdef>
+        </sectiondef>
         <briefdescription>
+            <para>Position structure (Contains the coordinates of a point)</para>
         </briefdescription>
         <detaileddescription>
-<para>X coordinate </para>
         </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="190" column="11" bodyfile="analytic/global.h" bodystart="190" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float y</definition>
-        <argsstring></argsstring>
-        <name>y</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Y coordinate </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="analytic/global.h" line="191" column="11" bodyfile="analytic/global.h" bodystart="191" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-    <briefdescription>
-<para>Position structure (Contains the coordinates of a point) </para>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="analytic/global.h" line="189" column="1" bodyfile="analytic/global.h" bodystart="188" bodyend="192"/>
-    <listofallmembers>
-      <member refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" prot="public" virt="non-virtual"><scope>Analytic_Position</scope><name>x</name></member>
-      <member refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" prot="public" virt="non-virtual"><scope>Analytic_Position</scope><name>y</name></member>
-    </listofallmembers>
-  </compounddef>
+        <location file="analytic/global.h" line="189" column="1" bodyfile="analytic/global.h" bodystart="188"
+                  bodyend="192"/>
+        <listofallmembers>
+            <member refid="struct_analytic___position_1ad0da36b2558901e21e7a30f6c227a45e" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Position</scope>
+                <name>x</name>
+            </member>
+            <member refid="struct_analytic___position_1aa4f0d3eebc3c443f9be81bf48561a217" prot="public"
+                    virt="non-virtual">
+                <scope>Analytic_Position</scope>
+                <name>y</name>
+            </member>
+        </listofallmembers>
+    </compounddef>
 </doxygen>

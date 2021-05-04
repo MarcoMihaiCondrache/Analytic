@@ -7,14 +7,12 @@
 #include "../input.h"
 #include "../output.h"
 
-int Ui_readInput(const char *leading, const char *format, ...)
-{
+int Ui_readInput(const char *leading, const char *format, ...) {
     va_list inputArg;
     int whileExit = 0;
     va_start(inputArg, format);
-    while (!whileExit)
-    {
-        printf(leading);
+    while (!whileExit) {
+        printf("%s", leading);
         printf("\n");
         printf(TRAILING);
         whileExit = vscanf(format, inputArg);

@@ -63,6 +63,7 @@ extern void Ui_clear();
  * @see CLEAR
  * @see Ui_readInput
  */
-extern int Ui_handleMenu(const char *leadingMsg, const char *selectionMsg, const char *items[], int itemsCount, bool clear);
+extern int
+Ui_handleMenu(const char *leadingMsg, const char *selectionMsg, const char *items[], int itemsCount, bool clear);
 
 #endif

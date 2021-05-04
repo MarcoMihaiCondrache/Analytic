@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
-  <compounddef id="dir_bddad71ee8844db90baa0118102329e1" kind="dir">
-    <compoundname>log/src</compoundname>
-    <innerfile refid="log_8c">log.c</innerfile>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="log/src/"/>
-  </compounddef>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd"
+         version="1.8.17">
+    <compounddef id="dir_bddad71ee8844db90baa0118102329e1" kind="dir">
+        <compoundname>log/src</compoundname>
+        <innerfile refid="log_8c">log.c</innerfile>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <location file="log/src/"/>
+    </compounddef>
 </doxygen>
