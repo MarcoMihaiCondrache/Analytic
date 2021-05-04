@@ -20,7 +20,7 @@
  @licend  The above is the entire license notice
  for the JavaScript code in this file
  */
-var navTreeSubIndices = new Array();
+var navTreeSubIndices = [];
 var arrowDown = '&#9660;';
 var arrowRight = '&#9658;';
 
@@ -156,7 +156,7 @@ function gotoAnchor(anchor, aname, updateLocation) {
 }
 
 function newNode(o, po, text, link, childrenData, lastNode) {
-    var node = new Object();
+    var node = {};
     node.children = Array();
     node.childrenData = childrenData;
     node.depth = po.depth + 1;
@@ -459,12 +459,12 @@ $(window).on('load', function () {
 });
 
 function initNavTree(toroot, relpath) {
-    var o = new Object();
+    var o = {};
     o.toroot = toroot;
-    o.node = new Object();
+    o.node = {};
     o.node.li = document.getElementById("nav-tree-contents");
     o.node.childrenData = NAVTREE;
-    o.node.children = new Array();
+    o.node.children = [];
     o.node.childrenUL = document.createElement("ul");
     o.node.getChildrenUL = function () {
         return o.node.childrenUL;
